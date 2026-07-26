@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Yapay zeka aramalarina acik
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://www.odergroup.com.tr/sitemap.xml
