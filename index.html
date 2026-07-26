@@ -7,6 +7,7 @@
 <!-- ===== SEO: TITLE + DESCRIPTION (55-60 / 150-160 karakter) ===== -->
 <title>Fuar Standı, Mağaza Yapımı, Çatı GES ve Fabrika Otomasyonu | Öder Group</title>
 <meta name="description" content="Öder Group; fuar standı ve mağaza/showroom yapımı, çatı GES kurulumu, fabrika otomasyonu ve enerji danışmanlığında anahtar teslim çözüm sunar. İstanbul merkezli, 20+ yıl tecrübe.">
+<link rel="icon" href="favicon.png" type="image/png">
 <link rel="canonical" href="https://www.odergroup.com.tr/">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -15,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Öder Group | Fuar Standı, Mağaza Yapımı, Çatı GES, Fabrika Otomasyonu">
 <meta name="twitter:description" content="Mimari uygulama, teknik hizmetler ve enerji altyapısında anahtar teslim mühendislik. İstanbul.">
-<meta name="twitter:image" content="https://odergroup.com.tr/wp-content/uploads/2024/04/mimari-proje.jpg">
+<meta name="twitter:image" content="https://www.odergroup.com.tr/mimari-proje-magaza-fuar-standi.jpg">
 
 <!-- ===== Open Graph / sosyal paylaşım ===== -->
 <meta property="og:type" content="website">
@@ -24,7 +25,7 @@
 <meta property="og:title" content="Fuar Standı, Mağaza Yapımı, Çatı GES ve Fabrika Otomasyonu | Öder Group">
 <meta property="og:description" content="Mimari uygulama, teknik hizmetler ve enerji altyapısında anahtar teslim mühendislik. İstanbul.">
 <meta property="og:url" content="https://www.odergroup.com.tr/">
-<meta property="og:image" content="https://odergroup.com.tr/wp-content/uploads/2024/04/mimari-proje.jpg">
+<meta property="og:image" content="https://www.odergroup.com.tr/mimari-proje-magaza-fuar-standi.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +43,7 @@
       "name":"Öder Group Enerji Elektrik Mekanik Teknik Hizmetler San. Tic. Ltd. Şti.",
       "alternateName":"Öder Group",
       "url":"https://www.odergroup.com.tr/",
-      "logo":"https://odergroup.com.tr/wp-content/uploads/2024/04/oder-logo-beyaz.png",
+      "logo":"oder-group-logo.png",
       "telephone":"+90-534-547-22-39",
       "email":"odergroup@hotmail.com",
       "foundingDate":"2023",
@@ -219,6 +220,30 @@ nav.menu{display:flex;gap:30px;align-items:center}
 .scol .go{margin-top:20px;font-family:'Archivo';font-weight:600;font-size:.82rem;display:inline-flex;gap:9px;border-bottom:1px solid currentColor;padding-bottom:3px}
 .scol .go:hover{gap:14px}
 
+/* ---- İLLÜSTRASYONLU HİZMET ŞERİDİ ---- */
+.illu{background:#fff}
+.illugrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:48px}
+.ic{background:#fff;padding:0;overflow:hidden;position:relative;transition:.4s}
+.ic:hover{background:var(--stone)}
+.ic .art{height:230px;display:block;width:100%;object-fit:cover;filter:grayscale(.35) contrast(1.03);transition:.55s}
+.ic:hover .art{filter:none;transform:scale(1.03)}
+.ic{overflow:hidden}
+.ic .txt{padding:24px 26px 30px;border-top:1px solid var(--line)}
+.ic .k{font-family:'Archivo';font-size:.66rem;letter-spacing:.22em;font-weight:600;text-transform:uppercase;display:block;margin-bottom:8px}
+.ic h3{font-size:1.16rem;font-weight:600;margin-bottom:8px}
+.ic p{font-size:.87rem;color:var(--muted);font-weight:300;margin-bottom:16px}
+.ic .go2{font-family:'Archivo';font-weight:600;font-size:.8rem;display:inline-flex;gap:8px;border-bottom:1px solid currentColor;padding-bottom:3px;transition:.25s}
+.ic:hover .go2{gap:13px}
+/* SVG animasyonları */
+.ic .art .fade{opacity:0;transition:opacity .6s ease}
+.ic:hover .art .fade{opacity:1}
+.ic .art .rise{transform:translateY(10px);opacity:.55;transition:.6s cubic-bezier(.2,.7,.3,1)}
+.ic:hover .art .rise{transform:none;opacity:1}
+.pulse{animation:pl 2.6s ease-in-out infinite}
+@keyframes pl{0%,100%{opacity:.25}50%{opacity:.9}}
+.dash{stroke-dasharray:5 7;animation:dsh 3.4s linear infinite}
+@keyframes dsh{to{stroke-dashoffset:-48}}
+
 /* süreç */
 .proc{background:var(--stone-2)}
 .pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:46px}
@@ -331,7 +356,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 @media(max-width:1080px){
   .svc,.pgrid,.trust .wrap{grid-template-columns:repeat(2,1fr)}
   .tr:nth-child(3){border-left:0}
-  .refblock{grid-template-columns:1fr}
+  .refblock,.illugrid{grid-template-columns:1fr 1fr}
   .cta .wrap{grid-template-columns:1fr}
   .fgrid{grid-template-columns:1fr 1fr}
   nav.menu{position:fixed;inset:80px 0 auto 0;background:var(--ink);flex-direction:column;padding:26px;gap:6px;transform:translateY(-140%);transition:.4s;z-index:50;max-height:calc(100vh - 80px);overflow:auto;align-items:stretch}
@@ -343,7 +368,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   .burger{display:block}
 }
 @media(max-width:640px){
-  .svc,.pgrid,.stats .wrap,.trust .wrap{grid-template-columns:1fr}
+  .svc,.pgrid,.stats .wrap,.trust .wrap,.illugrid{grid-template-columns:1fr}
   .stat,.tr{border-left:0;border-top:1px solid rgba(255,255,255,.1)}
   .tr{border-top:1px solid var(--line)}
   .rb{padding:28px 22px 32px}
@@ -374,7 +399,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 <header class="nav" id="top">
   <div class="wrap">
     <a class="logo" href="/" aria-label="Öder Group ana sayfa">
-      <img src="https://odergroup.com.tr/wp-content/uploads/2024/04/oder-logo-beyaz.png"
+      <img src="oder-group-logo.png"
            alt="Öder Group kurumsal logo — enerji, inşaat-mimarlık ve teknik hizmetler" width="150" height="44">
     </a>
     <nav class="menu" id="menu" aria-label="Ana menü">
@@ -405,7 +430,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
         </span>
       </span>
       <span class="mi"><a href="#referanslar">Referanslar</a></span>
-      <span class="mi"><a href="#kurumsal">Kurumsal</a></span>
+      <span class="mi"><a href="kurumsal.html">Kurumsal</a></span>
       <span class="mi"><a href="#iletisim">İletişim</a></span>
     </nav>
     <button class="burger" id="burger" aria-label="Menüyü aç"><span></span><span></span><span></span></button>
@@ -417,7 +442,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
   <div class="slide on" data-i="0">
     <div class="bg" role="img" aria-label="Fuar standı uygulaması — Öder Group mimari ekibi tarafından kurulan stand"
-         style="background-image:url('https://odergroup.com.tr/wp-content/uploads/2024/04/mimari-proje.jpg')"></div>
+         style="background-image:url('fuar-standi-kurulumu-istanbul.jpg')"></div>
     <div class="shade"></div><div class="accentline" style="background:var(--arc)"></div>
     <div class="inner wrap">
       <span class="num" style="color:#D3A472">01 — İNŞAAT &amp; MİMARLIK</span>
@@ -433,7 +458,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
   <div class="slide" data-i="1">
     <div class="bg" role="img" aria-label="Fabrika otomasyonu ve elektrik pano uygulaması — endüstriyel tesis"
-         style="background-image:url('https://odergroup.com.tr/wp-content/uploads/2024/04/teknik-hizmetler.jpg')"></div>
+         style="background-image:url('fabrika-otomasyonu-scada.jpg')"></div>
     <div class="shade"></div><div class="accentline" style="background:var(--tech)"></div>
     <div class="inner wrap">
       <span class="num" style="color:#7EB6D4">02 — TEKNİK HİZMETLER</span>
@@ -448,7 +473,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
   <div class="slide" data-i="2">
     <div class="bg" role="img" aria-label="Çatı GES kurulumu — sanayi çatısına monte edilmiş güneş panelleri"
-         style="background-image:url('https://odergroup.com.tr/wp-content/uploads/2024/04/yenilenebilir-enerji.jpg')"></div>
+         style="background-image:url('endustriyel-tesis-cati-ges.jpg')"></div>
     <div class="shade"></div><div class="accentline" style="background:var(--energy)"></div>
     <div class="inner wrap">
       <span class="num" style="color:#7FC8A0">03 — ENERJİ</span>
@@ -490,7 +515,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
     <div class="svc">
       <article class="scol" id="insaat">
         <div class="ph" role="img" aria-label="Mimari proje ve mağaza uygulaması görseli"
-             style="background-image:url('https://odergroup.com.tr/wp-content/uploads/2024/04/mimari-proje.jpg')"></div>
+             style="background-image:url('magaza-showroom-ic-mekan.jpg')"></div>
         <div class="cnt">
           <span class="tag" style="color:var(--arc)">01 — İnşaat &amp; Mimarlık</span>
           <h3>Mağaza, Fuar ve Yapı Uygulamaları</h3>
@@ -509,7 +534,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
       <article class="scol" id="teknik">
         <div class="ph" role="img" aria-label="Endüstriyel tesiste teknik bakım ve otomasyon uygulaması"
-             style="background-image:url('https://odergroup.com.tr/wp-content/uploads/2024/04/teknik-hizmetler.jpg')"></div>
+             style="background-image:url('elektrik-trafo-pano-odasi.jpg')"></div>
         <div class="cnt">
           <span class="tag" style="color:var(--tech)">02 — Teknik Hizmetler</span>
           <h3>Fabrika Otomasyonu ve İşletme</h3>
@@ -526,7 +551,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
       <article class="scol" id="enerji">
         <div class="ph" role="img" aria-label="Çatı üzerine kurulmuş güneş enerjisi santrali panelleri"
-             style="background-image:url('https://odergroup.com.tr/wp-content/uploads/2024/04/yenilenebilir-enerji.jpg')"></div>
+             style="background-image:url('cati-ges-panel-dizisi.jpg')"></div>
         <div class="cnt">
           <span class="tag" style="color:var(--energy)">03 — Enerji</span>
           <h3>Çatı GES ve Enerji Danışmanlığı</h3>
@@ -540,6 +565,85 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
           <a class="btn-supply" href="https://oderenerji.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16l2 10H2L4 4zM12 16v4M8 20h8"/></svg>Solar Ekipman Tedarik Merkezi</a>
         </div>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== İLLÜSTRASYONLU HİZMET ANLATIMI ===== -->
+<section class="illu rv">
+  <div class="wrap">
+    <span class="eyebrow">Nasıl Çalışıyoruz</span>
+    <h2 class="sec">Her işin kendine ait mühendisliği var</h2>
+    <p class="lead">Fuar standından çatı GES'e; ölçü, imalat, montaj ve devreye alma süreçlerini şematik olarak anlattık.</p>
+
+    <div class="illugrid">
+
+      <!-- FUAR STANDI -->
+      <article class="ic">
+        <img class="art" src="fuar-standi-kurulumu-istanbul.jpg" alt="Fuar standı kurulumu — fuar alanında truss taşıyıcı sistem ve panel montajı" loading="lazy" width="1600" height="900">
+        <div class="txt">
+          <span class="k" style="color:var(--arc)">Fuar Standı</span>
+          <h3>Tasarım, imalat, kurulum ve söküm</h3>
+          <p>Fuar takvimine göre geriye planlama; modüler taşıyıcı sistem, aydınlatma ve teslim sonrası demontaj.</p>
+          <a class="go2" style="color:var(--arc)" href="#iletisim">Stand görüşmesi başlat →</a>
+        </div>
+      </article>
+
+      <!-- MAĞAZA / SHOWROOM -->
+      <article class="ic">
+        <img class="art" src="magaza-kurulum-montaj.jpg" alt="Mağaza kurulum ve montaj çalışması — AVM içinde gece vardiyası duvar paneli uygulaması" loading="lazy" width="1600" height="900">
+        <div class="txt">
+          <span class="k" style="color:var(--arc)">Mağaza &amp; Showroom</span>
+          <h3>Anahtar teslim perakende uygulaması</h3>
+          <p>Mimari tasarım, elektrik-mekanik tesisat, aydınlatma, dekorasyon imalatı ve açılışa hazır teslim.</p>
+          <a class="go2" style="color:var(--arc)" href="#iletisim">Mağaza projesi görüşelim →</a>
+        </div>
+      </article>
+
+      <!-- TADİLAT / RESTORASYON -->
+      <article class="ic">
+        <img class="art" src="tadilat-restorasyon-tarihi-yapi.jpg" alt="Tarihi yapı cephe restorasyonu — iskele üzerinde taş detay onarımı" loading="lazy" width="1600" height="900">
+        <div class="txt">
+          <span class="k" style="color:var(--arc)">Tadilat &amp; Restorasyon</span>
+          <h3>Yapıyı aslına uygun yenileme</h3>
+          <p>AVM, hastane ve iş merkezlerinde etaplı tadilat; restorasyon ve restitüsyon çalışmaları.</p>
+          <a class="go2" style="color:var(--arc)" href="#iletisim">Yenileme keşfi iste →</a>
+        </div>
+      </article>
+
+      <!-- ÇATI GES -->
+      <article class="ic">
+        <img class="art" src="cati-ges-panel-dizisi.jpg" alt="Çatı GES — sanayi çatısına kurulmuş güneş enerjisi panel dizileri, havadan görünüm" loading="lazy" width="1600" height="900">
+        <div class="txt">
+          <span class="k" style="color:var(--energy)">Çatı GES</span>
+          <h3>Fizibiliteden devreye almaya</h3>
+          <p>Statik ve gölgelenme analizi, üretim öngörüsü, montaj, şebeke bağlantısı ve geçici kabul.</p>
+          <a class="go2" style="color:var(--energy)" href="#iletisim">Çatı fizibilitesi iste →</a>
+        </div>
+      </article>
+
+      <!-- FABRİKA OTOMASYONU -->
+      <article class="ic">
+        <img class="art" src="fabrika-otomasyonu-scada.jpg" alt="Fabrika otomasyonu — SCADA kontrol ekranlarında üretim hattı izleme" loading="lazy" width="1600" height="900">
+        <div class="txt">
+          <span class="k" style="color:var(--tech)">Fabrika Otomasyonu</span>
+          <h3>PLC, SCADA ve hat modernizasyonu</h3>
+          <p>Duruşu en aza indiren etaplı geçiş; izleme, raporlama ve uzaktan kontrol altyapısı.</p>
+          <a class="go2" style="color:var(--tech)" href="#iletisim">Otomasyon ihtiyacını anlat →</a>
+        </div>
+      </article>
+
+      <!-- TRAFO / PANO / BAKIM -->
+      <article class="ic">
+        <img class="art" src="enerji-verimliligi-termal-kontrol.jpg" alt="Koruyucu bakım — elektrik panosunda termal kamera ile ısıl kontrol" loading="lazy" width="1600" height="900">
+        <div class="txt">
+          <span class="k" style="color:var(--tech)">Elektrik &amp; Koruyucu Bakım</span>
+          <h3>Trafo, pano ve periyodik işletme</h3>
+          <p>Projelendirme, imalat, devreye alma ve sözleşmeli bakımla kesintisiz enerji sürekliliği.</p>
+          <a class="go2" style="color:var(--tech)" href="#iletisim">Bakım sözleşmesi görüş →</a>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
@@ -667,13 +771,13 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 <!-- ===== KURUMSAL ===== -->
 <section class="rv" id="kurumsal" style="background:#fff">
   <div class="wrap" style="display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center">
-    <img src="https://odergroup.com.tr/wp-content/uploads/2021/06/photo-54.jpeg"
-         alt="Öder Group teknik ekibi saha uygulaması sırasında" style="height:440px;width:100%;object-fit:cover;filter:grayscale(.25)">
+    <img src="ic-dekorasyon-bakim-onarim.jpg"
+         alt="Öder Group teknik ekibi — iç mekân bakım ve teknik kontrol çalışması" style="height:440px;width:100%;object-fit:cover;filter:grayscale(.25)">
     <div>
       <span class="eyebrow">Kurumsal</span>
       <h2 class="sec">Disiplinli mühendislik, şeffaf süreç</h2>
       <p class="lead">Öder Group; mimari uygulama, teknik işletme ve enerji altyapısında 20 yılı aşkın saha tecrübesini tek çatı altında birleştirir. Fuar standından fabrika otomasyonuna kadar her işi aynı proje yönetimi disipliniyle yürütür; çevresel etkiyi ve enerji maliyetini her projede hesaba katar.</p>
-      <a class="btn btn-linedark" href="https://odergroup.com.tr/kurumsal/hakkimizda/" target="_blank" rel="noopener" style="margin-top:26px">Hakkımızda</a>
+      <a class="btn btn-linedark" href="kurumsal.html#hakkimizda" style="margin-top:26px">Hakkımızda</a>
     </div>
   </div>
 </section>
@@ -718,9 +822,9 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <img class="flogo" src="https://odergroup.com.tr/wp-content/uploads/2024/04/oder-logo-beyaz.png" alt="Öder Group logo">
+        <img class="flogo" src="oder-group-logo.png" alt="Öder Group logo">
         <p>ÖDER GROUP ENERJİ ELEKTRİK MEKANİK TEKNİK HİZMETLER SANAYİ VE TİCARET LİMİTED ŞİRKETİ</p>
-        <img class="made" src="https://odergroup.com.tr/wp-content/uploads/2024/05/Ekran-Resmi-2024-05-08-18.03.34-1024x355.png" alt="Made in Türkiye kalite işareti">
+        <img class="made" src="made-in-turkiye-kalite.png" alt="Made in Türkiye kalite işareti">
       </div>
       <div>
         <h4>İnşaat &amp; Mimarlık</h4>
@@ -782,8 +886,8 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
     <div class="fbot">
       <span>© 2023 Öder Group Enerji Elektrik Mekanik Teknik Hizmetler San. Tic. Ltd. Şti. — Tüm hakları saklıdır.</span>
       <span>
-        <a href="https://odergroup.com.tr/kurumsal/gizlilik-politikasi/" target="_blank" rel="noopener">Gizlilik Politikası</a> ·
-        <a href="https://odergroup.com.tr/kurumsal/ticaret-sicil-bilgileri/" target="_blank" rel="noopener">Ticaret Sicil</a> ·
+        <a href="gizlilik-politikasi.html">Gizlilik Politikası</a> ·
+        <a href="kurumsal.html#sicil">Ticaret Sicil</a> ·
         <a href="#top">Başa Dön ↑</a>
       </span>
     </div>
