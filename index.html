@@ -793,11 +793,18 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
         <a class="btn btn-wa" href="https://wa.me/905345472239" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
-    <form class="form" onsubmit="event.preventDefault();alert('Bu bir tasarım örneğidir. WordPress kurulumunda form gerçek e-posta adresinize iletilecektir.')">
+    <form class="form" action="https://formsubmit.co/odergroup@hotmail.com" method="POST">
+      <input type="hidden" name="_subject" value="odergroup.com.tr — Yeni Keşif/Teklif Talebi">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://www.odergroup.com.tr/tesekkurler.html">
+      <input type="text" name="_honey" style="display:none">
       <label for="ad">Ad Soyad / Firma</label>
       <input id="ad" name="ad" required>
       <label for="tel">Telefon</label>
       <input id="tel" name="tel" type="tel" required>
+      <label for="eposta">E-posta</label>
+      <input id="eposta" name="email" type="email" placeholder="ornek@firma.com">
       <label for="konu">Talep Konusu</label>
       <select id="konu" name="konu">
         <option>Fuar Standı Tasarım ve Uygulama</option>
