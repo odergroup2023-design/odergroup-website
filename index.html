@@ -179,8 +179,12 @@
   --energy:#3E8E62;   /* Enerji */
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--stone);line-height:1.65;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--stone);line-height:1.65;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;max-width:100vw;-webkit-text-size-adjust:100%}
+img,svg,video{max-width:100%}
+/* uzun kelime/URL taşmasını engelle */
+h1,h2,h3,h4,p,a,li,b,span,dd,dt,small{overflow-wrap:anywhere}
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
 ul{list-style:none}
@@ -522,7 +526,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   /* ---- MOBİL: kaydırmalı hizmet kartları ---- */
   .svc{display:grid;grid-auto-flow:column;grid-auto-columns:86%;grid-template-columns:none;
        overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
-       gap:12px;padding:0 5vw 6px;margin:34px -5vw 0;border-top:0;scrollbar-width:none}
+       gap:12px;padding:0 5vw 6px;margin:34px calc(-50vw + 50%) 0;padding-inline:5vw;max-width:100vw;border-top:0;scrollbar-width:none}
   .svc::-webkit-scrollbar{display:none}
   .scol{scroll-snap-align:center;border:1px solid var(--line);border-radius:3px;overflow:hidden;flex-shrink:0}
   .scol .ph{height:190px;filter:none}
@@ -531,7 +535,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
   .pgrid{display:grid;grid-auto-flow:column;grid-auto-columns:80%;grid-template-columns:none;
          overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
-         gap:1px;padding:0 5vw;margin:38px -5vw 0;border:0;scrollbar-width:none}
+         gap:1px;padding:0 5vw;margin:38px calc(-50vw + 50%) 0;padding-inline:5vw;max-width:100vw;border:0;scrollbar-width:none}
   .pgrid::-webkit-scrollbar{display:none}
   .ic{scroll-snap-align:center;border:1px solid var(--line)}
   .ic .art{height:200px;filter:none}
@@ -545,10 +549,46 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   .bl img{max-width:74px;max-height:24px}
   .bl .lg{height:24px}
 
+  /* ---- MOBİL: üst şerit sadeleştirildi ---- */
+  .strip{padding:7px 0}
+  .strip .wrap{flex-wrap:nowrap;align-items:center;gap:10px}
+  .strip .wrap>span:first-child{display:none}          /* uzun adres gizlenir */
+  .strip .r{width:100%;justify-content:space-between;gap:10px;flex-wrap:nowrap}
+  .strip .r a[href^="mailto"]{display:none}            /* e-posta gizlenir, alt CTA var */
+  .strip .r a{font-size:.8rem;white-space:nowrap}
+  .langmenu{right:0;left:auto}
+
+  /* ---- MOBİL: başlık ---- */
+  header.nav .wrap{height:64px}
+  .burger{width:44px;height:44px;display:grid;place-items:center}
+  nav.menu{inset:64px 0 auto 0;max-height:calc(100dvh - 64px)}
+
+  /* ---- MOBİL: banner okları ve noktalar ---- */
+  .hnav{width:40px;height:40px;opacity:.72}
+  .hprev{left:8px}.hnext{right:8px}
+  .hdots{bottom:auto;top:calc(100% - 118px)}
+  .hdots span{width:20px}
+  .hdots span.on{width:34px}
+  .slide .inner{padding-bottom:120px}
+  .slide p{font-size:.94rem;margin-bottom:22px}
+  .slide .btns .btn{padding:13px 20px;font-size:.82rem}
+
+  /* ---- MOBİL: bölüm başlıkları ---- */
+  h2.sec{font-size:clamp(1.35rem,6.4vw,1.9rem)}
+  .lead{font-size:.94rem}
+  .eyebrow{font-size:.63rem;letter-spacing:.18em}
+
+  /* ---- MOBİL: künye ve footer ---- */
+  .kunye{max-width:100%;display:block}
+  .fgrid{grid-template-columns:1fr;gap:26px}
+  .fgrid img.flogo{height:42px}
+  .socbig a{padding:9px 13px;font-size:.79rem}
+
   /* ---- MOBİL: dokunma hedefleri ve alt CTA ---- */
-  .fq button{min-height:52px}
+  .fq button{min-height:52px;font-size:.92rem;text-align:left}
   .scol li a{padding:13px 0}
-  .langbtn{padding:8px 12px}
+  .langbtn{padding:7px 10px;font-size:.78rem}
+  .form input,.form select,.form textarea{font-size:16px}  /* iOS yakınlaştırmasını engeller */
   body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
   .mobcta{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:80;
           box-shadow:0 -8px 26px rgba(21,24,28,.22);padding-bottom:env(safe-area-inset-bottom)}
