@@ -297,12 +297,19 @@ nav.menu{display:flex;gap:30px;align-items:center}
 
 /* hizmet ızgarası */
 .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:50px;border-top:1px solid var(--line)}
-.scol{border-left:1px solid var(--line);background:#fff;transition:.35s}
+.scol{border-left:1px solid var(--line);background:#fff;transition:.35s;display:flex;flex-direction:column}
 .scol:hover{box-shadow:0 24px 50px rgba(21,24,28,.09)}
 .scol .ph{height:240px;background-size:cover;background-position:center;filter:grayscale(.18) saturate(1.05);transition:.5s;position:relative}
 .scol:hover .ph{filter:grayscale(0)}
 .scol .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(21,24,28,.55),transparent 58%)}
-.scol .cnt{padding:28px 28px 32px}
+.scol .cnt{padding:28px 28px 32px;display:flex;flex-direction:column;flex:1}
+/* kısa sütunlarda kalan boşluğu dolduran ikinci görsel */
+.scol .ph2{flex:1;min-height:168px;margin-top:24px;background-size:cover;background-position:center;
+  position:relative;overflow:hidden;border-radius:2px;filter:grayscale(.10) saturate(1.05);transition:.5s}
+.scol:hover .ph2{filter:grayscale(0) saturate(1.08)}
+.scol .ph2:after{content:attr(data-cap);position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;
+  background:linear-gradient(to top,rgba(21,24,28,.86),transparent);color:#fff;
+  font-family:'Archivo';font-size:.72rem;font-weight:600;letter-spacing:.04em;line-height:1.35}
 .scol .tag{font-family:'Archivo';font-size:.66rem;letter-spacing:.22em;font-weight:600;text-transform:uppercase;margin-bottom:10px;display:block}
 .scol h3{font-size:1.32rem;font-weight:600;margin-bottom:8px}
 .scol .sub{font-size:.88rem;color:var(--muted);font-weight:300;margin-bottom:16px}
@@ -366,20 +373,21 @@ nav.menu{display:flex;gap:30px;align-items:center}
 .rblist li b{font-family:'Archivo';font-weight:600;font-size:.88rem;margin-left:auto;white-space:nowrap}
 .rblist li span{color:var(--muted);font-size:.78rem;min-width:66px;text-align:right}
 /* referans marka kartlari */
-.blogos{display:grid;grid-template-columns:repeat(auto-fill,minmax(134px,1fr));gap:9px;margin-top:4px}
-.bl{background:#fff;border:1px solid var(--line);padding:15px 11px 13px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:9px;text-align:center;position:relative;overflow:hidden;transition:transform .28s,box-shadow .28s,border-color .28s}
-.bl:before{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--arc);transform:scaleX(0);transform-origin:left;transition:transform .35s}
-.bl:hover{border-color:#c3bdb3;box-shadow:0 12px 28px rgba(21,24,28,.10);transform:translateY(-3px)}
-.bl:hover:before{transform:scaleX(1)}
-.bl .lg{height:32px;display:flex;align-items:center;justify-content:center;width:100%}
-.bl img{max-height:32px;max-width:104px;object-fit:contain}
-.bl .mono{width:36px;height:36px;display:flex;align-items:center;justify-content:center;
-  background:linear-gradient(135deg,var(--ink) 0%,#2b3138 100%);color:#fff;
-  font-family:'Archivo';font-weight:700;font-size:.82rem;letter-spacing:.03em;border-radius:2px}
-.bl.tek .mono{background:linear-gradient(135deg,var(--tech) 0%,#245873 100%)}
-.bl.per .mono{background:linear-gradient(135deg,var(--arc) 0%,#8f6339 100%)}
-.bl b{font-family:'Archivo';font-size:.79rem;font-weight:600;line-height:1.28;color:var(--ink)}
-.bl small{font-size:.63rem;color:var(--muted);font-weight:500;letter-spacing:.1em;text-transform:uppercase;line-height:1.3}
+.blogos{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:0;margin-top:14px;
+  border-top:1px solid var(--line);border-left:1px solid var(--line);background:var(--line)}
+.bl{background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:20px 14px 16px;display:grid;grid-template-rows:44px auto auto;align-items:center;
+  gap:10px;text-align:center;position:relative;transition:background .3s}
+.bl:hover{background:#FBFAF8}
+.bl .lg{height:44px;display:flex;align-items:center;justify-content:center;width:100%}
+.bl img{max-height:40px;max-width:120px;object-fit:contain}
+.bl .mono{min-width:44px;height:38px;padding:0 12px;display:flex;align-items:center;justify-content:center;
+  background:#fff;border:1.5px solid var(--tech);color:var(--tech);
+  font-family:'Archivo';font-weight:700;font-size:.9rem;letter-spacing:.06em;border-radius:2px}
+.bl.per .mono{border-color:var(--arc);color:var(--arc)}
+.bl b{font-family:'Archivo';font-size:.82rem;font-weight:600;line-height:1.3;color:var(--ink);align-self:start}
+.bl small{font-size:.6rem;color:var(--muted);font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  line-height:1.3;align-self:start}
 .blmore{margin-top:12px;font-family:'Archivo';font-size:.78rem;font-weight:600;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:3px;cursor:pointer;display:inline-block;background:none;border-top:0;border-left:0;border-right:0}
 .blmore:hover{color:var(--ink);border-bottom-color:var(--ink)}
 /* logo marquee */
@@ -387,7 +395,7 @@ nav.menu{display:flex;gap:30px;align-items:center}
 .mqwrap:before,.mqwrap:after{content:"";position:absolute;top:0;bottom:0;width:90px;z-index:2;pointer-events:none}
 .mqwrap:before{left:0;background:linear-gradient(to right,#fff,transparent)}
 .mqwrap:after{right:0;background:linear-gradient(to left,#fff,transparent)}
-.mqtrack{display:flex;width:max-content;animation:mq 55s linear infinite}
+.mqtrack{display:flex;width:max-content;animation:mq 110s linear infinite}
 @media(hover:hover){.mqwrap:hover .mqtrack{animation-play-state:paused}}
 .mqtrack.dur{animation-play-state:paused}
 @keyframes mq{to{transform:translateX(-50%)}}
@@ -542,12 +550,13 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   .swipe{display:flex}
 
   /* ---- MOBİL: marka kartları ---- */
-  .blogos{grid-template-columns:repeat(3,1fr);gap:7px}
-  .bl{padding:12px 6px 11px;gap:7px}
-  .bl b{font-size:.7rem}
-  .bl small{font-size:.56rem;letter-spacing:.07em}
-  .bl img{max-width:74px;max-height:24px}
-  .bl .lg{height:24px}
+  .blogos{grid-template-columns:repeat(2,1fr);gap:0}
+  .bl{padding:16px 10px 13px;gap:8px;grid-template-rows:36px auto auto}
+  .bl b{font-size:.76rem}
+  .bl small{font-size:.55rem;letter-spacing:.09em}
+  .bl img{max-width:96px;max-height:32px}
+  .bl .lg{height:36px}
+  .bl .mono{height:32px;font-size:.8rem;padding:0 10px}
 
   /* ---- MOBİL: üst şerit sadeleştirildi ---- */
   .strip{padding:7px 0}
@@ -800,6 +809,9 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
             <li id="musavirlik"><a href="#iletisim">Proje Danışmanlık ve Müşavirlik <span>Kontrollük</span></a></li>
           </ul>
           <a class="go" style="color:var(--tech)" href="#iletisim">Servis / bakım talebi →</a>
+          <div class="ph2" role="img" data-cap="PLC-SCADA modernizasyonu · üretim hattı devreye alma"
+               aria-label="Fabrika otomasyonu SCADA panosu ve üretim hattı devreye alma çalışması"
+               style="background-image:url('fabrika-otomasyonu-scada.jpg')"></div>
         </div>
       </article>
 
@@ -817,6 +829,9 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
             <li id="tedarik"><a href="#iletisim">Enerji Tedarik, Teşvik ve Finansman <span>Piyasa endeksli</span></a></li>
           </ul>
           <a class="btn-supply" href="https://oderenerji.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16l2 10H2L4 4zM12 16v4M8 20h8"/></svg>Solar Ekipman Tedarik Merkezi</a>
+          <div class="ph2" role="img" data-cap="Termal kamera ile enerji verimliliği etüdü"
+               aria-label="Enerji verimliliği etüdü — termal kamera ile pano ve tesisat kontrolü"
+               style="background-image:url('enerji-verimliligi-termal-kontrol.jpg')"></div>
         </div>
       </article>
     </div>
@@ -1431,7 +1446,7 @@ const markalar=[
  ['Google','google.com','Google_2015_logo.svg'],
  ['General Electric','ge.com','General_Electric_logo.svg'],
  ['Cisco','cisco.com','Cisco_logo_blue_2016.svg'],
- ['Morgan Stanley','morganstanley.com',null],
+ ['Morgan Stanley','morganstanley.com','Morgan Stanley Logo 2024.svg'],
  ['CBRE','cbre.com','CBRE_Group_logo.svg'],
  ['MediaMarkt','mediamarkt.com.tr','Media_Markt_logo.svg'],
  ['Puma','puma.com','Puma-logo-(text).svg'],
@@ -1446,39 +1461,42 @@ const markalar=[
  ['IBM','ibm.com','IBM_logo.svg'],
  ['UPS','ups.com','United_Parcel_Service_logo_2014.svg'],
  ['Intersport','intersport.com.tr','Intersport_logo.svg'],
- ['Koçtaş','koctas.com.tr',null],
+ ['Koçtaş','koctas.com.tr','fav:koctas.com.tr'],
  ['Derimod','derimod.com.tr','Derimod_logo.png'],
  ['Çelebi','celebiaviation.com',null],
  ['Dünya Bankası (IFC)','ifc.org','International_Finance_Corporation_logo.svg'],
- ['Richmond Hotel','richmondint.com',null],
+ ['Richmond Hotel','richmondint.com','fav:richmondint.com'],
  ['Johnson Controls','johnsoncontrols.com',null],
  ['UCB Pharma','ucb.com','Ucb_Logo.svg'],
- ['Paşabahçe','pasabahce.com',null],
- ['Caribou Coffee','cariboucoffee.com',null],
- ['Vero Moda','veromoda.com',null],
- ['Anadolu Hastaneleri','anadolusaglik.org',null],
+ ['Paşabahçe','pasabahce.com','fav:pasabahce.com'],
+ ['Caribou Coffee','cariboucoffee.com','fav:cariboucoffee.com'],
+ ['Vero Moda','veromoda.com','fav:veromoda.com'],
+ ['Anadolu Sağlık Merkezi','anadolusaglik.org','Anadolu Medical Center logo.svg'],
  ['Kadıköy Şifa','kadikoysifa.com',null],
  ['Florence Nightingale','florence.com.tr',null],
- ['MAC Fit','macfit.com.tr',null],
+ ['MAC Fit','macfit.com.tr','fav:macfit.com.tr'],
  ['Magrabi Optik','magrabi.com',null],
  ['ICA İçtaş','ictas.com.tr',null],
  ['Maye Yapı','mayeyapi.com',null],
  ['Kayseri Şeker','kayseriseker.com.tr',null],
- ['Karaman Belediyesi','karaman.bel.tr',null],
- ['Bornova Belediyesi','bornova.bel.tr',null],
- ['BUSKİ','buski.gov.tr',null],
+ ['Karaman Belediyesi','karaman.bel.tr','fav:karaman.bel.tr'],
+ ['Bornova Belediyesi','bornova.bel.tr','fav:bornova.bel.tr'],
+ ['BUSKİ','buski.gov.tr','fav:buski.gov.tr'],
  ['Konya OSB','kos.org.tr',null],
- ['Eskişehir OSB','eosb.org.tr',null]
+ ['Eskişehir OSB','eosb.org.tr','fav:eosb.org.tr']
 ];
 const FAV=d=>`https://www.google.com/s2/favicons?domain=${d}&sz=64`;
 const WIKI=f=>'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f)+'?width=240';
+/* 'fav:alanadi' -> markanın kendi sitesinden 256px logo; yalnız net çıktığı doğrulanan markalarda kullanılır */
+const FAV2=d=>'https://www.google.com/s2/favicons?domain='+d+'&sz=256';
+const LOGO=v=>(typeof v==='string'&&v.slice(0,4)==='fav:')?FAV2(v.slice(4)):WIKI(v);
 
 const tr=document.getElementById('mqtrack');
 if(tr){
   const html=markalar.map(([ad,dom,wiki])=>{
     const mo=monogram(ad);
     const g = wiki
-      ? `<img loading="lazy" src="${WIKI(wiki)}" alt="${ad} logosu"
+      ? `<img loading="lazy" src="${LOGO(wiki)}" alt="${ad} logosu"
            onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'mqmono',textContent:'${mo}'}))">`
       : `<span class="mqmono">${mo}</span>`;
     return `<span class="mq-item">${g}<b>${ad}</b></span>`;
@@ -1522,17 +1540,17 @@ const REF_TEKNIK=[
  ['UPS','United_Parcel_Service_logo_2014.svg','Lojistik'],
  ['Caffè Nero','Caffè_Nero_Logo.svg','Kafe zinciri'],
  ['UCB Pharma','Ucb_Logo.svg','İlaç'],
- ['Morgan Stanley',null,'Finans'],
- ['Paşabahçe Mağazaları',null,'Perakende'],
- ['Koçtaş',null,'Perakende'],
+ ['Morgan Stanley','Morgan Stanley Logo 2024.svg','Finans'],
+ ['Paşabahçe Mağazaları','fav:pasabahce.com','Perakende'],
+ ['Koçtaş','fav:koctas.com.tr','Perakende'],
  ['Gürmen (Ramsey · Kip)',null,'Perakende'],
  ['Johnson Controls',null,'Mekanik sistem'],
  ['Çelebi',null,'Havacılık'],
  ['Arvato',null,'Lojistik'],
  ['Avrupa Elektronik',null,'Elektronik'],
- ['Caribou Coffee',null,'Kafe zinciri'],
- ['Richmond Hotel',null,'Otel'],
- ['Anadolu Hastaneleri',null,'Hastane'],
+ ['Caribou Coffee','fav:cariboucoffee.com','Kafe zinciri'],
+ ['Richmond Hotel','fav:richmondint.com','Otel'],
+ ['Anadolu Sağlık Merkezi','Anadolu Medical Center logo.svg','Hastane'],
  ['Kadıköy Şifa Hastanesi',null,'Hastane'],
  ['Florence Nightingale',null,'Hastane'],
  ['Ziraat Veri Merkezi',null,'Veri merkezi'],
@@ -1549,10 +1567,10 @@ const REF_PERAKENDE=[
  ['Jack & Jones','Jack_&_Jones_logo.svg','Hazır giyim'],
  ['Akbank','Akbank_logo.svg','Banka şubesi'],
  ['Türkiye Finans','Türkiye_finans.png','Banka şubesi'],
- ['Vero Moda',null,'Hazır giyim'],
+ ['Vero Moda','fav:veromoda.com','Hazır giyim'],
  ['Mars Entertainment Group',null,'Eğlence'],
  ['Mars Cinema',null,'Sinema'],
- ['MAC Fit',null,'Spor salonu'],
+ ['MAC Fit','fav:macfit.com.tr','Spor salonu'],
  ['Magrabi Optik',null,'Optik']
 ];
 function monogram(ad){
@@ -1563,7 +1581,7 @@ function markaKarti(sinif){
   return function([ad,wiki,etiket]){
     const mo=monogram(ad);
     const gorsel = wiki
-      ? `<img loading="lazy" src="${WIKI(wiki)}" alt="${ad} logosu"
+      ? `<img loading="lazy" src="${LOGO(wiki)}" alt="${ad} logosu"
            onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'mono',textContent:'${mo}'}))">`
       : `<span class="mono">${mo}</span>`;
     return `<div class="bl ${sinif}"><span class="lg">${gorsel}</span><b>${ad}</b><small>${etiket}</small></div>`;
