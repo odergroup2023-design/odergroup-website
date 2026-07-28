@@ -158,7 +158,9 @@
          "acceptedAnswer":{"@type":"Answer","text":"Evet. Müstakil konut ve villa projelerinde tasarımdan anahtar teslim uygulamaya kadar tüm süreci yürütüyoruz. Kentsel dönüşümde riskli yapı tespiti, ruhsat ve proje süreçleri, yıkım ve yeni yapı uygulaması hak sahipleriyle koordineli planlanır."}},
         {"@type":"Question","name":"Tiny house ve prefabrik yapı üretiyor musunuz?",
          "acceptedAnswer":{"@type":"Answer","text":"Evet. Modüler yapılar fabrika ortamında üretilir, iç mekân donanımı tamamlanır ve sahaya vinçle monte edilir. Klasik inşaata göre daha kısa sürede, kontrollü kalitede ve daha az şantiye yüküyle teslim edilir."}},
-        {"@type":"Question","name":"Çatı GES kurulumu için hangi şartlar aranır?",
+        {"@type":"Question","name":"Elektrikli araç şarj istasyonu kurulumunda neye bakılır?",
+        "acceptedAnswer":{"@type":"Answer","text":"Belirleyici olan cihaz değil tesisin elektriksel altyapısıdır. Mevcut abone gücü, pano ve trafo kapasitesi, kablo kesiti ve topraklama durumu ölçülür. Keşifte yük analizi yapılır; gerekiyorsa güç artırımı, pano yenileme ve kablolama kurulumdan önce planlanır. AVM, otel, iş merkezi, fabrika ve site otoparklarında AC ve DC istasyon kurulumu yapılır."}},
+      {"@type":"Question","name":"Çatı GES kurulumu için hangi şartlar aranır?",
          "acceptedAnswer":{"@type":"Answer","text":"Çatının statik taşıma kapasitesi, yönelim ve gölgelenme durumu ile tesisin bağlantı gücü belirleyicidir. Saha keşfinde bu üç kriter ölçülür ve üretim öngörüsü çıkarılır."}},
         {"@type":"Question","name":"Fabrika otomasyonu mevcut hatta uygulanabilir mi?",
          "acceptedAnswer":{"@type":"Answer","text":"Evet. Mevcut hatlar duruş süresi en aza indirilecek biçimde etaplandırılarak modernize edilir; PLC, SCADA ve pano yenilemeleri üretim takvimine göre planlanır."}},
@@ -436,6 +438,16 @@ nav.menu{display:flex;gap:30px;align-items:center}
 .stat span{color:#8d949b;font-size:.85rem;font-weight:300;display:block;margin-top:8px}
 
 /* SSS (AEO) */
+.stripkurum{display:none}
+.evbox{margin-top:20px;padding:20px 22px;background:#F4FAF6;border-left:3px solid var(--energy)}
+.evbox b{font-family:'Archivo';font-size:.88rem;font-weight:600;color:var(--ink);display:block;margin-bottom:8px}
+.evbox p{font-size:.88rem;line-height:1.7;color:var(--muted);margin:0}
+.evlist{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:7px}
+.evlist li{font-size:.84rem;line-height:1.6;color:var(--muted);padding-left:16px;position:relative}
+.evlist li:before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--energy);border-radius:50%}
+.evlist li b{display:inline;font-size:.84rem;color:var(--ink)}
+.evnot{margin-top:12px!important;font-size:.78rem!important;opacity:.85;font-style:italic}
+@media(max-width:640px){.evbox{padding:16px 16px}}
 .faq{background:var(--stone)}
 .faqlist{margin-top:42px;border-top:1px solid var(--line)}
 .fq{border-bottom:1px solid var(--line)}
@@ -567,7 +579,17 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   .swipe{display:flex}
 
   /* ---- MOBİL: marka kartları ---- */
-  .blogos{grid-template-columns:repeat(2,1fr);gap:0}
+  /* cepte marka kartlari yatay kaydirilir (parmakla saga-sola) */
+  .blogos{display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;border-left:0;
+    grid-template-columns:none;padding-bottom:2px}
+  .blogos::-webkit-scrollbar{display:none}
+  .blogos .bl{flex:0 0 46%;scroll-snap-align:start;border-left:1px solid var(--line);border-right:0}
+  .blogos .bl:last-child{border-right:1px solid var(--line)}
+  /* kaydirilabilir oldugunu belli eden ipucu */
+  .blwrap{position:relative}
+  .blwrap:after{content:"";position:absolute;top:0;bottom:0;right:0;width:38px;pointer-events:none;
+    background:linear-gradient(to left,#fff,transparent)}
   .bl{padding:16px 10px 13px;gap:8px;grid-template-rows:36px auto auto}
   .bl b{font-size:.76rem}
   .bl small{font-size:.55rem;letter-spacing:.09em}
@@ -577,6 +599,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
   /* ---- MOBİL: üst şerit sadeleştirildi ---- */
   .strip{padding:7px 0}
+  .stripkurum{display:inline;font-size:.78rem;letter-spacing:.04em;opacity:.9;white-space:nowrap}
   .strip .wrap{flex-wrap:nowrap;align-items:center;gap:10px}
   .strip .wrap>span:first-child{display:none}          /* uzun adres gizlenir */
   .strip .r{width:100%;justify-content:space-between;gap:10px;flex-wrap:nowrap}
@@ -650,7 +673,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 <div class="strip">
   <div class="wrap">
     <span>Barbaros Mah. Lale Sk. Ağaoğlu My Office No:2 İç Kapı:13 — Ataşehir / İstanbul</span>
-    <span class="r"><a href="tel:+905345472239">+90 534 547 22 39</a><a href="mailto:info@odergroup.com.tr">info@odergroup.com.tr</a>
+    <span class="r"><span class="stripkurum">Keşif ve teklif ücretsiz</span><a href="tel:+905345472239">+90 534 547 22 39</a><a href="mailto:info@odergroup.com.tr">info@odergroup.com.tr</a>
       <span class="langbox" id="langbox">
         <button class="langbtn" id="langbtn" aria-label="Dil seçimi / Language">
           <span class="bayrak" id="langbayrak"></span>
@@ -842,10 +865,25 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
           <p class="sub">Enerji maliyetini ölçen, düşüren ve finanse eden çözümler.</p>
           <ul>
             <li id="ges"><a href="#iletisim">Çatı GES — Güneş Enerjisi Santrali <span>Fizibilite → devreye alma</span></a></li>
-            <li id="sarj"><a href="#iletisim">Elektrikli Araç Şarj İstasyonu <span>AC / DC</span></a></li>
+            <li id="sarj"><a href="#iletisim">Elektrikli Araç Şarj İstasyonu <span>AC / DC · yük analizi → devreye alma</span></a></li>
             <li id="evd"><a href="#iletisim">Enerji Verimliliği Danışmanlığı (EVD) <span>Etüt · raporlama</span></a></li>
             <li id="tedarik"><a href="#iletisim">Enerji Tedarik, Teşvik ve Finansman <span>Piyasa endeksli</span></a></li>
           </ul>
+          <div class="evbox">
+            <b>Elektrikli araç şarj istasyonu kurulumu</b>
+            <p>AVM, otel, iş merkezi, fabrika ve site otoparklarında AC ve DC şarj
+            istasyonu kuruyoruz. İşin belirleyicisi cihaz değil <strong>altyapıdır</strong>:
+            mevcut abone gücü, pano kapasitesi, kablo kesiti ve topraklama yeterli değilse
+            istasyon çalışmaz. Bu yüzden her projeye tesisin yük analiziyle başlıyoruz.</p>
+            <ul class="evlist">
+              <li><b>Yük analizi</b> — mevcut abone gücü ve trafo kapasitesinin ölçülmesi</li>
+              <li><b>Altyapı</b> — pano, kablolama, koruma ve topraklama düzenlemesi</li>
+              <li><b>Kurulum</b> — AC (yavaş/orta) veya DC (hızlı) istasyon montajı</li>
+              <li><b>Devreye alma</b> — test, etiketleme ve kullanıcıya teslim</li>
+            </ul>
+            <p class="evnot">Şarj ağı işletmeciliği lisansı ve EPDK süreçleri yatırımcıya aittir;
+            biz elektriksel altyapı ve kurulum tarafını üstleniriz.</p>
+          </div>
           <a class="btn-supply" href="https://oderenerji.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16l2 10H2L4 4zM12 16v4M8 20h8"/></svg>Solar Ekipman Tedarik Merkezi</a>
           <div class="ph2" role="img" data-cap="Termal kamera ile enerji verimliliği etüdü"
                aria-label="Enerji verimliliği etüdü — termal kamera ile pano ve tesisat kontrolü"
@@ -1029,14 +1067,14 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
         <span class="rbtag" style="color:var(--tech)">Teknik Hizmetler · Tesis Yönetimi</span>
         <h3>Zincir mağaza, hastane, veri merkezi ve endüstriyel tesis</h3>
         <p class="rbsub">ProAsist Teknik Hizmetler bünyesinde müşteri yöneticisi olarak mekanik-elektrik bakım, arıza, inşai onarım, projelendirme, ihale ve teklif süreçlerinin yönetimi (2019–2022). 2020 Novartis bakım sözleşmesi sürecinde proje yöneticisi.</p>
-        <div class="blogos" id="bl-teknik"></div>
+        <div class="blwrap"><div class="blogos" id="bl-teknik"></div></div>
       </div>
 
       <div class="rb">
         <span class="rbtag" style="color:var(--arc)">İnşaat &amp; Mimarlık · Perakende Uygulama</span>
         <h3>Mağaza kurulum-söküm, tadilat ve iç dekorasyon</h3>
         <p class="rbsub">LC Waikiki – Zirve Mimarlık bünyesinde perakende, ofis ve sanayi yapılarının kurumsal kimlik ve konsept tasarımı ile inşaat uygulama süreçlerinde teklif, ihale analizi, maliyet ve satınalma yönetimi (2013–2014). ProAsist döneminde (2019–2022) AVM, hastane, iş merkezi ve zincir mağazaların inşai onarım, tadilat ve iç dekorasyon bakım-onarım süreçlerinin yönetimi. Mağaza kurulum ve söküm operasyonlarındaki bu disiplin, fuar standı kurulum-söküm süreçlerinin de temelidir: hızlı montaj, planlı demontaj, takvime bağlı teslim.</p>
-        <div class="blogos" id="bl-perakende"></div>
+        <div class="blwrap"><div class="blogos" id="bl-perakende"></div></div>
         <p class="rbnote">Ayrıca Özler Kalıp ve İskele Sistemleri'nde proje satış koordinatörlüğü, ERB Yapı bünyesinde kentsel tasarım ve peyzaj projelerinde iş geliştirme ve ihale yönetimi.</p>
       </div>
 
@@ -1075,14 +1113,15 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
     <span class="eyebrow">Sık Sorulan Sorular</span>
     <h2 class="sec">Karar öncesi merak edilenler</h2>
     <div class="faqlist">
-      <div class="fq"><button>Fuar standı yapımı ne kadar sürede tamamlanır?</button><div class="ans"><p>Stand büyüklüğüne ve fuar takvimine göre değişir. Tasarım onayından sonra üretim ve montaj planı, fuarın kurulum takvimine göre geriye doğru kurgulanır; keşif görüşmesinde net süre paylaşılır.</p></div></div>
-      <div class="fq"><button>Mağaza ve showroom yapımında hangi işler dahil?</button><div class="ans"><p>Mimari tasarım, mekanik ve elektrik tesisat, aydınlatma, iklimlendirme, dekorasyon imalatları ve teslim öncesi test süreçleri anahtar teslim kapsamda yürütülür. Mağaza kapanış ve taşınmalarında söküm (demontaj) ve mahal teslim işleri de yapılır.</p></div></div>
       <div class="fq"><button>Tadilat, restorasyon ve iç dekorasyon işlerini hangi mekânlarda yapıyorsunuz?</button><div class="ans"><p><strong>Konut ve villalar, zincir mağazalar, AVM'ler, hastaneler, iş merkezleri ve ofisler</strong> — altı mekân tipinde de çalışıyoruz. Her birinin kendine ait kuralı var ve biz projeyi ona göre kuruyoruz:</p><ul class="ans-list"><li><b>AVM ve zincir mağaza:</b> Çalışma gece 22:00 sonrası, mağaza sabah müşteriye açık. Toz bariyeri, gürültü sınırı ve AVM yönetimi izinleri bizim sorumluluğumuzda.</li><li><b>Hastane:</b> Hasta ve personel sirkülasyonunu kesmeden, hijyen bariyerli ve etaplı çalışma; enfeksiyon kontrol kurallarına uygun.</li><li><b>Ofis ve iş merkezi:</b> Kat kat ilerleyen program, mesai dışı imalat, çalışan konforunu bozmayan geçiş planı.</li><li><b>Konut ve villa:</b> Oturulan evlerde bölüm bölüm teslim; taşınma gerekmeden yaşanabilir şantiye düzeni.</li><li><b>Tarihi yapı:</b> Restorasyon ve restitüsyonda özgün malzeme ve teknikle, koruma kurulu süreçlerine uygun çalışma.</li></ul><p><strong>Her işte üç şey sabittir:</strong> yazılı takvim, tek proje sorumlusu ve teslim öncesi kontrol listesi.</p></div></div>
+      <div class="fq"><button>Mağaza ve showroom yapımında hangi işler dahil?</button><div class="ans"><p>Mimari tasarım, mekanik ve elektrik tesisat, aydınlatma, iklimlendirme, dekorasyon imalatları ve teslim öncesi test süreçleri anahtar teslim kapsamda yürütülür. Mağaza kapanış ve taşınmalarında söküm (demontaj) ve mahal teslim işleri de yapılır.</p></div></div>
+      <div class="fq"><button>Fuar standı yapımı ne kadar sürede tamamlanır?</button><div class="ans"><p>Stand büyüklüğüne ve fuar takvimine göre değişir. Tasarım onayından sonra üretim ve montaj planı, fuarın kurulum takvimine göre geriye doğru kurgulanır; keşif görüşmesinde net süre paylaşılır.</p></div></div>
       <div class="fq"><button>Teklif almak ücretli mi, ne kadar sürede dönüş yapıyorsunuz?</button><div class="ans"><p>Keşif ve teklif <strong>ücretsizdir</strong>. Talebinizi aldıktan sonra sizi arar, mekânı yerinde görür ve iş kalemleri ayrıştırılmış, takvimli bir teklif sunarız. Tekliflerimizde kalem kalem ne yapıldığı yazar; sonradan çıkan sürpriz kalem olmaz.</p></div></div>
       <div class="fq"><button>İşi taşerona mı veriyorsunuz, kim sorumlu olacak?</button><div class="ans"><p>Her projeye <strong>tek bir proje sorumlusu</strong> atanır ve süreç boyunca muhatabınız o kişidir. Mimari, elektrik ve mekanik işler tek sözleşme altında toplanır; koordinasyon yükü sizde değil bizde kalır.</p></div></div>
       <div class="fq"><button>Konut, villa ve kentsel dönüşüm projeleri yapıyor musunuz?</button><div class="ans"><p>Evet. Müstakil konut ve villa projelerinde tasarımdan anahtar teslim uygulamaya kadar tüm süreci yürütüyoruz. Kentsel dönüşümde ise riskli yapı tespiti, ruhsat ve proje süreçleri, yıkım ve yeni yapı uygulaması hak sahipleriyle koordineli olarak planlanır.</p></div></div>
       <div class="fq"><button>Tiny house ve prefabrik yapı üretiyor musunuz?</button><div class="ans"><p>Evet. Modüler yapılar fabrika ortamında üretilir, iç mekân donanımı tamamlanır ve sahaya vinçle monte edilir. Bu yöntem klasik inşaata göre daha kısa sürede, kontrollü kalitede ve daha az şantiye yüküyle teslim imkânı verir.</p></div></div>
       <div class="fq"><button>Çatı GES kurulumu için hangi şartlar aranır?</button><div class="ans"><p>Çatının statik taşıma kapasitesi, yönelim ve gölgelenme durumu ile tesisin bağlantı gücü belirleyicidir. Saha keşfinde bu üç kriter ölçülür ve üretim öngörüsü çıkarılır.</p></div></div>
+      <div class="fq"><button>Elektrikli araç şarj istasyonu kurulumunda neye bakılır?</button><div class="ans"><p>Belirleyici olan cihaz markası değil <strong>tesisin elektriksel altyapısıdır</strong>. Üç şey ölçülür: mevcut abone gücü, pano ve trafo kapasitesi, kablo kesiti ile topraklama durumu. Bunlar yetersizse istasyon ya çalışmaz ya da tesisin diğer yüklerini riske atar.</p><p>Keşifte yük analizi yapılır; gerekiyorsa güç artırımı, pano yenileme ve kablolama işleri kurulumdan önce planlanır. AVM, otel, iş merkezi, fabrika ve site otoparklarında <strong>AC (yavaş/orta) ve DC (hızlı)</strong> istasyon kurulumu yapıyoruz. Şarj ağı işletmeciliği lisansı ve EPDK süreçleri yatırımcıya aittir; biz altyapı ve kurulum tarafını üstleniriz.</p></div></div>
       <div class="fq"><button>Fabrika otomasyonu mevcut hatta uygulanabilir mi?</button><div class="ans"><p>Evet. Mevcut hatlar duruş süresi en aza indirilecek biçimde etaplandırılarak modernize edilir; PLC, SCADA ve pano yenilemeleri üretim takvimine göre planlanır.</p></div></div>
       <div class="fq"><button>Hangi bölgelerde hizmet veriyorsunuz?</button><div class="ans"><p>Merkez ofisimiz Ataşehir / İstanbul'dadır; projeler Türkiye genelinde yürütülmektedir.</p></div></div>
     </div>
