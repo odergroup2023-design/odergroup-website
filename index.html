@@ -372,6 +372,18 @@ nav.menu{display:flex;gap:30px;align-items:center}
 .rblist li:last-child{border:0}
 .rblist li b{font-family:'Archivo';font-weight:600;font-size:.88rem;margin-left:auto;white-space:nowrap}
 .rblist li span{color:var(--muted);font-size:.78rem;min-width:66px;text-align:right}
+/* kurum rozeti — logo yerine tarafsız belge/kurum etiketi.
+   Not: UNDP, MEB gibi kurumların logoları izin olmadan kullanılmaz;
+   ortaklık/onay izlenimi yaratmamak için nötr rozet tercih edildi. */
+.krz{display:inline-flex;align-items:center;gap:5px;margin-left:8px;padding:3px 8px;
+  border:1px solid var(--line);border-radius:20px;background:#fff;
+  font-family:'Archivo';font-size:.6rem;font-weight:700;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted);white-space:nowrap;vertical-align:middle}
+.krz svg{width:11px;height:11px;flex:none}
+.krz.belge{color:#2E6C8E;border-color:#bcd4e2;background:#f4f9fc}
+.krz.kamu{color:#8f6339;border-color:#e0d3c4;background:#fbf7f2}
+.krz.egitim{color:#3f6b4f;border-color:#c8ddd0;background:#f4faf6}
+@media(max-width:640px){.krz{font-size:.55rem;padding:2px 7px;margin-left:6px}}
 /* referans marka kartlari */
 .blogos{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:0;margin-top:14px;
   border-top:1px solid var(--line);border-left:1px solid var(--line);background:var(--line)}
@@ -512,8 +524,13 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   .burger{display:block}
 }
 @media(max-width:640px){
-  .stats .wrap,.trust .wrap,.illugrid{grid-template-columns:1fr}
-  .stat,.tr{border-left:0;border-top:1px solid rgba(255,255,255,.1)}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}   /* 20+ ve 250+ yan yana */
+  .trust .wrap,.illugrid{grid-template-columns:1fr}
+  .stat{border-left:1px solid rgba(255,255,255,.12);border-top:1px solid rgba(255,255,255,.12);padding:34px 14px}
+  .stat:nth-child(odd){border-left:0}
+  .stat b{font-size:clamp(1.7rem,7.4vw,2.3rem)}
+  .stat span{font-size:.72rem;letter-spacing:.1em}
+  .tr{border-left:0;border-top:1px solid rgba(255,255,255,.1)}
   .tr{border-top:1px solid var(--line)}
   .rb{padding:28px 22px 32px}
   .fkurumsal{grid-template-columns:1fr 1fr}
@@ -603,7 +620,8 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
           box-shadow:0 -8px 26px rgba(21,24,28,.22);padding-bottom:env(safe-area-inset-bottom)}
   .mobcta a{padding:18px 10px;text-align:center;font-family:'Archivo';font-weight:600;font-size:.86rem;color:#fff;
             display:flex;align-items:center;justify-content:center;gap:8px}
-  .mobcta a svg{width:17px;height:17px;flex:none}
+  .mobcta a svg{width:18px;height:18px;flex:none}
+  .mobcta a:active{filter:brightness(.86)}
   .mobcta .c1{background:var(--ink)}
   .mobcta .c2{background:#25D366}
 }
@@ -808,7 +826,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
             <li id="bakim"><a href="#iletisim">Koruyucu Bakım ve Teknik İşletme <span>Periyodik sözleşme</span></a></li>
             <li id="musavirlik"><a href="#iletisim">Proje Danışmanlık ve Müşavirlik <span>Kontrollük</span></a></li>
           </ul>
-          <a class="go" style="color:var(--tech)" href="#iletisim">Servis / bakım talebi →</a>
+          <a class="go" style="color:var(--tech)" href="#iletisim">Acil servis ve keşif talebi →</a>
           <div class="ph2" role="img" data-cap="PLC-SCADA modernizasyonu · üretim hattı devreye alma"
                aria-label="Fabrika otomasyonu SCADA panosu ve üretim hattı devreye alma çalışması"
                style="background-image:url('fabrika-otomasyonu-scada.jpg')"></div>
@@ -1028,10 +1046,10 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
         <ul class="rblist">
           <li>Trakya Üniversitesi, Teknik Eğitim Fakültesi — Yapı Öğretmenliği <b>3,7 / 4</b></li>
           <li>Anadolu Üniversitesi — İşletme</li>
-          <li>4734 ve 4735 sayılı Kamu İhale Kanunu eğitmenliği (AMP Yazılım, 2010–2013)</li>
-          <li>Kamu eğitim ve destek referansları: İzmir Bornova Belediyesi, BUSKİ, Bursa Gençlik ve Spor İl Müdürlüğü, Konya OSB</li>
-          <li>Millî Eğitim Bakanlığı — Yapı öğretmenliği ve tesis sorumluluğu (2018–2019)</li>
-          <li>Habitat Gündem 21 / UNDP — Yerel Gündem 21 Programı Katılım Belgesi <b>2003–2006</b></li>
+          <li>4734 ve 4735 sayılı Kamu İhale Kanunu eğitmenliği (AMP Yazılım, 2010–2013)<span class="krz egitim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4 2 9l10 5 10-5-10-5zM6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>EĞİTMENLİK</span></li>
+          <li>Kamu eğitim ve destek referansları: İzmir Bornova Belediyesi, BUSKİ, Bursa Gençlik ve Spor İl Müdürlüğü, Konya OSB<span class="krz kamu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg>KAMU KURUMU</span></li>
+          <li>Millî Eğitim Bakanlığı — Yapı öğretmenliği ve tesis sorumluluğu (2018–2019)<span class="krz kamu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg>KAMU KURUMU</span></li>
+          <li>Habitat Gündem 21 / UNDP — Yerel Gündem 21 Programı <b>2003–2006</b><span class="krz belge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>KATILIM BELGESİ</span></li>
         </ul>
         <p class="rbnote">Kırklareli Yerel Gençlik Lideri ve Kuzey Marmara (Trakya) Kolaylaştırıcısı olarak UNDP ve UCLG-MEWA ortaklığındaki programda görev alınmıştır.</p>
       </div>
@@ -1225,8 +1243,10 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
 <!-- mobil yapışkan CTA -->
 <div class="mobcta">
-  <a class="c1" href="tel:+905345472239" data-i18n="ara">Hemen Ara</a>
-  <a class="c2" href="https://wa.me/905345472239" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="c1" href="tel:+905345472239" aria-label="Hemen ara">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6.6 3h3l1.5 4-2 1.4a12 12 0 0 0 5.5 5.5l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.6 5.2 2 2 0 0 1 6.6 3z"/></svg><span data-i18n="ara">Hemen Ara</span></a>
+  <a class="c2" href="https://wa.me/905345472239" target="_blank" rel="noopener" aria-label="WhatsApp ile yaz">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.94.53 3.75 1.45 5.3L2 22l5-1.3a9.8 9.8 0 0 0 5.04 1.38h.01c5.43 0 9.84-4.4 9.84-9.84C21.89 6.4 17.47 2 12.04 2zm5.75 14.03c-.24.68-1.4 1.3-1.93 1.35-.53.05-1.02.24-3.47-.72-2.96-1.17-4.82-4.24-4.97-4.44-.14-.2-1.17-1.56-1.17-2.97 0-1.42.73-2.11 1-2.4.26-.3.57-.37.77-.37h.55c.17 0 .41-.07.63.48.24.58.8 1.99.87 2.13.07.15.12.32.02.51-.1.2-.2.32-.34.5-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.75 1.23 1.6 2 1.1.98 2.02 1.28 2.32 1.43.29.15.46.12.63-.07.17-.2.73-.85.93-1.14.19-.29.39-.24.65-.15.26.1 1.66.79 1.95.93.29.15.48.22.55.34.07.13.07.75-.17 1.43z"/></svg><span>WhatsApp</span></a>
 </div>
 
 <script>
