@@ -440,14 +440,23 @@ nav.menu{display:flex;gap:30px;align-items:center}
 /* SSS (AEO) */
 .stripkurum{display:none}
 .evbox{margin-top:20px;padding:20px 22px;background:#F4FAF6;border-left:3px solid var(--energy)}
-.evbox b{font-family:'Archivo';font-size:.88rem;font-weight:600;color:var(--ink);display:block;margin-bottom:8px}
+.evbox>summary{font-family:'Archivo';font-size:.88rem;font-weight:600;color:var(--ink);
+  margin-bottom:8px;list-style:none;cursor:default}
+.evbox>summary::-webkit-details-marker{display:none}
 .evbox p{font-size:.88rem;line-height:1.7;color:var(--muted);margin:0}
 .evlist{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:7px}
 .evlist li{font-size:.84rem;line-height:1.6;color:var(--muted);padding-left:16px;position:relative}
 .evlist li:before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--energy);border-radius:50%}
 .evlist li b{display:inline;font-size:.84rem;color:var(--ink)}
 .evnot{margin-top:12px!important;font-size:.78rem!important;opacity:.85;font-style:italic}
-@media(max-width:640px){.evbox{padding:16px 16px}}
+@media(max-width:640px){
+  .evbox{padding:14px 16px}
+  .evbox>summary{cursor:pointer;margin-bottom:0;display:flex;align-items:center;gap:8px}
+  .evbox>summary:after{content:"";width:7px;height:7px;border-right:1.6px solid var(--energy);
+    border-bottom:1.6px solid var(--energy);transform:rotate(45deg);margin-left:auto;transition:transform .25s}
+  .evbox[open]>summary{margin-bottom:8px}
+  .evbox[open]>summary:after{transform:rotate(-135deg)}
+}
 .faq{background:var(--stone)}
 .faqlist{margin-top:42px;border-top:1px solid var(--line)}
 .fq{border-bottom:1px solid var(--line)}
@@ -579,17 +588,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   .swipe{display:flex}
 
   /* ---- MOBİL: marka kartları ---- */
-  /* cepte marka kartlari yatay kaydirilir (parmakla saga-sola) */
-  .blogos{display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;
-    -webkit-overflow-scrolling:touch;scrollbar-width:none;border-left:0;
-    grid-template-columns:none;padding-bottom:2px}
-  .blogos::-webkit-scrollbar{display:none}
-  .blogos .bl{flex:0 0 46%;scroll-snap-align:start;border-left:1px solid var(--line);border-right:0}
-  .blogos .bl:last-child{border-right:1px solid var(--line)}
-  /* kaydirilabilir oldugunu belli eden ipucu */
-  .blwrap{position:relative}
-  .blwrap:after{content:"";position:absolute;top:0;bottom:0;right:0;width:38px;pointer-events:none;
-    background:linear-gradient(to left,#fff,transparent)}
+  .blogos{grid-template-columns:repeat(2,1fr);gap:0}
   .bl{padding:16px 10px 13px;gap:8px;grid-template-rows:36px auto auto}
   .bl b{font-size:.76rem}
   .bl small{font-size:.55rem;letter-spacing:.09em}
@@ -599,7 +598,8 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
   /* ---- MOBİL: üst şerit sadeleştirildi ---- */
   .strip{padding:7px 0}
-  .stripkurum{display:inline;font-size:.78rem;letter-spacing:.04em;opacity:.9;white-space:nowrap}
+  .stripkurum{display:inline;font-size:.74rem;letter-spacing:.03em;opacity:.88;white-space:nowrap;
+    min-width:0;overflow:hidden;text-overflow:ellipsis}
   .strip .wrap{flex-wrap:nowrap;align-items:center;gap:10px}
   .strip .wrap>span:first-child{display:none}          /* uzun adres gizlenir */
   .strip .r{width:100%;justify-content:space-between;gap:10px;flex-wrap:nowrap}
@@ -673,7 +673,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 <div class="strip">
   <div class="wrap">
     <span>Barbaros Mah. Lale Sk. Ağaoğlu My Office No:2 İç Kapı:13 — Ataşehir / İstanbul</span>
-    <span class="r"><span class="stripkurum">Keşif ve teklif ücretsiz</span><a href="tel:+905345472239">+90 534 547 22 39</a><a href="mailto:info@odergroup.com.tr">info@odergroup.com.tr</a>
+    <span class="r"><span class="stripkurum">Ücretsiz keşif</span><a href="tel:+905345472239">+90 534 547 22 39</a><a href="mailto:info@odergroup.com.tr">info@odergroup.com.tr</a>
       <span class="langbox" id="langbox">
         <button class="langbtn" id="langbtn" aria-label="Dil seçimi / Language">
           <span class="bayrak" id="langbayrak"></span>
@@ -869,8 +869,8 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
             <li id="evd"><a href="#iletisim">Enerji Verimliliği Danışmanlığı (EVD) <span>Etüt · raporlama</span></a></li>
             <li id="tedarik"><a href="#iletisim">Enerji Tedarik, Teşvik ve Finansman <span>Piyasa endeksli</span></a></li>
           </ul>
-          <div class="evbox">
-            <b>Elektrikli araç şarj istasyonu kurulumu</b>
+          <details class="evbox" open>
+            <summary>Elektrikli araç şarj istasyonu kurulumu</summary>
             <p>AVM, otel, iş merkezi, fabrika ve site otoparklarında AC ve DC şarj
             istasyonu kuruyoruz. İşin belirleyicisi cihaz değil <strong>altyapıdır</strong>:
             mevcut abone gücü, pano kapasitesi, kablo kesiti ve topraklama yeterli değilse
@@ -883,7 +883,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
             </ul>
             <p class="evnot">Şarj ağı işletmeciliği lisansı ve EPDK süreçleri yatırımcıya aittir;
             biz elektriksel altyapı ve kurulum tarafını üstleniriz.</p>
-          </div>
+          </details>
           <a class="btn-supply" href="https://oderenerji.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16l2 10H2L4 4zM12 16v4M8 20h8"/></svg>Solar Ekipman Tedarik Merkezi</a>
           <div class="ph2" role="img" data-cap="Termal kamera ile enerji verimliliği etüdü"
                aria-label="Enerji verimliliği etüdü — termal kamera ile pano ve tesisat kontrolü"
@@ -1067,14 +1067,14 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
         <span class="rbtag" style="color:var(--tech)">Teknik Hizmetler · Tesis Yönetimi</span>
         <h3>Zincir mağaza, hastane, veri merkezi ve endüstriyel tesis</h3>
         <p class="rbsub">ProAsist Teknik Hizmetler bünyesinde müşteri yöneticisi olarak mekanik-elektrik bakım, arıza, inşai onarım, projelendirme, ihale ve teklif süreçlerinin yönetimi (2019–2022). 2020 Novartis bakım sözleşmesi sürecinde proje yöneticisi.</p>
-        <div class="blwrap"><div class="blogos" id="bl-teknik"></div></div>
+        <div class="blogos" id="bl-teknik"></div>
       </div>
 
       <div class="rb">
         <span class="rbtag" style="color:var(--arc)">İnşaat &amp; Mimarlık · Perakende Uygulama</span>
         <h3>Mağaza kurulum-söküm, tadilat ve iç dekorasyon</h3>
         <p class="rbsub">LC Waikiki – Zirve Mimarlık bünyesinde perakende, ofis ve sanayi yapılarının kurumsal kimlik ve konsept tasarımı ile inşaat uygulama süreçlerinde teklif, ihale analizi, maliyet ve satınalma yönetimi (2013–2014). ProAsist döneminde (2019–2022) AVM, hastane, iş merkezi ve zincir mağazaların inşai onarım, tadilat ve iç dekorasyon bakım-onarım süreçlerinin yönetimi. Mağaza kurulum ve söküm operasyonlarındaki bu disiplin, fuar standı kurulum-söküm süreçlerinin de temelidir: hızlı montaj, planlı demontaj, takvime bağlı teslim.</p>
-        <div class="blwrap"><div class="blogos" id="bl-perakende"></div></div>
+        <div class="blogos" id="bl-perakende"></div>
         <p class="rbnote">Ayrıca Özler Kalıp ve İskele Sistemleri'nde proje satış koordinatörlüğü, ERB Yapı bünyesinde kentsel tasarım ve peyzaj projelerinde iş geliştirme ve ihale yönetimi.</p>
       </div>
 
@@ -1684,6 +1684,13 @@ const so=new IntersectionObserver(es=>es.forEach(e=>{
   });
 }),{threshold:.35});
 so.observe(document.querySelector('.stats'));
+
+/* cepte arac sarj kutusunu kapali baslat: .svc yatay kayan izgarada
+   tek satirdaki butun kartlar en uzun kartin boyuna cekiliyor. */
+(function(){
+  const d=document.querySelector('.evbox');
+  if(d && window.matchMedia('(max-width:640px)').matches) d.removeAttribute('open');
+})();
 </script>
 </body>
 </html>
