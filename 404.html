@@ -62,6 +62,20 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:34px 0;font-weight:300;font
   if(m[p]){ location.replace(m[p]); }
 })();
 </script>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J36PFJFTB5"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-J36PFJFTB5');
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';
+  var p={link_url:h,transport_type:'beacon'};
+  if(h.indexOf('tel:')===0)gtag('event','telefon_tiklama',p);
+  else if(h.indexOf('wa.me')>-1||h.indexOf('whatsapp')>-1)gtag('event','whatsapp_tiklama',p);
+  else if(h.indexOf('mailto:')===0)gtag('event','eposta_tiklama',p);
+});
+document.addEventListener('submit',function(e){gtag('event','generate_lead',{form_id:e.target.id||'iletisim_formu',transport_type:'beacon'});});
+</script>
 </head>
 <body>
 <header class="nav"><div class="wrap">
