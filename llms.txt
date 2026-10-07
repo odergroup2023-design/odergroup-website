@@ -18,6 +18,14 @@
 - [Fabrika Otomasyonu](https://www.odergroup.com.tr/fabrika-otomasyonu.html): Etaplı geçiş; izleme, raporlama ve uzaktan kontrol altyapısı.
 - [Elektrik Taahhüt, Trafo, Pano ve Koruyucu Bakım](https://www.odergroup.com.tr/elektrik-bakim.html): Trafo ve pano projelendirme, imalat, devreye alma ve sözleşmeli periyodik bakım.
 
+## Kimlere hizmet veriyoruz
+- AVM'ler ve mağaza zincirleri: anahtar teslim mağaza kurulumu, söküm, yenileme; AVM'lerde gece vardiyasıyla uygulama
+- Hastaneler ve sağlık tesisleri: işletmeyi durdurmadan, enfeksiyon kontrol protokolüne uygun tadilat ve iç dekorasyon
+- Ofis ve iş merkezleri: etaplı tadilat, iç mekân tasarımı ve aydınlatma
+- Fabrika ve endüstriyel tesisler: trafo-pano, sözleşmeli elektrik bakımı, PLC/SCADA otomasyonu
+- Villa ve daire sahipleri: küçük ölçekli dekorasyon ve yenilemeden anahtar teslim villaya
+- Fuar katılımcıları: stand tasarımı, kurulum ve demontaj
+
 ## Hizmet bölgesi
 Merkez ofis Ataşehir / İstanbul; projeler Türkiye genelinde.
 
