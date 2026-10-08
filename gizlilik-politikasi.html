@@ -2,6 +2,39 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
+<!-- ===== ÖLÇÜM: Google Tag Manager ===== -->
+<!-- KURULUM: GTM-XXXXXXX yerine kendi konteyner kimliğin yazılacak.
+     Tek konteyner; GA4, Google Ads, Meta Pixel ve LinkedIn etiketleri
+     GTM arayüzünden yönetilir, siteye tekrar dokunulmaz. -->
+<script>
+window.dataLayer = window.dataLayer || [];
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+if(i && i.indexOf('XXXX')===-1){f.parentNode.insertBefore(j,f);}
+})(window,document,'script','dataLayer','GTM-XXXXXXX');
+</script>
+<!-- ===== GÜVENLİK ===== -->
+<!-- Not: GitHub Pages HTTP başlığı gönderemez. Bunlar HTML seviyesinde
+     uygulanabilen korumalar. Tam koruma için Cloudflare'e geçilmeli. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://formsubmit.co; frame-src https://www.google.com https://www.youtube.com https://www.google.com/maps/; form-action https://formsubmit.co 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script>
+/* Clickjacking koruması — X-Frame-Options gönderilemediği için JS ile.
+   Site başka bir alan adının iframe'ine gömülürse en üste çıkar. */
+(function(){ try{
+  if (window.top !== window.self) {
+    var izin = ['odergroup.com.tr','www.odergroup.com.tr','oderenerji.com'];
+    var ust = '';
+    try { ust = window.top.location.hostname; } catch(e) { ust = 'ERISILEMEZ'; }
+    if (ust === 'ERISILEMEZ' || izin.indexOf(ust) === -1) {
+      window.top.location = window.self.location.href;
+    }
+  }
+}catch(e){} })();
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gizlilik Politikası | Öder Group</title>
 <meta name="description" content="Öder Group gizlilik politikası: kişisel verilerin korunması, bilgi güvenliği ve telif hakları hakkında bilgilendirme.">
@@ -39,21 +72,14 @@ h2.alt{font-size:1.2rem;font-weight:600;margin:34px 0 14px}
 footer{background:var(--ink-2);color:#9ba2a9;padding:40px 0;font-weight:300;font-size:.85rem}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;width:min(1080px,90%)}
 footer a:hover{color:#fff}
+
+/* ===== MOBİL ERİŞİLEBİLİRLİK (Search Console mobil kullanılabilirlik) ===== */
+@media(max-width:640px){
+  .kat,.eyebrow{font-size:.75rem;letter-spacing:.16em}
+  .nav .geri,.mobcta a,.btn,.fq > button,.lbn{min-height:48px;display:inline-flex;align-items:center;justify-content:center}
+  .fq > button{justify-content:space-between;text-align:left}
+}
 </style>
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J36PFJFTB5"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-J36PFJFTB5');
-document.addEventListener('click',function(e){
-  var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';
-  var p={link_url:h,transport_type:'beacon'};
-  if(h.indexOf('tel:')===0)gtag('event','telefon_tiklama',p);
-  else if(h.indexOf('wa.me')>-1||h.indexOf('whatsapp')>-1)gtag('event','whatsapp_tiklama',p);
-  else if(h.indexOf('mailto:')===0)gtag('event','eposta_tiklama',p);
-});
-document.addEventListener('submit',function(e){gtag('event','generate_lead',{form_id:e.target.id||'iletisim_formu',transport_type:'beacon'});});
-</script>
 </head>
 <body>
 
@@ -120,9 +146,68 @@ document.addEventListener('submit',function(e){gtag('event','generate_lead',{for
 
 <footer>
   <div class="wrap">
-    <span>© 2023–2026 Öder Group Enerji Elektrik Mekanik Teknik Hizmetler San. Tic. Ltd. Şti.</span>
+    <span>© 2023 Öder Group Enerji Elektrik Mekanik Teknik Hizmetler San. Tic. Ltd. Şti.</span>
     <span><a href="index.html">Ana Sayfa</a> · <a href="kurumsal.html">Kurumsal</a></span>
   </div>
 </footer>
+
+<!-- ===== ÖLÇÜM: dönüşüm olayları ===== -->
+<script>
+/* ===== DÖNÜŞÜM OLAYLARI =====
+   Her olay dataLayer'a gönderilir; GTM'de tetikleyici olarak kullanılır.
+   GA4 + Google Ads + Meta Pixel aynı olayı dinler. */
+(function(){
+  var dl = function(ad, ek){
+    window.dataLayer = window.dataLayer || [];
+    var o = {event: ad, sayfa: location.pathname};
+    if (ek) for (var k in ek) o[k] = ek[k];
+    window.dataLayer.push(o);
+  };
+
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if (!a) return;
+    var h = a.getAttribute('href') || '';
+
+    if (h.indexOf('tel:') === 0)
+      dl('telefon_tiklama', {numara: h.replace('tel:','')});
+
+    else if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1)
+      dl('whatsapp_tiklama', {konum: a.closest('.mobcta') ? 'mobil_alt_cta' : 'sayfa_ici'});
+
+    else if (h.indexOf('mailto:') === 0)
+      dl('eposta_tiklama');
+
+    else if (h.indexOf('oderenerji.com') > -1)
+      dl('magaza_yonlendirme');
+
+    else if (a.classList.contains('go') || a.classList.contains('btn-solid'))
+      dl('teklif_cta_tiklama', {metin: (a.innerText||'').trim().slice(0,40)});
+  }, true);
+
+  /* form gönderimi — asıl dönüşüm */
+  var f = document.querySelector('form.form');
+  if (f) f.addEventListener('submit', function(){
+    var k = f.querySelector('[name=konu]');
+    dl('teklif_formu_gonderildi', {konu: k ? k.value : '-'});
+  });
+
+  /* okuma derinliği — içeriğin ilgi çekip çekmediğini ölçer */
+  var esikler = [25,50,75,100], gecilen = {};
+  window.addEventListener('scroll', function(){
+    var y = (window.scrollY + window.innerHeight) / document.body.scrollHeight * 100;
+    esikler.forEach(function(t){
+      if (y >= t && !gecilen[t]) { gecilen[t] = 1; dl('okuma_derinligi', {yuzde: t}); }
+    });
+  }, {passive:true});
+
+  /* SSS açılması — hangi soru merak ediliyor */
+  document.querySelectorAll('.fq > button').forEach(function(b){
+    b.addEventListener('click', function(){
+      dl('sss_acildi', {soru: (b.innerText||'').trim().slice(0,60)});
+    });
+  });
+})();
+</script>
 </body>
 </html>

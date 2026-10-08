@@ -2,14 +2,47 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
+<!-- ===== ÖLÇÜM: Google Tag Manager ===== -->
+<!-- KURULUM: GTM-XXXXXXX yerine kendi konteyner kimliğin yazılacak.
+     Tek konteyner; GA4, Google Ads, Meta Pixel ve LinkedIn etiketleri
+     GTM arayüzünden yönetilir, siteye tekrar dokunulmaz. -->
+<script>
+window.dataLayer = window.dataLayer || [];
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+if(i && i.indexOf('XXXX')===-1){f.parentNode.insertBefore(j,f);}
+})(window,document,'script','dataLayer','GTM-XXXXXXX');
+</script>
+<!-- ===== GÜVENLİK ===== -->
+<!-- Not: GitHub Pages HTTP başlığı gönderemez. Bunlar HTML seviyesinde
+     uygulanabilen korumalar. Tam koruma için Cloudflare'e geçilmeli. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://formsubmit.co; frame-src https://www.google.com https://www.youtube.com https://www.google.com/maps/; form-action https://formsubmit.co 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script>
+/* Clickjacking koruması — X-Frame-Options gönderilemediği için JS ile.
+   Site başka bir alan adının iframe'ine gömülürse en üste çıkar. */
+(function(){ try{
+  if (window.top !== window.self) {
+    var izin = ['odergroup.com.tr','www.odergroup.com.tr','oderenerji.com'];
+    var ust = '';
+    try { ust = window.top.location.hostname; } catch(e) { ust = 'ERISILEMEZ'; }
+    if (ust === 'ERISILEMEZ' || izin.indexOf(ust) === -1) {
+      window.top.location = window.self.location.href;
+    }
+  }
+}catch(e){} })();
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Kentsel Dönüşüm: Riskli Yapıdan Yeni Binaya | Öder Group</title>
-<meta name="description" content="6306 sayılı kanun kapsamında riskli yapı tespiti, hak sahipleriyle mutabakat, ruhsat, yıkım ve yeni yapı. Şeffaf süreç, tek muhatap. Ücretsiz ön görüşme.">
+<title>Kentsel Dönüşüm | Öder Group</title>
+<meta name="description" content="Riskli yapı tespiti, hak sahipleriyle mutabakat, ruhsat ve proje süreçleri, yıkım ve yeni yapı uygulaması. Süreç şeffaf yürütülür.">
 <link rel="canonical" href="https://www.odergroup.com.tr/kentsel-donusum.html">
 <meta name="robots" content="index,follow">
 <link rel="icon" href="favicon.png" type="image/png">
-<meta property="og:title" content="Kentsel Dönüşüm: Riskli Yapıdan Yeni Binaya | Öder Group">
-<meta property="og:description" content="6306 sayılı kanun kapsamında riskli yapı tespiti, hak sahipleriyle mutabakat, ruhsat, yıkım ve yeni yapı. Şeffaf süreç, tek muhatap. Ücretsiz ön görüşme.">
+<meta property="og:title" content="Kentsel Dönüşüm | Öder Group">
+<meta property="og:description" content="Riskli yapı tespiti, hak sahipleriyle mutabakat, ruhsat ve proje süreçleri, yıkım ve yeni yapı uygulaması. Süreç şeffaf yürütülür.">
 <meta property="og:image" content="https://www.odergroup.com.tr/h/g048.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.odergroup.com.tr/kentsel-donusum.html">
@@ -17,8 +50,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Kentsel Dönüşüm", "provider": {"@type": "Organization", "name": "Öder Group", "url": "https://www.odergroup.com.tr/"}, "areaServed": [{"@type": "City", "name": "İstanbul"}, {"@type": "Country", "name": "Türkiye"}], "serviceType": "İnşaat & Mimarlık", "description": "Öder Group, 6306 sayılı kanun kapsamında kentsel dönüşüm projelerini tek muhatap olarak yürütür: riskli yapı tespiti, hak sahipleriyle mutabakat, ruhsat ve proje süreçleri, yıkım ve yeni yapı uygulaması. Hak sahipleri her aşamada şeffaf biçimde bilgilendirilir; apartman ve site yönetimleri için süreç baştan sona planlanır.", "url": "https://www.odergroup.com.tr/kentsel-donusum.html", "audience": [{"@type": "Audience", "audienceType": "Apartman ve site yönetimleri"}, {"@type": "Audience", "audienceType": "Hak sahipleri"}, {"@type": "Audience", "audienceType": "Arsa sahipleri"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Apartman yönetimi olarak kentsel dönüşüme nereden başlamalıyız?", "acceptedAnswer": {"@type": "Answer", "text": "İlk adım riskli yapı tespitidir. Ardından hak sahipleriyle karar süreci, proje ve ruhsat aşamaları gelir. Öder Group bu adımları sırasıyla planlar ve hak sahiplerine yazılı olarak sunar."}}, {"@type": "Question", "name": "Hak sahipleriyle anlaşmayı siz mi yürütüyorsunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Süreci yönetir, toplantıları düzenler ve teklifleri şeffaf şekilde sunarız. Karar hak sahiplerinindir; biz teknik ve hukuki zemini hazırlarız."}}, {"@type": "Question", "name": "Riskli yapı tespiti ne kadar sürüyor?", "acceptedAnswer": {"@type": "Answer", "text": "Tespit, laboratuvar ve rapor süreci binanın büyüklüğüne ve numune sayısına bağlıdır. Beton karot alımı, donatı tespiti ve zemin verisi gerekir. Süreyi keşifte binaya bakarak söyleriz — bina görülmeden tarih vermeyiz."}}, {"@type": "Question", "name": "Yıkım sırasında komşu binalara zarar gelir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Bitişik nizamda bu risk gerçektir ve önlem alınmadan başlanmaz. Yıkım öncesi komşu yapıların mevcut durumu fotoğrafla tespit edilir, gerekiyorsa iksa ve destekleme yapılır, kontrollü yıkım yöntemi seçilir."}}, {"@type": "Question", "name": "İnşaat sürerken kira yardımı süreçlerine destek veriyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Başvuru süreçleri hak sahiplerinin kendi sorumluluğundadır; biz gerekli teknik belgeleri ve yapı ruhsatı evrakını zamanında sağlarız. Hangi belgenin ne zaman hazır olacağı proje takviminde gösterilir."}}]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Kentsel Dönüşüm",
+"provider":{"@type":"Organization","name":"Öder Group","url":"https://www.odergroup.com.tr/"},
+"areaServed":{"@type":"Country","name":"Türkiye"},
+"serviceType":"İnşaat & Mimarlık","description":"Riskli yapı tespiti, hak sahipleriyle mutabakat, ruhsat ve proje süreçleri, yıkım ve yeni yapı uygulaması. Süreç şeffaf yürütülür.",
+"url":"https://www.odergroup.com.tr/kentsel-donusum.html"}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Hak sahipleriyle anlaşmayı siz mi yürütüyorsunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Süreci yönetir, toplantıları düzenler ve teklifleri şeffaf şekilde sunarız. Karar hak sahiplerinindir; biz teknik ve hukuki zemini hazırlarız."}}, {"@type": "Question", "name": "Riskli yapı tespiti ne kadar sürüyor?", "acceptedAnswer": {"@type": "Answer", "text": "Tespit, laboratuvar ve rapor süreci binanın büyüklüğüne ve numune sayısına bağlıdır. Beton karot alımı, donatı tespiti ve zemin verisi gerekir. Süreyi keşifte binaya bakarak söyleriz — bina görülmeden tarih vermeyiz."}}, {"@type": "Question", "name": "Yıkım sırasında komşu binalara zarar gelir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Bitişik nizamda bu risk gerçektir ve önlem alınmadan başlanmaz. Yıkım öncesi komşu yapıların mevcut durumu fotoğrafla tespit edilir, gerekiyorsa iksa ve destekleme yapılır, kontrollü yıkım yöntemi seçilir."}}, {"@type": "Question", "name": "İnşaat sürerken kira yardımı süreçlerine destek veriyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Başvuru süreçleri hak sahiplerinin kendi sorumluluğundadır; biz gerekli teknik belgeleri ve yapı ruhsatı evrakını zamanında sağlarız. Hangi belgenin ne zaman hazır olacağı proje takviminde gösterilir."}}]}
+</script>
 <style>
 :root{--ink:#15181C;--ink2:#22272E;--stone:#F6F4F1;--stone2:#EAE6E0;--line:#DAD5CD;--muted:#6C7278;--v:#B07C4F}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -125,26 +166,18 @@ footer a:hover{color:#fff}
   body{padding-bottom:calc(62px + env(safe-area-inset-bottom))}
   .mobcta{display:grid !important;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:80;box-shadow:0 -8px 26px rgba(21,24,28,.25);padding-bottom:env(safe-area-inset-bottom)}
   .mobcta a{padding:17px 8px;text-align:center;font-family:'Archivo';font-weight:600;font-size:.85rem;color:#fff}
-  .mobcta .c1{background:var(--v)} .mobcta .c2{background:#25D366}
+  .mobcta .c1{background:var(--v)} .mobcta .c2{background:#3E8E62}
 }
 .mobcta{display:none}
 @media(prefers-reduced-motion:reduce){ .rv{opacity:1;transform:none} *{animation:none!important;transition:none!important} }
+
+/* ===== MOBİL ERİŞİLEBİLİRLİK (Search Console mobil kullanılabilirlik) ===== */
+@media(max-width:640px){
+  .kat,.eyebrow{font-size:.75rem;letter-spacing:.16em}
+  .nav .geri,.mobcta a,.btn,.fq > button,.lbn{min-height:48px;display:inline-flex;align-items:center;justify-content:center}
+  .fq > button{justify-content:space-between;text-align:left}
+}
 </style>
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J36PFJFTB5"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-J36PFJFTB5');
-document.addEventListener('click',function(e){
-  var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';
-  var p={link_url:h,transport_type:'beacon'};
-  if(h.indexOf('tel:')===0)gtag('event','telefon_tiklama',p);
-  else if(h.indexOf('wa.me')>-1||h.indexOf('whatsapp')>-1)gtag('event','whatsapp_tiklama',p);
-  else if(h.indexOf('mailto:')===0)gtag('event','eposta_tiklama',p);
-});
-document.addEventListener('submit',function(e){gtag('event','generate_lead',{form_id:e.target.id||'iletisim_formu',transport_type:'beacon'});});
-</script>
-<style>.aeo{padding:64px 0 56px;background:var(--stone);color:var(--ink)}.aeo .wrap{display:block}.aeo .sec{color:var(--ink);max-width:26ch}.aeo .lead{color:#3a4149}.aeo .eyebrow{color:var(--muted)}.aud{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:22px 0 0}.aud li{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:.86rem;color:var(--ink)}</style>
 </head>
 <body>
 
@@ -171,15 +204,6 @@ document.addEventListener('submit',function(e){gtag('event','generate_lead',{for
 
 <div class="nums">
   <div class="wrap"><div class="nm"><b>6306</b><span>sayılı kanun kapsamı</span></div><div class="nm"><b>Şeffaf</b><span>hak sahibi bilgilendirme</span></div><div class="nm"><b>Tek</b><span>muhatap</span></div></div>
-
-<section class="aeo" id="kimler-icin">
-  <div class="wrap">
-    <span class="eyebrow">Kimler için</span>
-    <h2 class="sec">Hak sahipleri için tek muhatap</h2>
-    <p class="lead">Öder Group, 6306 sayılı kanun kapsamında kentsel dönüşüm projelerini tek muhatap olarak yürütür: riskli yapı tespiti, hak sahipleriyle mutabakat, ruhsat ve proje süreçleri, yıkım ve yeni yapı uygulaması. Hak sahipleri her aşamada şeffaf biçimde bilgilendirilir; apartman ve site yönetimleri için süreç baştan sona planlanır.</p>
-    <ul class="aud"><li>Apartman ve site yönetimleri</li><li>Hak sahipleri</li><li>Arsa sahipleri</li></ul>
-  </div>
-</section>
 </div>
 
 <section>
@@ -202,11 +226,21 @@ document.addEventListener('submit',function(e){gtag('event','generate_lead',{for
   </div>
 </section>
 
+
+<section class="derin">
+  <div class="wrap">
+    <span class="eyebrow rv">Süreç teknik olduğu kadar insani</span>
+    <h2 class="sec rv d1">Kentsel dönüşümde adımlar ve belgeler</h2>
+    <p class="lead rv d2">Kentsel dönüşümde işin zor kısmı yıkım değil, karar aşamasıdır. Hak sahipleri aynı binada yıllarca oturmuş komşulardır; süreç şeffaf yürütülmediğinde teknik olarak doğru olan proje bile ilerlemez.</p>
+    <div class="rv d3" style="margin-top:30px;display:grid;gap:22px"><div><h3 style="font-size:1.06rem;margin-bottom:8px">Riskli yapı tespiti</h3><p>Süreç, lisanslı kuruluşça yapılan riskli yapı tespitiyle başlar. Rapor ilgili idareye sunulur, tebligat yapılır ve itiraz süresi işler. Bu aşamada binanın gerçekten riskli olup olmadığı teknik bir sorudur; sonucu kimse peşinen varsayamaz.</p></div><div><h3 style="font-size:1.06rem;margin-bottom:8px">Hak sahipleriyle mutabakat</h3><p>Yıkım ve yeniden yapım kararı kanunda belirlenen çoğunlukla alınır. Paylaşım esasları, geçici konut düzeni ve kira yardımı başvurusu bu aşamada netleşir. Her hak sahibinin mevcut bağımsız bölüm büyüklüğü ve konumu yeni projedeki karşılığıyla birlikte yazılı olarak gösterilir — sözlü mutabakat sonradan anlaşmazlığa döner.</p></div><div><h3 style="font-size:1.06rem;margin-bottom:8px">Yıkım ve çevre güvenliği</h3><p>Yıkım öncesi abonelikler kapatılır, varsa tehlikeli atık ayrıştırılır, komşu yapılar için gerekli önlemler alınır. Yıkım ruhsatı ve moloz nakli süreçleri idareyle birlikte yürütülür.</p></div><div><h3 style="font-size:1.06rem;margin-bottom:8px">Yeni yapı ve güncel deprem yönetmeliği</h3><p>Yeni bina, yürürlükteki deprem yönetmeliğine göre projelendirilir. Dönüşümün asıl kazancı metrekare artışı değil, yapının deprem güvenliğidir; bu yüzden statik proje ve zemin etüdü sürecin en kritik kalemidir.</p></div><div><h3 style="font-size:1.06rem;margin-bottom:8px">Takvim ve şeffaflık</h3><p>Hak sahiplerine aylık ilerleme bildirimi yapılır: hangi imalat bitti, hangisi sırada, takvimde sapma var mı. Kira yardımı ve teslim tarihi gibi başlıklarda tahmin değil, güncel durum paylaşılır.</p></div></div>
+  </div>
+</section>
+
 <section class="faq">
   <div class="wrap">
     <span class="eyebrow rv">Sık Sorulan Sorular</span>
     <h2 class="sec rv d1">Merak edilenler</h2>
-    <div style="margin-top:34px;border-top:1px solid var(--line)"><div class="fq"><button type="button">Apartman yönetimi olarak kentsel dönüşüme nereden başlamalıyız?</button><div class="a"><p>İlk adım riskli yapı tespitidir. Ardından hak sahipleriyle karar süreci, proje ve ruhsat aşamaları gelir. Öder Group bu adımları sırasıyla planlar ve hak sahiplerine yazılı olarak sunar.</p></div></div><div class="fq"><button type="button">Hak sahipleriyle anlaşmayı siz mi yürütüyorsunuz?</button><div class="a"><p>Süreci yönetir, toplantıları düzenler ve teklifleri şeffaf şekilde sunarız. Karar hak sahiplerinindir; biz teknik ve hukuki zemini hazırlarız.</p></div></div><div class="fq"><button type="button">Riskli yapı tespiti ne kadar sürüyor?</button><div class="a"><p>Tespit, laboratuvar ve rapor süreci binanın büyüklüğüne ve numune sayısına bağlıdır. Beton karot alımı, donatı tespiti ve zemin verisi gerekir. Süreyi keşifte binaya bakarak söyleriz — bina görülmeden tarih vermeyiz.</p></div></div><div class="fq"><button type="button">Yıkım sırasında komşu binalara zarar gelir mi?</button><div class="a"><p>Bitişik nizamda bu risk gerçektir ve önlem alınmadan başlanmaz. Yıkım öncesi komşu yapıların mevcut durumu fotoğrafla tespit edilir, gerekiyorsa iksa ve destekleme yapılır, kontrollü yıkım yöntemi seçilir.</p></div></div><div class="fq"><button type="button">İnşaat sürerken kira yardımı süreçlerine destek veriyor musunuz?</button><div class="a"><p>Başvuru süreçleri hak sahiplerinin kendi sorumluluğundadır; biz gerekli teknik belgeleri ve yapı ruhsatı evrakını zamanında sağlarız. Hangi belgenin ne zaman hazır olacağı proje takviminde gösterilir.</p></div></div></div>
+    <div style="margin-top:34px;border-top:1px solid var(--line)"><div class="fq"><button type="button">Hak sahipleriyle anlaşmayı siz mi yürütüyorsunuz?</button><div class="a"><p>Süreci yönetir, toplantıları düzenler ve teklifleri şeffaf şekilde sunarız. Karar hak sahiplerinindir; biz teknik ve hukuki zemini hazırlarız.</p></div></div><div class="fq"><button type="button">Riskli yapı tespiti ne kadar sürüyor?</button><div class="a"><p>Tespit, laboratuvar ve rapor süreci binanın büyüklüğüne ve numune sayısına bağlıdır. Beton karot alımı, donatı tespiti ve zemin verisi gerekir. Süreyi keşifte binaya bakarak söyleriz — bina görülmeden tarih vermeyiz.</p></div></div><div class="fq"><button type="button">Yıkım sırasında komşu binalara zarar gelir mi?</button><div class="a"><p>Bitişik nizamda bu risk gerçektir ve önlem alınmadan başlanmaz. Yıkım öncesi komşu yapıların mevcut durumu fotoğrafla tespit edilir, gerekiyorsa iksa ve destekleme yapılır, kontrollü yıkım yöntemi seçilir.</p></div></div><div class="fq"><button type="button">İnşaat sürerken kira yardımı süreçlerine destek veriyor musunuz?</button><div class="a"><p>Başvuru süreçleri hak sahiplerinin kendi sorumluluğundadır; biz gerekli teknik belgeleri ve yapı ruhsatı evrakını zamanında sağlarız. Hangi belgenin ne zaman hazır olacağı proje takviminde gösterilir.</p></div></div></div>
   </div>
 </section>
 
@@ -223,7 +257,7 @@ document.addEventListener('submit',function(e){gtag('event','generate_lead',{for
 
 <footer>
   <div class="wrap">
-    <span>© 2023–2026 Öder Group — İnşaat &amp; Mimarlık · Enerji · Teknik Hizmetler</span>
+    <span>© 2023 Öder Group — İnşaat &amp; Mimarlık · Enerji · Teknik Hizmetler</span>
     <span><a href="index.html">Ana Sayfa</a> · <a href="kurumsal.html">Kurumsal</a> · <a href="mailto:info@odergroup.com.tr">info@odergroup.com.tr</a></span>
   </div>
 </footer>
@@ -276,6 +310,65 @@ document.getElementById('lbs').onclick=e=>{e.stopPropagation();ac(li+1)};
 lb.addEventListener('click',e=>{if(e.target===lb)kapa()});
 addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;
   if(e.key==='Escape')kapa(); if(e.key==='ArrowLeft')ac(li-1); if(e.key==='ArrowRight')ac(li+1);});
+</script>
+
+<!-- ===== ÖLÇÜM: dönüşüm olayları ===== -->
+<script>
+/* ===== DÖNÜŞÜM OLAYLARI =====
+   Her olay dataLayer'a gönderilir; GTM'de tetikleyici olarak kullanılır.
+   GA4 + Google Ads + Meta Pixel aynı olayı dinler. */
+(function(){
+  var dl = function(ad, ek){
+    window.dataLayer = window.dataLayer || [];
+    var o = {event: ad, sayfa: location.pathname};
+    if (ek) for (var k in ek) o[k] = ek[k];
+    window.dataLayer.push(o);
+  };
+
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if (!a) return;
+    var h = a.getAttribute('href') || '';
+
+    if (h.indexOf('tel:') === 0)
+      dl('telefon_tiklama', {numara: h.replace('tel:','')});
+
+    else if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1)
+      dl('whatsapp_tiklama', {konum: a.closest('.mobcta') ? 'mobil_alt_cta' : 'sayfa_ici'});
+
+    else if (h.indexOf('mailto:') === 0)
+      dl('eposta_tiklama');
+
+    else if (h.indexOf('oderenerji.com') > -1)
+      dl('magaza_yonlendirme');
+
+    else if (a.classList.contains('go') || a.classList.contains('btn-solid'))
+      dl('teklif_cta_tiklama', {metin: (a.innerText||'').trim().slice(0,40)});
+  }, true);
+
+  /* form gönderimi — asıl dönüşüm */
+  var f = document.querySelector('form.form');
+  if (f) f.addEventListener('submit', function(){
+    var k = f.querySelector('[name=konu]');
+    dl('teklif_formu_gonderildi', {konu: k ? k.value : '-'});
+  });
+
+  /* okuma derinliği — içeriğin ilgi çekip çekmediğini ölçer */
+  var esikler = [25,50,75,100], gecilen = {};
+  window.addEventListener('scroll', function(){
+    var y = (window.scrollY + window.innerHeight) / document.body.scrollHeight * 100;
+    esikler.forEach(function(t){
+      if (y >= t && !gecilen[t]) { gecilen[t] = 1; dl('okuma_derinligi', {yuzde: t}); }
+    });
+  }, {passive:true});
+
+  /* SSS açılması — hangi soru merak ediliyor */
+  document.querySelectorAll('.fq > button').forEach(function(b){
+    b.addEventListener('click', function(){
+      dl('sss_acildi', {soru: (b.innerText||'').trim().slice(0,60)});
+    });
+  });
+})();
 </script>
 </body>
 </html>
