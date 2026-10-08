@@ -17,7 +17,7 @@ if(i && i.indexOf('XXXX')===-1){f.parentNode.insertBefore(j,f);}
 <!-- ===== GÜVENLİK ===== -->
 <!-- Not: GitHub Pages HTTP başlığı gönderemez. Bunlar HTML seviyesinde
      uygulanabilen korumalar. Tam koruma için Cloudflare'e geçilmeli. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://formsubmit.co; frame-src https://www.google.com https://www.youtube.com https://www.google.com/maps/; form-action https://formsubmit.co 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://formsubmit.co; frame-src https://www.google.com https://www.youtube.com https://www.google.com/maps/; form-action https://formsubmit.co 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <script>
@@ -178,6 +178,20 @@ footer a:hover{color:#fff}
   .fq > button{justify-content:space-between;text-align:left}
 }
 </style>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J36PFJFTB5"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-J36PFJFTB5');
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';
+  var p={link_url:h,transport_type:'beacon'};
+  if(h.indexOf('tel:')===0)gtag('event','telefon_tiklama',p);
+  else if(h.indexOf('wa.me')>-1||h.indexOf('whatsapp')>-1)gtag('event','whatsapp_tiklama',p);
+  else if(h.indexOf('mailto:')===0)gtag('event','eposta_tiklama',p);
+});
+document.addEventListener('submit',function(e){gtag('event','generate_lead',{form_id:e.target.id||'iletisim_formu',transport_type:'beacon'});});
+</script>
 </head>
 <body>
 
@@ -264,7 +278,7 @@ footer a:hover{color:#fff}
 
 <footer>
   <div class="wrap">
-    <span>© 2023 Öder Group — İnşaat &amp; Mimarlık · Enerji · Teknik Hizmetler</span>
+    <span>© 2023–2026 Öder Group — İnşaat &amp; Mimarlık · Enerji · Teknik Hizmetler</span>
     <span><a href="index.html">Ana Sayfa</a> · <a href="kurumsal.html">Kurumsal</a> · <a href="mailto:info@odergroup.com.tr">info@odergroup.com.tr</a></span>
   </div>
 </footer>

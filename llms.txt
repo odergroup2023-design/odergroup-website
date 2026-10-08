@@ -16,6 +16,7 @@
 - [Tiny House ve Prefabrik Yapı](https://www.odergroup.com.tr/tiny-house.html): Modüler yapı üretimi, iç mekân donanımı ve vinçle montaj.
 - [Çatı GES](https://www.odergroup.com.tr/cati-ges.html): Statik ve gölgelenme analizi, üretim öngörüsü, montaj, şebeke bağlantısı ve geçici kabul.
 - [Fabrika Otomasyonu](https://www.odergroup.com.tr/fabrika-otomasyonu.html): Etaplı geçiş; izleme, raporlama ve uzaktan kontrol altyapısı.
+- [Enerji Verimliliği Danışmanlığı (EVD)](https://www.odergroup.com.tr/enerji-verimliligi-danismanligi.html): Sanayi ve ticari tesislerde enerji etüdü, termal kamera ölçümü, kayıp analizi ve verimlilik projelendirmesi; yazılı raporlama.
 - [Elektrik Taahhüt, Trafo, Pano ve Koruyucu Bakım](https://www.odergroup.com.tr/elektrik-bakim.html): Trafo ve pano projelendirme, imalat, devreye alma ve sözleşmeli periyodik bakım.
 
 ## Kimlere hizmet veriyoruz
