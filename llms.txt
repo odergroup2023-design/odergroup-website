@@ -3,29 +3,36 @@
 > Öder Group Enerji Elektrik Mekanik Teknik Hizmetler Sanayi ve Ticaret Limited Şirketi.
 > Merkez ofis Ataşehir / İstanbul; projeler Türkiye genelinde yürütülür.
 > İç dekorasyon, mağaza ve showroom kurulumu, fuar standı, tadilat-restorasyon,
-> konut-villa, kentsel dönüşüm, tiny house, çatı GES, fabrika otomasyonu ve
-> elektrik taahhüt-bakım hizmetleri. 2023'te kuruldu.
+> konut-villa, kentsel dönüşüm, tiny house, çatı GES, fabrika otomasyonu,
+> elektrik taahhüt-bakım ve tesis yönetimi hizmetleri. 2023'te kuruldu.
 
 ## Hizmetler
+- [Teknik Hizmetler ve Tesis Yönetimi](https://www.odergroup.com.tr/teknik-hizmetler-tesis-yonetimi.html): AVM, hastane, iş merkezi, zincir mağaza ve fabrikalarda periyodik bakım sözleşmesi, teknik işletme, arıza müdahalesi ve inşai onarım. Sayfada "bakım sözleşmesi imzalamadan önce sorulacak 8 soru" başlığı altında kapsam, koruyucu bakım–arıza ayrımı, parça dahil/hariç, müdahale süresi, saha personeli, raporlama, alt yüklenici sorumluluğu ve devir-fesih konuları açıklanır.
+- [Elektrik Taahhüt, Trafo, Pano ve Koruyucu Bakım](https://www.odergroup.com.tr/elektrik-bakim.html): Trafo ve pano projelendirme, imalat, devreye alma ve sözleşmeli periyodik bakım.
+- [Fabrika Otomasyonu](https://www.odergroup.com.tr/fabrika-otomasyonu.html): PLC-SCADA modernizasyonu, etaplı geçiş; izleme, raporlama ve uzaktan kontrol altyapısı.
+- [Enerji Verimliliği Danışmanlığı (EVD)](https://www.odergroup.com.tr/enerji-verimliligi-danismanligi.html): Sanayi ve ticari tesislerde enerji etüdü, termal kamera ölçümü, kayıp analizi ve verimlilik projelendirmesi; yazılı raporlama.
+- [Çatı GES](https://www.odergroup.com.tr/cati-ges.html): Statik ve gölgelenme analizi, üretim öngörüsü, montaj, şebeke bağlantısı ve geçici kabul.
 - [İç Dekorasyon ve Mekân Tasarımı](https://www.odergroup.com.tr/ic-dekorasyon.html): AVM, hastane, ofis ve iş merkezlerinde iç mekân tasarımı, tavan-duvar-aydınlatma imalatı ve dekorasyon bakım-onarımı.
 - [Mağaza ve Showroom Kurulum-Söküm](https://www.odergroup.com.tr/magaza-showroom.html): Mimari tasarımdan elektrik-mekanik tesisata, aydınlatmadan dekorasyon imalatına; açılış gününe hazır mağaza teslimi.
 - [Fuar Standı Tasarım ve Uygulama](https://www.odergroup.com.tr/fuar-standi.html): Modüler taşıyıcı sistem, aydınlatma, grafik uygulama ve fuar sonrası demontaj.
-- [Tadilat, Restorasyon ve Restitüsyon](https://www.odergroup.com.tr/tadilat-restorasyon.html): Etaplı tadilat; tescilli yapılarda koruma kurulu süreçlerine uygun restorasyon.
+- [Tadilat, Restorasyon ve Restitüsyon](https://www.odergroup.com.tr/tadilat-restorasyon.html): Etaplı tadilat; tescilli yapılarda koruma kurulu süreçlerine uygun restorasyon. Sayfada tadilat, restitüsyon ve restorasyon arasındaki teknik fark ayrı ayrı açıklanır.
 - [Konut ve Villa Projeleri](https://www.odergroup.com.tr/konut-villa.html): Mimari tasarım, ruhsat süreci, kaba ve ince yapı, peyzaj ve teslim.
 - [Kentsel Dönüşüm](https://www.odergroup.com.tr/kentsel-donusum.html): Riskli yapı tespiti, hak sahipleriyle mutabakat, ruhsat, yıkım ve yeni yapı uygulaması.
 - [Tiny House ve Prefabrik Yapı](https://www.odergroup.com.tr/tiny-house.html): Modüler yapı üretimi, iç mekân donanımı ve vinçle montaj.
-- [Çatı GES](https://www.odergroup.com.tr/cati-ges.html): Statik ve gölgelenme analizi, üretim öngörüsü, montaj, şebeke bağlantısı ve geçici kabul.
-- [Fabrika Otomasyonu](https://www.odergroup.com.tr/fabrika-otomasyonu.html): Etaplı geçiş; izleme, raporlama ve uzaktan kontrol altyapısı.
-- [Enerji Verimliliği Danışmanlığı (EVD)](https://www.odergroup.com.tr/enerji-verimliligi-danismanligi.html): Sanayi ve ticari tesislerde enerji etüdü, termal kamera ölçümü, kayıp analizi ve verimlilik projelendirmesi; yazılı raporlama.
-- [Elektrik Taahhüt, Trafo, Pano ve Koruyucu Bakım](https://www.odergroup.com.tr/elektrik-bakim.html): Trafo ve pano projelendirme, imalat, devreye alma ve sözleşmeli periyodik bakım.
 
 ## Kimlere hizmet veriyoruz
-- AVM'ler ve mağaza zincirleri: anahtar teslim mağaza kurulumu, söküm, yenileme; AVM'lerde gece vardiyasıyla uygulama
-- Hastaneler ve sağlık tesisleri: işletmeyi durdurmadan, enfeksiyon kontrol protokolüne uygun tadilat ve iç dekorasyon
-- Ofis ve iş merkezleri: etaplı tadilat, iç mekân tasarımı ve aydınlatma
-- Fabrika ve endüstriyel tesisler: trafo-pano, sözleşmeli elektrik bakımı, PLC/SCADA otomasyonu
+- AVM'ler ve mağaza zincirleri: anahtar teslim mağaza kurulumu, söküm, yenileme; AVM'lerde gece vardiyasıyla uygulama; ortak alan teknik işletmesi
+- Hastaneler ve sağlık tesisleri: işletmeyi durdurmadan, enfeksiyon kontrol protokolüne uygun tadilat, iç dekorasyon ve teknik bakım
+- Ofis ve iş merkezleri: etaplı tadilat, iç mekân tasarımı, aydınlatma ve periyodik bakım
+- Fabrika ve endüstriyel tesisler: trafo-pano, sözleşmeli elektrik bakımı, PLC/SCADA otomasyonu, enerji etüdü
 - Villa ve daire sahipleri: küçük ölçekli dekorasyon ve yenilemeden anahtar teslim villaya
 - Fuar katılımcıları: stand tasarımı, kurulum ve demontaj
+
+## Çalışma biçimi
+- Keşif ve teklif ücretsizdir; teklifte iş kalemleri ayrı ayrı yazılır.
+- Her projeye tek proje sorumlusu atanır; mimari, elektrik ve mekanik işler tek sözleşmede toplanır.
+- Tahmini süre, fiyat veya tasarruf oranı verilmez; rakamlar keşif ve ölçüm sonrası yazılı olarak paylaşılır.
+- Kurucu Ümit Öder, 4734 sayılı Kamu İhale Kanunu ve 4735 sayılı Kamu İhale Sözleşmeleri Kanunu konusunda eğitmenlik yapmıştır (AMP Yazılım, 2010–2013); kamu ihalesi ve şartname süreçleri standart iştir.
 
 ## Hizmet bölgesi
 Merkez ofis Ataşehir / İstanbul; projeler Türkiye genelinde.
