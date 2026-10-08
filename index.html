@@ -17,7 +17,7 @@ if(i && i.indexOf('XXXX')===-1){f.parentNode.insertBefore(j,f);}
 <!-- ===== GÜVENLİK ===== -->
 <!-- Not: GitHub Pages HTTP başlığı gönderemez. Bunlar HTML seviyesinde
      uygulanabilen korumalar. Tam koruma için Cloudflare'e geçilmeli. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://formsubmit.co; frame-src https://www.google.com https://www.youtube.com https://www.google.com/maps/; form-action https://formsubmit.co 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://formsubmit.co; frame-src https://www.google.com https://www.youtube.com https://www.google.com/maps/; form-action https://formsubmit.co 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <script>
 /* Clickjacking koruması — X-Frame-Options gönderilemediği için JS ile.
@@ -36,8 +36,8 @@ if(i && i.indexOf('XXXX')===-1){f.parentNode.insertBefore(j,f);}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- ===== SEO: TITLE + DESCRIPTION (55-60 / 150-160 karakter) ===== -->
-<title>İç Dekorasyon, Mağaza Yapımı, Çatı GES ve Fabrika Otomasyonu | Öder Group</title>
-<meta name="description" content="Öder Group; iç dekorasyon, konut-villa ve kentsel dönüşüm, mağaza yapımı, fuar standı, tadilat-restorasyon, çatı GES ve fabrika otomasyonunda anahtar teslim çözüm sunar. İstanbul.">
+<title>İnşaat-Mimarlık, Mağaza Kurulumu, Teknik Hizmet | Öder Group</title>
+<meta name="description" content="AVM, hastane, tesis, mağaza zincirleri, villa ve daireler için iç dekorasyon, mağaza kurulumu, tadilat, elektrik bakımı ve çatı GES. Ücretsiz keşif.">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="canonical" href="https://www.odergroup.com.tr/">
 <link rel="alternate" hreflang="tr" href="https://www.odergroup.com.tr/?lang=tr">
@@ -52,16 +52,16 @@ if(i && i.indexOf('XXXX')===-1){f.parentNode.insertBefore(j,f);}
 <meta name="theme-color" content="#15181C">
 <meta name="format-detection" content="telephone=yes">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Öder Group | Fuar Standı, Mağaza Yapımı, Çatı GES, Fabrika Otomasyonu">
-<meta name="twitter:description" content="Mimari uygulama, teknik hizmetler ve enerji altyapısında anahtar teslim mühendislik. İstanbul.">
+<meta name="twitter:title" content="İnşaat-Mimarlık, Mağaza Kurulumu, Teknik Hizmet | Öder Group">
+<meta name="twitter:description" content="AVM, hastane, tesis, mağaza zincirleri, villa ve daireler için iç dekorasyon, mağaza kurulumu, tadilat, elektrik bakımı ve çatı GES. Ücretsiz keşif.">
 <meta name="twitter:image" content="https://www.odergroup.com.tr/mimari-proje-magaza-fuar-standi.jpg">
 
 <!-- ===== Open Graph / sosyal paylaşım ===== -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="tr_TR">
 <meta property="og:site_name" content="Öder Group">
-<meta property="og:title" content="Fuar Standı, Mağaza Yapımı, Çatı GES ve Fabrika Otomasyonu | Öder Group">
-<meta property="og:description" content="Mimari uygulama, teknik hizmetler ve enerji altyapısında anahtar teslim mühendislik. İstanbul.">
+<meta property="og:title" content="İnşaat-Mimarlık, Mağaza Kurulumu, Teknik Hizmet | Öder Group">
+<meta property="og:description" content="AVM, hastane, tesis, mağaza zincirleri, villa ve daireler için iç dekorasyon, mağaza kurulumu, tadilat, elektrik bakımı ve çatı GES. Ücretsiz keşif.">
 <meta property="og:url" content="https://www.odergroup.com.tr/">
 <meta property="og:image" content="https://www.odergroup.com.tr/mimari-proje-magaza-fuar-standi.jpg">
 
@@ -720,6 +720,21 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   .mqtrack{animation:none}
 }
 </style>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J36PFJFTB5"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-J36PFJFTB5');
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';
+  var p={link_url:h,transport_type:'beacon'};
+  if(h.indexOf('tel:')===0)gtag('event','telefon_tiklama',p);
+  else if(h.indexOf('wa.me')>-1||h.indexOf('whatsapp')>-1)gtag('event','whatsapp_tiklama',p);
+  else if(h.indexOf('mailto:')===0)gtag('event','eposta_tiklama',p);
+});
+document.addEventListener('submit',function(e){gtag('event','generate_lead',{form_id:e.target.id||'iletisim_formu',transport_type:'beacon'});});
+</script>
+<style>.seg-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:28px}.seg-c{display:flex;flex-direction:column;gap:8px;padding:22px 22px 18px;background:#fff;border:1px solid var(--line);border-radius:4px;color:var(--ink);text-decoration:none;transition:border-color .2s,transform .2s}.seg-c:hover,.seg-c:focus-visible{border-color:var(--arc);transform:translateY(-2px)}.seg-c b{font-size:1.02rem;font-weight:600}.seg-c span{color:var(--muted);font-size:.92rem;line-height:1.5}.seg-c i{font-style:normal;font-size:.8rem;font-weight:600;color:var(--arc);margin-top:auto}</style>
 </head>
 <body>
 
@@ -858,6 +873,16 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
     <div class="tr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 17l6-6 4 4 8-8"/><path d="M21 7v5h-5"/></svg><div><b>Verimlilik Odaklı</b><span>Her projede enerji maliyeti hesabı</span></div></div>
   </div>
 </div>
+
+<!-- ===== KİMLERE HİZMET ===== -->
+<section class="seg rv" id="kimlere">
+  <div class="wrap">
+    <span class="eyebrow">Kimlere hizmet veriyoruz</span>
+    <h2 class="sec">AVM'den villaya, tek mühendislik sorumluluğu</h2>
+    <p class="lead">Öder Group; AVM, hastane, ofis, fabrika ve mağaza zincirleriyle villa ve daire sahiplerine inşaat-mimarlık, iç dekorasyon ve teknik hizmet sunar. Projenize en yakın alanı seçin, ücretsiz keşif için bize ulaşın.</p>
+    <div class="seg-g"><a class="seg-c" href="magaza-showroom.html"><b>AVM ve mağaza zincirleri</b><span>Gece vardiyasıyla anahtar teslim mağaza kurulumu, söküm ve yenileme.</span><i>İncele →</i></a><a class="seg-c" href="tadilat-restorasyon.html"><b>Hastane ve sağlık tesisleri</b><span>İşletmeyi durdurmadan, enfeksiyon kontrol protokolüne uygun tadilat ve dekorasyon.</span><i>İncele →</i></a><a class="seg-c" href="ic-dekorasyon.html"><b>Ofis ve iş merkezleri</b><span>Etaplı tadilat, iç mekân tasarımı ve aydınlatma.</span><i>İncele →</i></a><a class="seg-c" href="elektrik-bakim.html"><b>Fabrika ve tesisler</b><span>Trafo-pano, sözleşmeli elektrik bakımı ve otomasyon.</span><i>İncele →</i></a><a class="seg-c" href="konut-villa.html"><b>Villa ve daire sahipleri</b><span>Küçük dekorasyon işlerinden anahtar teslim villaya.</span><i>İncele →</i></a><a class="seg-c" href="fuar-standi.html"><b>Fuar katılımcıları</b><span>Tasarım, kurulum ve demontaj tek ekipten.</span><i>İncele →</i></a></div>
+  </div>
+</section>
 
 <!-- ===== HİZMETLER ===== -->
 <section class="rv">
@@ -1153,10 +1178,10 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 <!-- ===== SAYILAR ===== -->
 <div class="stats rv">
   <div class="wrap">
-    <div class="stat"><b data-n="20">0</b><span>Yıllık Tecrübe</span></div>
-    <div class="stat"><b data-n="250">0</b><span>Mutlu Müşteri</span></div>
-    <div class="stat"><b data-n="30">0</b><span>Tamamlanan Proje</span></div>
-    <div class="stat"><b data-n="10">0</b><span>Uzman Kadro</span></div>
+    <div class="stat"><b data-n="20">20+</b><span>Yıllık Tecrübe</span></div>
+    <div class="stat"><b data-n="250">250+</b><span>Mutlu Müşteri</span></div>
+    <div class="stat"><b data-n="30">30+</b><span>Tamamlanan Proje</span></div>
+    <div class="stat"><b data-n="10">10+</b><span>Uzman Kadro</span></div>
   </div>
 </div>
 
@@ -1323,7 +1348,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
     </div>
 
     <div class="fbot">
-      <span>© 2023 Öder Group Enerji Elektrik Mekanik Teknik Hizmetler San. Tic. Ltd. Şti. — Tüm hakları saklıdır.</span>
+      <span>© 2023–2026 Öder Group Enerji Elektrik Mekanik Teknik Hizmetler San. Tic. Ltd. Şti. — Tüm hakları saklıdır.</span>
       <span>
         <a href="gizlilik-politikasi.html">Gizlilik Politikası</a> ·
         <a href="kurumsal.html#sicil">Ticaret Sicil</a> ·
