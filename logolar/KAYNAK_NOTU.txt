@@ -1,0 +1,19 @@
+LOGO DOSYALARI – KAYNAK NOTU
+
+1) Mars Cinema Group
+Dosya: Mars_Cinema_Group_resmi_beyaz.png
+Kaynak: Mars Media resmî web varlığı. Şeffaf zeminli beyaz logo; koyu zemin üzerinde kullanılmalıdır.
+
+2) Mars Entertainment Group
+Dosya: Mars_Entertainment_Group_resmi.png
+Kaynak: Paribu Cineverse / CGV Mars resmî e-fatura web varlığı.
+
+3) Magrabi Optical
+Dosya: Magrabi_Optical_seffaf.png
+Kaynak dosya logo arşivinden alınmış, beyaz zemini kaldırılarak şeffaf PNG hazırlanmıştır. Güncel resmî Magrabi marka görünümüyle kontrol edilmiştir.
+
+4) Konya Organize Sanayi Bölgesi (KOS)
+Dosya: Konya_OSB_KOS_seffaf.png
+Konya OSB kurumsal kimlik sayfasında yayımlanan KOS logosu ve resmî belge üzerindeki kullanım esas alınarak şeffaf PNG hazırlanmıştır. Kurumun resmî indirme paketi RAR biçiminde sunulduğu için bu klasörde PNG kullanım kopyası yer almaktadır.
+
+Not: Marka logoları ilgili hak sahiplerine aittir. Ticari/kurumsal kullanımda marka izin ve kurumsal kimlik kuralları geçerlidir.
