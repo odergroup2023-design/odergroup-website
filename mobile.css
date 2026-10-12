@@ -18,7 +18,7 @@
   .page-home .stripkurum,.page-home .num,.page-home .dtab small,
   .page-home .scol .tag,.page-home .rbtag,.page-home .ic .k,
   .page-home .stat span,.page-home .form label,.page-home .form label.consent,
-  .page-home .kunye .ust b,.page-home .fgrid h4,.page-home .fsocial .lbl,
+  .page-home .kunye .ust b,.page-home .fgrid .footer-title,.page-home .fsocial .lbl,
   .page-home .fkurumsal b { font-size:.75rem; line-height:1.5; letter-spacing:.08em; }
   .page-home .langbtn,.page-home .burger { min-width:44px; min-height:44px; }
   .page-home .hnav { min-width:44px; min-height:44px; }
@@ -155,3 +155,100 @@
 @media (prefers-reduced-motion:reduce) {
   html { scroll-behavior:auto; }
 }
+
+/* Kullanıcı talebi: tablet dahil üst şerit kalkar, dil logo ve menü arasına gelir. */
+@media (max-width:1080px) {
+  .page-home>.strip { display:none; }
+  .page-home header.nav .wrap { display:grid; grid-template-columns:auto minmax(0,1fr) 44px; gap:12px; height:72px; }
+  .page-home header.nav .logo { min-width:0; grid-column:1; grid-row:1; }
+  .page-home header.nav .logo img { width:200px; max-width:100%; height:auto; }
+  .page-home header.nav .langbox { grid-column:2; grid-row:1; justify-self:center; }
+  .page-home header.nav .burger { grid-column:3; grid-row:1; min-width:44px; min-height:44px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; }
+  .page-home header.nav .burger span { width:22px; height:2px; margin:0; flex:none; background:#fff; }
+  .page-home .langbtn { min-height:44px; padding:8px; }
+  .page-home .langmenu { left:50%; right:auto; transform:translate(-50%,-6px); max-height:min(65svh,440px); overflow:auto; }
+  .page-home .langbox.open .langmenu { transform:translate(-50%,0); }
+  .page-home .langmenu button { min-height:44px; }
+  .page-home nav.menu { top:72px; transform:none; display:none; max-height:calc(100svh - 72px); }
+  .page-home nav.menu.open { display:flex; }
+  .page-home .mi>a,.page-home .drop a { min-height:44px; display:flex; align-items:center; }
+  .page-home .mi>a { padding-block:10px; }
+  .page-home .drop a { padding-block:10px; line-height:1.45; }
+  .page-home .burger:focus-visible,.page-home .langbtn:focus-visible,
+  .page-home .menu a:focus-visible { outline:2px solid #D3A472; outline-offset:3px; }
+}
+@media (max-width:640px) {
+  .page-home header.nav .wrap { height:64px; grid-template-columns:auto minmax(0,1fr) 44px; gap:8px; }
+  .page-home header.nav .logo img { width:clamp(128px,40vw,170px); height:auto; }
+  .page-home nav.menu { top:64px; max-height:calc(100svh - 64px); }
+  .page-home .langbtn { font-size:.75rem; gap:5px; padding:8px 6px; }
+  .page-home .langmenu { min-width:156px; }
+  .page-home .fsoc a,.page-home .socbig a { min-height:48px; }
+}
+/* Görünmeyen slaytın arka planı ve ışığı ağ yüküne eklenmez. */
+.page-home .slide:not(.on) .bg { background-image:none!important; }
+.gi:focus-visible { outline:3px solid var(--arc); outline-offset:3px; }
+@media (prefers-reduced-motion:reduce) {
+  *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
+  .mqtrack { animation:none!important; }
+}
+
+/* Denetimde saptanan kontrast ve oran uyarıları: marka paleti korunur. */
+:root { --muted:#626970; }
+.page-technical .eyebrow { color:#2b6c48; }
+.page-home .dtab small { color:#a5adb5; }
+.page-service .btn:not(.btn-line) { background:#8f603c; }
+.page-service .mobcta .c1 { background:#8f603c; }
+.page-service .mobcta .c2,.page-home .mobcta .c2 { background:#28764b; }
+.osimg img { height:auto; }
+@media (max-width:1080px) {
+ .page-home .burger { z-index:2; }
+ .page-home .drop { padding-left:10px; }
+}
+
+@media (min-width:641px) and (max-width:1080px) {
+ .page-home .hero { display:grid; grid-template-columns:60px minmax(0,1fr) 60px;
+   grid-template-rows:minmax(0,1fr) 60px auto; min-height:700px; max-height:none; height:auto; }
+ .page-home .slide { position:relative; inset:auto; grid-area:1 / 1 / 2 / -1; min-width:0; }
+ .page-home .slide:not(.on) { visibility:hidden; pointer-events:none; }
+ .page-home .slide .inner { height:auto; min-height:100%; padding:64px 0 40px; }
+ .page-home .slide h1,.page-home .slide .h1 { max-width:22ch; }
+ .page-home .hnav { position:relative; width:44px; height:44px; inset:auto; grid-row:2;
+   align-self:center; justify-self:center; transform:none; }
+ .page-home .hnav:hover { transform:none; }
+ .page-home .hprev { grid-column:1; }
+ .page-home .hnext { grid-column:3; }
+ .page-home .hdots { position:relative; inset:auto; transform:none; grid-area:2 / 2; align-self:center; justify-self:center; }
+ .page-home .dtabs { position:relative; inset:auto; grid-area:3 / 1 / 4 / -1; }
+ .page-home .dtab { min-height:76px; }
+ .page-home .hcount,.page-home .scrollhint { display:none; }
+}
+
+@media (max-width:1080px) {
+ .page-home .form input,.page-home .form select,.page-home .form textarea { font-size:1rem; min-height:44px; }
+}
+
+.page-service .nums .nm b { color:#9bcbea; }
+
+/* Geniş ekranlar için daha net 1200 px arka plan. */
+@media(min-width:641px){
+[style*="optimized/cati-ges-panel-dizisi-640.webp"] { background-image:url("optimized/cati-ges-panel-dizisi-1200.webp")!important; }
+[style*="optimized/elektrik-trafo-pano-odasi-640.webp"] { background-image:url("optimized/elektrik-trafo-pano-odasi-1200.webp")!important; }
+[style*="optimized/endustriyel-tesis-cati-ges-640.webp"] { background-image:url("optimized/endustriyel-tesis-cati-ges-1200.webp")!important; }
+[style*="optimized/enerji-verimliligi-termal-kontrol-640.webp"] { background-image:url("optimized/enerji-verimliligi-termal-kontrol-1200.webp")!important; }
+[style*="optimized/fabrika-otomasyonu-scada-640.webp"] { background-image:url("optimized/fabrika-otomasyonu-scada-1200.webp")!important; }
+[style*="optimized/h-g009-640.webp"] { background-image:url("optimized/h-g009-1200.webp")!important; }
+[style*="optimized/h-g039-640.webp"] { background-image:url("optimized/h-g039-1200.webp")!important; }
+[style*="optimized/h-g041-640.webp"] { background-image:url("optimized/h-g041-1200.webp")!important; }
+[style*="optimized/h-g042-640.webp"] { background-image:url("optimized/h-g042-1200.webp")!important; }
+[style*="optimized/h-g045-640.webp"] { background-image:url("optimized/h-g045-1200.webp")!important; }
+[style*="optimized/h-g048-640.webp"] { background-image:url("optimized/h-g048-1200.webp")!important; }
+[style*="optimized/h-g084-640.webp"] { background-image:url("optimized/h-g084-1200.webp")!important; }
+[style*="optimized/h-g148-640.webp"] { background-image:url("optimized/h-g148-1200.webp")!important; }
+[style*="optimized/h-g156-640.webp"] { background-image:url("optimized/h-g156-1200.webp")!important; }
+[style*="optimized/h-g202-640.webp"] { background-image:url("optimized/h-g202-1200.webp")!important; }
+[style*="optimized/magaza-showroom-ic-mekan-640.webp"] { background-image:url("optimized/magaza-showroom-ic-mekan-1200.webp")!important; }
+[style*="optimized/oder-group-fuar-standi-640.webp"] { background-image:url("optimized/oder-group-fuar-standi-1200.webp")!important; }
+}
+.page-home .slide:not(.on) .bg { background-image:none!important; }
