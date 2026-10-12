@@ -604,6 +604,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   .stat span{font-size:.72rem;letter-spacing:.1em}
   .tr{border-left:0;border-top:1px solid rgba(255,255,255,.1)}
   .tr{border-top:1px solid var(--line)}
+  .refblock{grid-template-columns:minmax(0,1fr)}
   .rb{padding:28px 22px 32px}
   .fkurumsal{grid-template-columns:1fr 1fr}
   .fsocial{flex-direction:column;align-items:flex-start}
@@ -621,7 +622,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   .scrollhint{display:flex}
 
   /* ---- MOBIL ERISILEBILIRLIK (Google: dokunma hedefi >=48px, yazi >=12px) ---- */
-  .svc a, .pgrid a, .scol li a, .bl, .mi > a,
+  .svc a, .pgrid a, .scol li a, .mi > a,
   nav.menu a, .fq > button, .faqlist .fq button{
     min-height:48px; display:flex; align-items:center;
   }
@@ -662,12 +663,17 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   .swipe{display:flex}
 
   /* ---- MOBİL: marka kartları ---- */
-  .blogos{grid-template-columns:repeat(2,1fr);gap:0}
-  .bl{padding:16px 10px 13px;gap:8px;grid-template-rows:36px auto auto}
-  .bl b{font-size:.76rem}
-  .bl small{font-size:.55rem;letter-spacing:.09em}
-  .bl img{max-width:96px;max-height:32px}
-  .bl .lg{height:36px}
+  /* Bilgi kartları dokunma hedefi değildir; genel flex kuralından ayrı tutulur.
+     Logo üstte, marka ve sektör altta: dar yan sütun / harf harf kırılma yok. */
+  .blogos{grid-template-columns:repeat(2,minmax(0,1fr));gap:0}
+  .bl{display:grid;min-width:0;padding:14px 10px 12px;gap:6px;
+      grid-template-columns:minmax(0,1fr);grid-template-rows:36px auto auto;
+      align-content:start}
+  .bl b{font-size:.75rem;overflow-wrap:normal;word-break:normal}
+  .bl small{font-size:.75rem;letter-spacing:.04em;white-space:normal;
+            overflow-wrap:normal;word-break:normal}
+  .bl img{max-width:min(96px,100%);max-height:32px}
+  .bl .lg{height:36px;min-width:0}
   .bl .mono{height:32px;font-size:.8rem;padding:0 10px}
 
   /* ---- MOBİL: üst şerit sadeleştirildi ---- */
