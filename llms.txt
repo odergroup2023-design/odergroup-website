@@ -3,15 +3,19 @@
 > Öder Group Enerji Elektrik Mekanik Teknik Hizmetler Sanayi ve Ticaret Limited Şirketi.
 > Merkez ofis Ataşehir / İstanbul; projeler Türkiye genelinde yürütülür.
 > İç dekorasyon, mağaza ve showroom kurulumu, fuar standı, tadilat-restorasyon,
-> konut-villa, kentsel dönüşüm, tiny house, çatı GES, fabrika otomasyonu,
-> elektrik taahhüt-bakım ve tesis yönetimi hizmetleri. 2023'te kuruldu.
+> konut-villa, kentsel dönüşüm, tiny house, çatı GES, GES/RES saha teknik hizmetleri,
+> fabrika otomasyonu, yüksek gerilim (YG/OG), 5G saha altyapısı, elektrik taahhüt-bakım
+> ve tesis yönetimi hizmetleri. 2023'te kuruldu.
 
 ## Hizmetler
 - [Teknik Hizmetler ve Tesis Yönetimi](https://www.odergroup.com.tr/teknik-hizmetler-tesis-yonetimi.html): AVM, hastane, iş merkezi, zincir mağaza ve fabrikalarda periyodik bakım sözleşmesi, teknik işletme, arıza müdahalesi ve inşai onarım. Sayfada "bakım sözleşmesi imzalamadan önce sorulacak 8 soru" başlığı altında kapsam, koruyucu bakım–arıza ayrımı, parça dahil/hariç, müdahale süresi, saha personeli, raporlama, alt yüklenici sorumluluğu ve devir-fesih konuları açıklanır.
 - [Elektrik Taahhüt, Trafo, Pano ve Koruyucu Bakım](https://www.odergroup.com.tr/elektrik-bakim.html): Trafo ve pano projelendirme, imalat, devreye alma ve sözleşmeli periyodik bakım.
+- [Yüksek Gerilim (YG/OG) Proje ve Saha İşleri](https://www.odergroup.com.tr/yuksek-gerilim.html): Gerilim seviyesi, saha, trafo, hücre, pano, test, kesinti ve devreye alma kapsamlarının keşif ve teknik şartnameye göre ayrıştırılması.
+- [5G Altyapı ve Saha Uygulamaları](https://www.odergroup.com.tr/5g-altyapi.html): 5G saha enerji beslemesi, pano, kablo güzergâhı, erişim, saha koordinasyonu ve devreye alma takviminin değerlendirilmesi.
 - [Fabrika Otomasyonu](https://www.odergroup.com.tr/fabrika-otomasyonu.html): PLC-SCADA modernizasyonu, etaplı geçiş; izleme, raporlama ve uzaktan kontrol altyapısı.
 - [Enerji Verimliliği Danışmanlığı (EVD)](https://www.odergroup.com.tr/enerji-verimliligi-danismanligi.html): Sanayi ve ticari tesislerde enerji etüdü, termal kamera ölçümü, kayıp analizi ve verimlilik projelendirmesi; yazılı raporlama.
 - [Çatı GES](https://www.odergroup.com.tr/cati-ges.html): Statik ve gölgelenme analizi, üretim öngörüsü, montaj, şebeke bağlantısı ve geçici kabul.
+- GES ve RES saha teknik hizmetleri: Enerji altyapısı, trafo-pano, bakım, ölçüm ve saha teknik koordinasyonu kapsamlarının yatırım ve işletme hedeflerine göre değerlendirilmesi.
 - [İç Dekorasyon ve Mekân Tasarımı](https://www.odergroup.com.tr/ic-dekorasyon.html): AVM, hastane, ofis ve iş merkezlerinde iç mekân tasarımı, tavan-duvar-aydınlatma imalatı ve dekorasyon bakım-onarımı.
 - [Mağaza ve Showroom Kurulum-Söküm](https://www.odergroup.com.tr/magaza-showroom.html): Mimari tasarımdan elektrik-mekanik tesisata, aydınlatmadan dekorasyon imalatına; açılış gününe hazır mağaza teslimi.
 - [Fuar Standı Tasarım ve Uygulama](https://www.odergroup.com.tr/fuar-standi.html): Modüler taşıyıcı sistem, aydınlatma, grafik uygulama ve fuar sonrası demontaj.
@@ -25,6 +29,8 @@
 - Hastaneler ve sağlık tesisleri: işletmeyi durdurmadan, enfeksiyon kontrol protokolüne uygun tadilat, iç dekorasyon ve teknik bakım
 - Ofis ve iş merkezleri: etaplı tadilat, iç mekân tasarımı, aydınlatma ve periyodik bakım
 - Fabrika ve endüstriyel tesisler: trafo-pano, sözleşmeli elektrik bakımı, PLC/SCADA otomasyonu, enerji etüdü
+- GES ve RES yatırım/işletme yöneticileri: enerji altyapısı, trafo-pano, bakım, ölçüm ve teknik koordinasyon
+- 5G altyapı ve telekom saha yöneticileri: saha enerji beslemesi, kablolama, pano ve devreye alma koordinasyonu
 - Villa ve daire sahipleri: küçük ölçekli dekorasyon ve yenilemeden anahtar teslim villaya
 - Fuar katılımcıları: stand tasarımı, kurulum ve demontaj
 
@@ -32,6 +38,7 @@
 - Keşif ve teklif ücretsizdir; teklifte iş kalemleri ayrı ayrı yazılır.
 - Her projeye tek proje sorumlusu atanır; mimari, elektrik ve mekanik işler tek sözleşmede toplanır.
 - Tahmini süre, fiyat veya tasarruf oranı verilmez; rakamlar keşif ve ölçüm sonrası yazılı olarak paylaşılır.
+- YG/OG ve 5G saha kapsamları, teknik şartname, yetkili ekip, iş güvenliği ve mevzuat gereklilikleri dikkate alınarak keşif sonrası netleştirilir.
 - Kurucu Ümit Öder, 4734 sayılı Kamu İhale Kanunu ve 4735 sayılı Kamu İhale Sözleşmeleri Kanunu konusunda eğitmenlik yapmıştır (AMP Yazılım, 2010–2013); kamu ihalesi ve şartname süreçleri standart iştir.
 
 ## Hizmet bölgesi
