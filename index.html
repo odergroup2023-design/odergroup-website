@@ -433,6 +433,10 @@ nav.menu{display:flex;gap:30px;align-items:center}
 .krz.belge{color:#2E6C8E;border-color:#bcd4e2;background:#f4f9fc}
 .krz.kamu{color:#8f6339;border-color:#e0d3c4;background:#fbf7f2}
 .krz.egitim{color:#3f6b4f;border-color:#c8ddd0;background:#f4faf6}
+.rblist--credentials li{display:block}
+.rblist--credentials li b{display:inline-block;margin-left:6px}
+.rblist--credentials li .krz{display:flex;width:fit-content;max-width:100%;
+  min-width:0;margin:8px 0 0;text-align:left;white-space:normal;line-height:1.4}
 @media(max-width:640px){.krz{font-size:.55rem;padding:2px 7px;margin-left:6px}}
 /* referans marka kartlari */
 .blogos{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:0;margin-top:14px;
@@ -606,6 +610,8 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   .tr{border-top:1px solid var(--line)}
   .refblock{grid-template-columns:minmax(0,1fr)}
   .rb{padding:28px 22px 32px}
+  /* Eğitim açıklaması tam genişlikte; rozetler dar sağ sütuna sıkışmaz. */
+  .rblist--credentials li .krz{font-size:.75rem}
   .fkurumsal{grid-template-columns:1fr 1fr}
   .fsocial{flex-direction:column;align-items:flex-start}
   .dtabs .wrap{grid-template-columns:1fr}
@@ -1169,7 +1175,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
       <div class="rb">
         <span class="rbtag" style="color:var(--muted)">Kurumsal Yetkinlik · Eğitim ve Belgeler</span>
         <h3>Mühendislik eğitimi, ihale mevzuatı ve sosyal sorumluluk</h3>
-        <ul class="rblist">
+        <ul class="rblist rblist--credentials">
           <li>Trakya Üniversitesi, Teknik Eğitim Fakültesi — Yapı Öğretmenliği <b>3,7 / 4</b></li>
           <li>Anadolu Üniversitesi — İşletme</li>
           <li>4734 ve 4735 sayılı Kamu İhale Kanunu eğitmenliği (AMP Yazılım, 2010–2013)<span class="krz egitim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4 2 9l10 5 10-5-10-5zM6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>EĞİTMENLİK</span></li>
