@@ -38,7 +38,7 @@ if(i){f.parentNode.insertBefore(j,f);}
 <!-- ===== SEO: TITLE + DESCRIPTION (55-60 / 150-160 karakter) ===== -->
 <title>İç Dekorasyon, Mağaza Yapımı, Çatı GES ve Fabrika Otomasyonu | Öder Group</title>
 <meta name="description" content="Türkiye genelinde mağaza, fuar, teknik bakım, fabrika otomasyonu, GES/RES ve YG/OG saha işleri. Öder Group ile projenizi değerlendirin, keşif ve teklif isteyin.">
-<link rel="icon" href="favicon.png" type="image/png">
+<link rel="icon" href="favicon-64.png" type="image/png">
 <link rel="canonical" href="https://www.odergroup.com.tr/">
 <link rel="alternate" hreflang="tr" href="https://www.odergroup.com.tr/?lang=tr">
 <link rel="alternate" hreflang="en" href="https://www.odergroup.com.tr/?lang=en">
@@ -65,10 +65,8 @@ if(i){f.parentNode.insertBefore(j,f);}
 <meta property="og:url" content="https://www.odergroup.com.tr/">
 <meta property="og:image" content="https://www.odergroup.com.tr/mimari-proje-magaza-fuar-standi.jpg">
 
-<link rel="preload" as="image" type="image/webp" href="oder-group-fuar-standi.webp" fetchpriority="high">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="fonts.css?v=20261012-2">
 
 <!-- ===== AEO / SEO: YAPISAL VERİ (schema.org) =====
      Google, Gemini, ChatGPT ve Bing gibi yanıt motorları firmayı bu blokla tanır. -->
@@ -549,7 +547,7 @@ nav.menu{display:flex;gap:30px;align-items:center}
 footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:44px;padding-bottom:48px}
 .fgrid img.flogo{height:50px;margin-bottom:18px}
-.fgrid h4{color:#fff;font-family:'Archivo';font-size:.73rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px;font-weight:600}
+.fgrid .footer-title{color:#fff;font-family:'Archivo';font-size:.73rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px;font-weight:600}
 .fgrid a{display:block;padding:5px 0;font-size:.87rem}
 .fgrid a:hover{color:#fff}
 .fgrid p{font-size:.85rem;line-height:1.7}
@@ -753,7 +751,9 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   .mqtrack{animation:none}
 }
 </style>
-<link rel="stylesheet" href="mobile.css?v=20261012-1">
+<link rel="stylesheet" href="mobile.css?v=20261012-2">
+<link rel="preload" media="(max-width:640px)" as="image" href="optimized/oder-group-fuar-standi-640.webp" imagesrcset="optimized/oder-group-fuar-standi-640.webp 1x, optimized/oder-group-fuar-standi-1200.webp 2x" fetchpriority="high">
+<link rel="preload" as="image" href="optimized/oder-group-fuar-standi-1200.webp" media="(min-width:641px)" fetchpriority="high">
 </head>
 <body class="page-home">
 
@@ -762,7 +762,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
     <span>Barbaros Mah. Lale Sk. Ağaoğlu My Office No:2 İç Kapı:13 — Ataşehir / İstanbul</span>
     <span class="r"><span class="stripkurum">Ücretsiz keşif</span><a href="tel:+905345472239">+90 534 547 22 39</a><a href="mailto:info@odergroup.com.tr">info@odergroup.com.tr</a>
       <span class="langbox" id="langbox">
-        <button class="langbtn" id="langbtn" aria-label="Dil seçimi / Language">
+        <button class="langbtn" id="langbtn" aria-label="Dil seçimi / Language" aria-controls="langmenu" aria-expanded="false">
           <span class="bayrak" id="langbayrak"></span>
           <span id="langkod">TR</span>
         </button>
@@ -775,8 +775,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 <header class="nav" id="top">
   <div class="wrap">
     <a class="logo" href="/" aria-label="Öder Group ana sayfa">
-      <img src="oder-group-logo.png"
-           alt="Öder Group kurumsal logo — enerji, inşaat-mimarlık ve teknik hizmetler" width="150" height="44">
+      <img alt="Öder Group kurumsal logo — enerji, inşaat-mimarlık ve teknik hizmetler" decoding="async" height="242" src="oder-group-logo-640.webp" srcset="oder-group-logo-400.webp 400w, oder-group-logo-640.webp 640w, oder-group-logo.webp 1100w" sizes="(max-width:1080px) 200px, 280px" width="1100"/>
     </a>
     <nav class="menu" id="menu" aria-label="Ana menü">
       <span class="mi"><a href="#insaat" data-i18n="nav2">İnşaat &amp; Mimarlık</a>
@@ -812,7 +811,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
       <span class="mi"><a href="kurumsal.html" data-i18n="nav6">Kurumsal</a></span>
       <span class="mi"><a href="#iletisim" data-i18n="nav7">İletişim</a></span>
     </nav>
-    <button class="burger" id="burger" aria-label="Menüyü aç"><span></span><span></span><span></span></button>
+    <button class="burger" id="burger" aria-label="Menüyü aç" aria-controls="menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
 
@@ -821,7 +820,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
   <div class="slide on" data-i="0">
     <div class="bg" role="img" aria-label="Öder Group fuar standı — iki katlı kurumsal stand, fuar alanında ziyaretçilerle"
-         style="background-image:url('oder-group-fuar-standi.webp')"></div>
+         style="background-image:image-set(url('optimized/oder-group-fuar-standi-640.webp') 1x,url('optimized/oder-group-fuar-standi-1200.webp') 2x)"></div>
     <div class="shade"></div><div class="accentline" style="background:var(--arc)"></div>
     <div class="inner wrap">
       <span class="num" style="color:#D3A472" data-i18n="k1">01 — İNŞAAT &amp; MİMARLIK</span>
@@ -837,7 +836,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
   <div class="slide" data-i="1">
     <div class="bg" role="img" aria-label="Fabrika otomasyonu ve elektrik pano uygulaması — endüstriyel tesis"
-         style="background-image:url('fabrika-otomasyonu-scada.webp')"></div>
+         style="background-image:image-set(url('optimized/fabrika-otomasyonu-scada-640.webp') 1x,url('optimized/fabrika-otomasyonu-scada-1200.webp') 2x)"></div>
     <div class="shade"></div><div class="accentline" style="background:var(--tech)"></div>
     <div class="inner wrap">
       <span class="num" style="color:#7EB6D4" data-i18n="k2">02 — TEKNİK HİZMETLER</span>
@@ -852,7 +851,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
   <div class="slide" data-i="2">
     <div class="bg" role="img" aria-label="Çatı GES kurulumu — sanayi çatısına monte edilmiş güneş panelleri"
-         style="background-image:url('endustriyel-tesis-cati-ges.webp')"></div>
+         style="background-image:image-set(url('optimized/endustriyel-tesis-cati-ges-640.webp') 1x,url('optimized/endustriyel-tesis-cati-ges-1200.webp') 2x)"></div>
     <div class="shade"></div><div class="accentline" style="background:var(--energy)"></div>
     <div class="inner wrap">
       <span class="num" style="color:#7FC8A0" data-i18n="k3">03 — ENERJİ</span>
@@ -903,13 +902,13 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
     <div class="svc">
       <article class="scol" id="insaat">
         <div class="ph" role="img" aria-label="Mimari proje ve mağaza uygulaması görseli"
-             style="background-image:url('magaza-showroom-ic-mekan.webp')"></div>
+             style="background-image:image-set(url('optimized/magaza-showroom-ic-mekan-640.webp') 1x,url('optimized/magaza-showroom-ic-mekan-1200.webp') 2x)"></div>
         <div class="cnt">
           <span class="tag" style="color:var(--arc)">01 — İnşaat &amp; Mimarlık</span>
           <h3>İç Dekorasyon, Mağaza ve Yapı Uygulamaları</h3>
           <p class="sub">İç mekân dekorasyonundan mağaza kurulumuna; marka deneyimini mekâna çeviren tasarım, uygulama ve yenileme.</p>
           <ul>
-            <li id="dekorasyon" class="one"><a href="#iletisim">İç Dekorasyon ve Mekân Tasarımı <span>AVM · hastane · ofis</span></a></li>
+            <li id="dekorasyon"><a href="#iletisim">İç Dekorasyon ve Mekân Tasarımı <span>AVM · hastane · ofis</span></a></li>
             <li id="magaza"><a href="#iletisim">Mağaza / Showroom Kurulum ve Söküm <span>Perakende fit-out</span></a></li>
             <li id="tadilat"><a href="#iletisim">Tadilat, Restorasyon ve Restitüsyon <span>Yapı yenileme</span></a></li>
             <li id="fuar"><a href="#iletisim">Fuar Standı Tasarım ve Uygulama <span>Kurulum + söküm</span></a></li>
@@ -925,7 +924,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
       <article class="scol" id="teknik">
         <div class="ph" role="img" aria-label="Endüstriyel tesiste teknik bakım ve otomasyon uygulaması"
-             style="background-image:url('elektrik-trafo-pano-odasi.webp')"></div>
+             style="background-image:image-set(url('optimized/elektrik-trafo-pano-odasi-640.webp') 1x,url('optimized/elektrik-trafo-pano-odasi-1200.webp') 2x)"></div>
         <div class="cnt">
           <span class="tag" style="color:var(--tech)">02 — Teknik Hizmetler</span>
           <h3>Fabrika Otomasyonu, Yüksek Gerilim ve 5G Altyapısı</h3>
@@ -941,13 +940,13 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
           <a class="go" style="color:var(--tech)" href="#iletisim">Acil servis ve keşif talebi →</a>
           <div class="ph2" role="img" data-cap="PLC-SCADA modernizasyonu · üretim hattı devreye alma"
                aria-label="Fabrika otomasyonu SCADA panosu ve üretim hattı devreye alma çalışması"
-               style="background-image:url('fabrika-otomasyonu-scada.webp')"></div>
+               style="background-image:image-set(url('optimized/fabrika-otomasyonu-scada-640.webp') 1x,url('optimized/fabrika-otomasyonu-scada-1200.webp') 2x)"></div>
         </div>
       </article>
 
       <article class="scol" id="enerji">
         <div class="ph" role="img" aria-label="Çatı üzerine kurulmuş güneş enerjisi santrali panelleri"
-             style="background-image:url('cati-ges-panel-dizisi.webp')"></div>
+             style="background-image:image-set(url('optimized/cati-ges-panel-dizisi-640.webp') 1x,url('optimized/cati-ges-panel-dizisi-1200.webp') 2x)"></div>
         <div class="cnt">
           <span class="tag" style="color:var(--energy)">03 — Enerji</span>
           <h3>Çatı GES ve Enerji Danışmanlığı</h3>
@@ -982,7 +981,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
           <a class="btn-supply" href="https://oderenerji.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16l2 10H2L4 4zM12 16v4M8 20h8"/></svg>Solar Ekipman Tedarik Merkezi</a>
           <div class="ph2" role="img" data-cap="Termal kamera ile enerji verimliliği etüdü"
                aria-label="Enerji verimliliği etüdü — termal kamera ile pano ve tesisat kontrolü"
-               style="background-image:url('enerji-verimliligi-termal-kontrol.webp')"></div>
+               style="background-image:image-set(url('optimized/enerji-verimliligi-termal-kontrol-640.webp') 1x,url('optimized/enerji-verimliligi-termal-kontrol-1200.webp') 2x)"></div>
         </div>
       </article>
     </div>
@@ -1000,7 +999,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
       <!-- IC DEKORASYON (ONE CIKAN) -->
       <article class="ic">
-        <img class="art" src="ic-dekorasyon-bakim-onarim.webp" alt="İç dekorasyon uygulaması — hastane ve iş merkezi koridorunda tavan, aydınlatma ve duvar paneli işleri" loading="lazy" width="1600" height="900">
+        <img alt="İç dekorasyon uygulaması — hastane ve iş merkezi koridorunda tavan, aydınlatma ve duvar paneli işleri" class="art" decoding="async" height="900" loading="lazy" sizes="(max-width:640px) calc(100vw - 32px), (max-width:900px) 50vw, 600px" src="optimized/ic-dekorasyon-bakim-onarim-1200.webp" srcset="optimized/ic-dekorasyon-bakim-onarim-640.webp 640w, optimized/ic-dekorasyon-bakim-onarim-1200.webp 1200w" width="1600"/>
         <div class="txt">
           <span class="k" style="color:var(--arc)">İç Dekorasyon</span>
           <h3>Mekânı markaya çeviren iç tasarım</h3>
@@ -1011,7 +1010,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
       <!-- KONUT & VILLA -->
       <article class="ic">
-        <img class="art" src="villa-teslim-gece.webp" alt="Anahtar teslim villa projesi — akşam saatlerinde havuzlu villa ve mimari aydınlatma" loading="lazy" width="1600" height="900">
+        <img alt="Anahtar teslim villa projesi — akşam saatlerinde havuzlu villa ve mimari aydınlatma" class="art" decoding="async" height="900" loading="lazy" sizes="(max-width:640px) calc(100vw - 32px), (max-width:900px) 50vw, 600px" src="optimized/villa-teslim-gece-1200.webp" srcset="optimized/villa-teslim-gece-640.webp 640w, optimized/villa-teslim-gece-1200.webp 1200w" width="1600"/>
         <div class="txt">
           <span class="k" style="color:var(--arc)">Konut &amp; Villa</span>
           <h3>Tasarımdan anahtar teslime</h3>
@@ -1022,7 +1021,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
       <!-- KENTSEL DÖNÜŞÜM -->
       <article class="ic">
-        <img class="art" src="kentsel-donusum-yikim-yenileme.webp" alt="Kentsel dönüşüm — riskli yapının yıkımı ve yanında yükselen yeni betonarme bina" loading="lazy" width="1600" height="900">
+        <img alt="Kentsel dönüşüm — riskli yapının yıkımı ve yanında yükselen yeni betonarme bina" class="art" decoding="async" height="900" loading="lazy" sizes="(max-width:640px) calc(100vw - 32px), (max-width:900px) 50vw, 600px" src="optimized/kentsel-donusum-yikim-yenileme-1200.webp" srcset="optimized/kentsel-donusum-yikim-yenileme-640.webp 640w, optimized/kentsel-donusum-yikim-yenileme-1200.webp 1200w" width="1600"/>
         <div class="txt">
           <span class="k" style="color:var(--arc)">Kentsel Dönüşüm</span>
           <h3>Riskli yapıdan güvenli binaya</h3>
@@ -1033,7 +1032,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
       <!-- TINY HOUSE / PREFABRİK -->
       <article class="ic">
-        <img class="art" src="tiny-house-imalat.webp" alt="Tiny house imalatı — ahşap cephe kaplaması yapılan modüler yapı" loading="lazy" width="1600" height="900">
+        <img alt="Tiny house imalatı — ahşap cephe kaplaması yapılan modüler yapı" class="art" decoding="async" height="900" loading="lazy" sizes="(max-width:640px) calc(100vw - 32px), (max-width:900px) 50vw, 600px" src="optimized/tiny-house-imalat-1200.webp" srcset="optimized/tiny-house-imalat-640.webp 640w, optimized/tiny-house-imalat-1200.webp 1200w" width="1600"/>
         <div class="txt">
           <span class="k" style="color:var(--arc)">Tiny House &amp; Prefabrik</span>
           <h3>Fabrikada üretim, sahada montaj</h3>
@@ -1044,7 +1043,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
       <!-- FUAR STANDI -->
       <article class="ic">
-        <img class="art" src="fuar-standi-kurulumu-istanbul.webp" alt="Fuar standı kurulumu — fuar alanında truss taşıyıcı sistem ve panel montajı" loading="lazy" width="1600" height="900">
+        <img alt="Fuar standı kurulumu — fuar alanında truss taşıyıcı sistem ve panel montajı" class="art" decoding="async" height="900" loading="lazy" sizes="(max-width:640px) calc(100vw - 32px), (max-width:900px) 50vw, 600px" src="optimized/fuar-standi-kurulumu-istanbul-1200.webp" srcset="optimized/fuar-standi-kurulumu-istanbul-640.webp 640w, optimized/fuar-standi-kurulumu-istanbul-1200.webp 1200w" width="1600"/>
         <div class="txt">
           <span class="k" style="color:var(--arc)">Fuar Standı</span>
           <h3>Tasarım, imalat, kurulum ve söküm</h3>
@@ -1055,7 +1054,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
       <!-- MAĞAZA / SHOWROOM -->
       <article class="ic">
-        <img class="art" src="magaza-kurulum-montaj.webp" alt="Mağaza kurulum ve montaj çalışması — AVM içinde gece vardiyası duvar paneli uygulaması" loading="lazy" width="1600" height="900">
+        <img alt="Mağaza kurulum ve montaj çalışması — AVM içinde gece vardiyası duvar paneli uygulaması" class="art" decoding="async" height="900" loading="lazy" sizes="(max-width:640px) calc(100vw - 32px), (max-width:900px) 50vw, 600px" src="optimized/magaza-kurulum-montaj-1200.webp" srcset="optimized/magaza-kurulum-montaj-640.webp 640w, optimized/magaza-kurulum-montaj-1200.webp 1200w" width="1600"/>
         <div class="txt">
           <span class="k" style="color:var(--arc)">Mağaza &amp; Showroom</span>
           <h3>Anahtar teslim perakende uygulaması</h3>
@@ -1066,7 +1065,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
       <!-- TADİLAT / RESTORASYON -->
       <article class="ic">
-        <img class="art" src="tadilat-restorasyon-tarihi-yapi.webp" alt="Tarihi yapı cephe restorasyonu — iskele üzerinde taş detay onarımı" loading="lazy" width="1600" height="900">
+        <img alt="Tarihi yapı cephe restorasyonu — iskele üzerinde taş detay onarımı" class="art" decoding="async" height="900" loading="lazy" sizes="(max-width:640px) calc(100vw - 32px), (max-width:900px) 50vw, 600px" src="optimized/tadilat-restorasyon-tarihi-yapi-1200.webp" srcset="optimized/tadilat-restorasyon-tarihi-yapi-640.webp 640w, optimized/tadilat-restorasyon-tarihi-yapi-1200.webp 1200w" width="1600"/>
         <div class="txt">
           <span class="k" style="color:var(--arc)">Tadilat &amp; Restorasyon</span>
           <h3>Yapıyı aslına uygun yenileme</h3>
@@ -1077,7 +1076,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
       <!-- ÇATI GES -->
       <article class="ic">
-        <img class="art" src="cati-ges-panel-dizisi.webp" alt="Çatı GES — sanayi çatısına kurulmuş güneş enerjisi panel dizileri, havadan görünüm" loading="lazy" width="1600" height="900">
+        <img alt="Çatı GES — sanayi çatısına kurulmuş güneş enerjisi panel dizileri, havadan görünüm" class="art" decoding="async" height="900" loading="lazy" sizes="(max-width:640px) calc(100vw - 32px), (max-width:900px) 50vw, 600px" src="optimized/cati-ges-panel-dizisi-1200.webp" srcset="optimized/cati-ges-panel-dizisi-640.webp 640w, optimized/cati-ges-panel-dizisi-1200.webp 1200w" width="1600"/>
         <div class="txt">
           <span class="k" style="color:var(--energy)">Çatı GES</span>
           <h3>Fizibiliteden devreye almaya</h3>
@@ -1088,7 +1087,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
       <!-- FABRİKA OTOMASYONU -->
       <article class="ic">
-        <img class="art" src="fabrika-otomasyonu-scada.webp" alt="Fabrika otomasyonu — SCADA kontrol ekranlarında üretim hattı izleme" loading="lazy" width="1600" height="900">
+        <img alt="Fabrika otomasyonu — SCADA kontrol ekranlarında üretim hattı izleme" class="art" decoding="async" height="900" loading="lazy" sizes="(max-width:640px) calc(100vw - 32px), (max-width:900px) 50vw, 600px" src="optimized/fabrika-otomasyonu-scada-1200.webp" srcset="optimized/fabrika-otomasyonu-scada-640.webp 640w, optimized/fabrika-otomasyonu-scada-1200.webp 1200w" width="1600"/>
         <div class="txt">
           <span class="k" style="color:var(--tech)">Fabrika Otomasyonu</span>
           <h3>PLC, SCADA ve hat modernizasyonu</h3>
@@ -1099,7 +1098,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 
       <!-- TRAFO / PANO / BAKIM -->
       <article class="ic">
-        <img class="art" src="enerji-verimliligi-termal-kontrol.webp" alt="Koruyucu bakım — elektrik panosunda termal kamera ile ısıl kontrol" loading="lazy" width="1600" height="900">
+        <img alt="Koruyucu bakım — elektrik panosunda termal kamera ile ısıl kontrol" class="art" decoding="async" height="900" loading="lazy" sizes="(max-width:640px) calc(100vw - 32px), (max-width:900px) 50vw, 600px" src="optimized/enerji-verimliligi-termal-kontrol-1200.webp" srcset="optimized/enerji-verimliligi-termal-kontrol-640.webp 640w, optimized/enerji-verimliligi-termal-kontrol-1200.webp 1200w" width="1600"/>
         <div class="txt">
           <span class="k" style="color:var(--tech)">Elektrik &amp; Koruyucu Bakım</span>
           <h3>Trafo, pano ve periyodik işletme</h3>
@@ -1226,8 +1225,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 <!-- ===== KURUMSAL ===== -->
 <section class="rv" id="kurumsal" style="background:#fff">
   <div class="wrap" style="display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center">
-    <img src="ic-dekorasyon-bakim-onarim.webp"
-         alt="Öder Group teknik ekibi — iç mekân bakım ve teknik kontrol çalışması" style="height:440px;width:100%;object-fit:cover;filter:grayscale(.08) saturate(1.05)" width="1600" height="900">
+    <img alt="Öder Group teknik ekibi — iç mekân bakım ve teknik kontrol çalışması" decoding="async" height="900" sizes="(max-width:640px) calc(100vw - 32px), (max-width:900px) 50vw, 600px" src="optimized/ic-dekorasyon-bakim-onarim-1200.webp" srcset="optimized/ic-dekorasyon-bakim-onarim-640.webp 640w, optimized/ic-dekorasyon-bakim-onarim-1200.webp 1200w" style="height:440px;width:100%;object-fit:cover;filter:grayscale(.08) saturate(1.05)" width="1600"/>
     <div>
       <span class="eyebrow">Kurumsal</span>
       <h2 class="sec">Disiplinli mühendislik, şeffaf süreç</h2>
@@ -1296,11 +1294,11 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   <div class="wrap">
     <div class="fgrid">
       <div class="footer-brand">
-        <img class="flogo" src="oder-group-logo.png" alt="Öder Group logo" width="1100" height="242">
+        <img alt="Öder Group logo" class="flogo" decoding="async" height="242" loading="lazy" src="oder-group-logo-640.webp" srcset="oder-group-logo-400.webp 400w, oder-group-logo-640.webp 640w, oder-group-logo.webp 1100w" sizes="(max-width:1080px) 200px, 280px" width="1100"/>
         <p>ÖDER GROUP ENERJİ ELEKTRİK MEKANİK TEKNİK HİZMETLER SANAYİ VE TİCARET LİMİTED ŞİRKETİ</p>
         <div class="kunye">
           <div class="ust">
-            <span class="ay" aria-label="Türkiye"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#E30A17"/><circle cx="11.5" cy="10" r="5" fill="#fff"/><circle cx="13.2" cy="10" r="4" fill="#E30A17"/><path fill="#fff" d="M18.4 6.6l.9 2.6 2.7-.1-2.2 1.6.8 2.6-2.2-1.6-2.2 1.6.8-2.6-2.2-1.6 2.7.1z"/></svg></span>
+            <span class="ay" role="img" aria-label="Türkiye"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#E30A17"/><circle cx="11.5" cy="10" r="5" fill="#fff"/><circle cx="13.2" cy="10" r="4" fill="#E30A17"/><path fill="#fff" d="M18.4 6.6l.9 2.6 2.7-.1-2.2 1.6.8 2.6-2.2-1.6-2.2 1.6.8-2.6-2.2-1.6 2.7.1z"/></svg></span>
             <b>Türkiye Merkezli Mühendislik</b>
           </div>
           <dl>
@@ -1312,7 +1310,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
         </div>
       </div>
       <div>
-        <h4>İnşaat &amp; Mimarlık</h4>
+        <h3 class="footer-title">İnşaat &amp; Mimarlık</h3>
         <a href="ic-dekorasyon.html">İç Dekorasyon ve Mekân Tasarımı</a>
         <a href="magaza-showroom.html">Mağaza Kurulum ve Söküm</a>
         <a href="tadilat-restorasyon.html">Tadilat ve Restorasyon</a>
@@ -1324,7 +1322,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
         <a href="#peyzaj">Peyzaj</a>
       </div>
       <div>
-        <h4>Teknik Hizmetler</h4>
+        <h3 class="footer-title">Teknik Hizmetler</h3>
         <a href="fabrika-otomasyonu.html">Fabrika Otomasyonu</a>
         <a href="elektrik-bakim.html">Elektrik, Trafo ve Pano</a>
         <a href="teknik-hizmetler-tesis-yonetimi.html">Koruyucu Bakım ve Tesis Yönetimi</a>
@@ -1333,7 +1331,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
         <a href="#musavirlik">Müşavirlik</a>
       </div>
       <div>
-        <h4>Enerji &amp; İletişim</h4>
+        <h3 class="footer-title">Enerji &amp; İletişim</h3>
         <a href="cati-ges.html">Çatı GES</a>
         <a href="#sarj">EV Şarj İstasyonu</a>
         <a href="enerji-verimliligi-danismanligi.html">Enerji Verimliliği (EVD)</a>
@@ -1362,7 +1360,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.5 15.6V8.4L15.8 12z"/></svg>YouTube</a>
         <a href="https://wa.me/905345472239" target="_blank" rel="noopener" aria-label="WhatsApp iletişim hattı">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1a14 14 0 0 1-6.4-5.6c-.5-.8-.8-1.7-.8-2.5 0-.8.4-1.5.9-1.9.2-.2.4-.2.6-.2h.4c.2 0 .4 0 .6.4l.8 1.9c.1.2 0 .4-.1.5l-.4.5c-.1.1-.2.3-.1.5a8.6 8.6 0 0 0 3.6 3.2c.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.5-.1l1.8.9c.2.1.4.2.4.3s0 .7-.1 1.2z"/></svg>WhatsApp</a>
-        <a href="https://oderenerji.com" target="_blank" rel="noopener" aria-label="Solar ekipman tedarik merkezi">
+        <a href="https://oderenerji.com" target="_blank" rel="noopener" aria-label="Solar Tedarik — ekipman tedarik merkezi">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 4h16l2 10H2L4 4zM12 16v4M8 20h8"/></svg>Solar Tedarik</a>
       </div>
     </div>
@@ -1564,11 +1562,12 @@ function show(i){
   if(dots[cur]) dots[cur].classList.remove('on');
   cur=i;
   slides[cur].classList.add('on');
+  slides.forEach((slide,index)=>{slide.inert=index!==cur;slide.setAttribute('aria-hidden',String(index!==cur));});
   const t=tabs[cur]; t.classList.add('on');
   if(dots[cur]) dots[cur].classList.add('on');
   if(countBox) countBox.innerHTML=`<b>${String(cur+1).padStart(2,'0')}</b> / ${String(slides.length).padStart(2,'0')}`;
   const b=t.querySelector('.prog'); if(b){b.style.animation='none';void b.offsetWidth;b.style.animation='';}
-  clearInterval(timer); timer=setInterval(()=>show(cur+1),SURE);
+  clearInterval(timer); if(!window.matchMedia('(prefers-reduced-motion:reduce)').matches) timer=setInterval(()=>show(cur+1),SURE);
 }
 show(0);
 tabs.forEach(t=>t.addEventListener('click',e=>{e.stopPropagation();show(+t.dataset.go)}));
@@ -1593,11 +1592,11 @@ hero?.addEventListener('touchend',e=>{
 },{passive:true});
 /* fare üzerindeyken durdur */
 hero?.addEventListener('mouseenter',()=>clearInterval(timer));
-hero?.addEventListener('mouseleave',()=>{clearInterval(timer);timer=setInterval(()=>show(cur+1),SURE)});
+hero?.addEventListener('mouseleave',()=>{clearInterval(timer);if(!window.matchMedia('(prefers-reduced-motion:reduce)').matches)timer=setInterval(()=>show(cur+1),SURE)});
 
 const burger=document.getElementById('burger'),menu=document.getElementById('menu');
-burger.addEventListener('click',()=>menu.classList.toggle('open'));
-menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+burger.addEventListener('click',()=>{const open=menu.classList.toggle('open');burger.setAttribute('aria-expanded',String(open));burger.setAttribute('aria-label',open?'Menüyü kapat':'Menüyü aç');});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');burger.setAttribute('aria-expanded','false');}));
 
 document.querySelectorAll('.fq button').forEach(b=>b.addEventListener('click',()=>b.parentElement.classList.toggle('open')));
 
@@ -1656,7 +1655,9 @@ const WIKI=f=>'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURICo
 const FAV2=d=>'https://www.google.com/s2/favicons?domain='+d+'&sz=256';
 /* 'loc:dosya' -> depodaki yerel logo (logolar/ klasoru); marka resmi logosunun
    dis kaynakta bulunamadigi, kullanici tarafindan saglanan dosyalar icin */
+const LOCAL_LOGOS={"Akbank_logo.svg": "logolar/cache/3fe682b92b77c9d0.png", "Anadolu Medical Center logo.svg": "logolar/cache/b88ad687b71465a4.png", "CBRE_Group_logo.svg": "logolar/cache/aaaaf725941e5ea6.png", "Caffè_Nero_Logo.svg": "logolar/cache/cc2b070f25230031.png", "Cisco_logo_blue_2016.svg": "logolar/cache/6130e83a004ea205.png", "DeFacto_logo.svg": "logolar/cache/42f362ead0d9ceb4.png", "Derimod_logo.png": "logolar/cache/24064834e09c372d.png", "General_Electric_logo.svg": "logolar/cache/b779df69f0717d2e.png", "Google_2015_logo.svg": "logolar/cache/a74916ca55270992.png", "IBM_logo.svg": "logolar/cache/5567d7b9d97bd9c5.png", "International_Finance_Corporation_logo.svg": "logolar/cache/6a193565ff7b95db.png", "Intersport_logo.svg": "logolar/cache/25211f7669e350c8.png", "Jack_&_Jones_logo.svg": "logolar/cache/0a4511f701cf627b.png", "LC_Waikiki_logo.svg": "logolar/cache/2c8c9c6bd6860c1f.png", "Logo_NIKE.svg": "logolar/cache/f661f0e2a0ca2034.png", "Media_Markt_logo.svg": "logolar/cache/d662cff4bcf9608f.png", "Medical_Park_logo.svg": "logolar/cache/d13ecb2a6e946633.png", "Morgan Stanley Logo 2024.svg": "logolar/cache/227b06358b32d918.png", "Novartis-Logo.svg": "logolar/cache/c9a0b7f6990a2bfc.png", "Puma-logo-(text).svg": "logolar/cache/cc2ef5cff454a1da.png", "Sisecam-Logo-2022.jpg": "logolar/cache/c0b150a07a66f969.png", "Türkiye_finans.png": "logolar/cache/7b9001cf013f839c.png", "Ucb_Logo.svg": "logolar/cache/78648f460f7d9b96.png", "United_Parcel_Service_logo_2014.svg": "logolar/cache/f29338a7a253e03e.png", "fav:bornova.bel.tr": "logolar/cache/8b25571c0914a8fa.png", "fav:buski.gov.tr": "logolar/cache/d854ef9637bfcdd1.png", "fav:cariboucoffee.com": "logolar/cache/514899f115371eb9.png", "fav:eosb.org.tr": "logolar/cache/ac43d75804237990.png", "fav:karaman.bel.tr": "logolar/cache/0e78a5be7d2a945d.png", "fav:koctas.com.tr": "logolar/cache/c966fa97bdfe10fe.png", "fav:macfit.com.tr": "logolar/cache/499c1e6254951391.png", "fav:pasabahce.com": "logolar/cache/2ca8b4ead68afc75.png", "fav:richmondint.com": "logolar/cache/2bcf97971326c553.png", "fav:veromoda.com": "logolar/cache/606fbd4bd871fc6a.png"};
 const LOGO=v=>{
+  if(LOCAL_LOGOS[v]) return LOCAL_LOGOS[v];
   if(typeof v==='string'){
     if(v.slice(0,4)==='fav:') return FAV2(v.slice(4));
     if(v.slice(0,4)==='loc:') return 'logolar/'+v.slice(4);
@@ -1669,8 +1670,7 @@ if(tr){
   const html=markalar.map(([ad,dom,wiki])=>{
     const mo=monogram(ad);
     const g = wiki
-      ? `<img loading="lazy" width="120" height="28" src="${LOGO(wiki)}" alt="${ad} logosu"
-           onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'mqmono',textContent:'${mo}'}))">`
+      ? `<img alt="${ad} logosu" decoding="async" height="28" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'mqmono',textContent:'${mo}'}))" src="${LOGO(wiki)}" width="120"/>`
       : `<span class="mqmono">${mo}</span>`;
     return `<span class="mq-item">${g}<b>${ad}</b></span>`;
   }).join('');
@@ -1754,8 +1754,7 @@ function markaKarti(sinif){
   return function([ad,wiki,etiket]){
     const mo=monogram(ad);
     const gorsel = wiki
-      ? `<img loading="lazy" width="120" height="28" src="${LOGO(wiki)}" alt="${ad} logosu"
-           onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'mono',textContent:'${mo}'}))">`
+      ? `<img alt="${ad} logosu" decoding="async" height="28" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'mono',textContent:'${mo}'}))" src="${LOGO(wiki)}" width="120"/>`
       : `<span class="mono">${mo}</span>`;
     return `<div class="bl ${sinif}"><span class="lg">${gorsel}</span><b>${ad}</b><small>${etiket}</small></div>`;
   };
@@ -1858,5 +1857,6 @@ so.observe(document.querySelector('.stats'));
 
 </script>
 <script src="lead-form.js" defer></script>
+<script src="site-ui.js?v=20261012-2" defer></script>
 </body>
 </html>

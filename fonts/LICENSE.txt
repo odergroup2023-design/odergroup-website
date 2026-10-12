@@ -1,0 +1,10 @@
+Archivo / Inter — Google Fonts üzerinden alınan orijinal fontlar.
+Kaynak CSS: https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap
+
+Copyright 2020 The Archivo Project Authors (https://github.com/Omnibus-Type/Archivo)
+
+http://scripts.sil.org/OFL
+
+Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)
+
+https://openfontlicense.org
