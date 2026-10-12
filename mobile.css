@@ -22,6 +22,11 @@
   .page-home .fkurumsal b { font-size:.75rem; line-height:1.5; letter-spacing:.08em; }
   .page-home .langbtn,.page-home .burger { min-width:44px; min-height:44px; }
   .page-home .hnav { min-width:44px; min-height:44px; }
+  /* Orijinal logo: genişlik ve yükseklik bağımsız zorlanmaz, oran korunur. */
+  .page-home .footer-brand img.flogo { display:block; width:min(280px,100%);
+    height:auto; object-fit:contain; margin:0 auto 20px; }
+  .page-home .footer-brand>p { max-width:34ch; margin:0 auto;
+    text-align:center; font-size:.8125rem; line-height:1.7; letter-spacing:0; }
   .page-home .blmore { min-height:44px; padding:10px 0; font-size:.8125rem; }
   .page-home .fsoc a { min-width:48px; min-height:48px; }
   .page-home .burger { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; }
