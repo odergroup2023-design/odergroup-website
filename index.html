@@ -37,7 +37,7 @@ if(i){f.parentNode.insertBefore(j,f);}
 
 <!-- ===== SEO: TITLE + DESCRIPTION (55-60 / 150-160 karakter) ===== -->
 <title>İç Dekorasyon, Mağaza Yapımı, Çatı GES ve Fabrika Otomasyonu | Öder Group</title>
-<meta name="description" content="Öder Group; iç dekorasyon, konut-villa ve kentsel dönüşüm, mağaza yapımı, fuar standı, tadilat-restorasyon, çatı GES ve fabrika otomasyonunda anahtar teslim çözüm sunar. İstanbul.">
+<meta name="description" content="Türkiye genelinde mağaza, fuar, teknik bakım, fabrika otomasyonu, GES/RES ve YG/OG saha işleri. Öder Group ile projenizi değerlendirin, keşif ve teklif isteyin.">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="canonical" href="https://www.odergroup.com.tr/">
 <link rel="alternate" hreflang="tr" href="https://www.odergroup.com.tr/?lang=tr">
@@ -53,18 +53,19 @@ if(i){f.parentNode.insertBefore(j,f);}
 <meta name="format-detection" content="telephone=yes">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Öder Group | Fuar Standı, Mağaza Yapımı, Çatı GES, Fabrika Otomasyonu">
-<meta name="twitter:description" content="Mimari uygulama, teknik hizmetler ve enerji altyapısında anahtar teslim mühendislik. İstanbul.">
-<meta name="twitter:image" content="https://www.odergroup.com.tr/mimari-proje-magaza-fuar-standi.webp">
+<meta name="twitter:description" content="Türkiye genelinde mimari uygulama, teknik bakım, otomasyon ve enerji altyapısı için keşif ve teklif talep edin.">
+<meta name="twitter:image" content="https://www.odergroup.com.tr/mimari-proje-magaza-fuar-standi.jpg">
 
 <!-- ===== Open Graph / sosyal paylaşım ===== -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="tr_TR">
 <meta property="og:site_name" content="Öder Group">
 <meta property="og:title" content="Fuar Standı, Mağaza Yapımı, Çatı GES ve Fabrika Otomasyonu | Öder Group">
-<meta property="og:description" content="Mimari uygulama, teknik hizmetler ve enerji altyapısında anahtar teslim mühendislik. İstanbul.">
+<meta property="og:description" content="Türkiye genelinde mimari uygulama, teknik bakım, otomasyon ve enerji altyapısı için keşif ve teklif talep edin.">
 <meta property="og:url" content="https://www.odergroup.com.tr/">
-<meta property="og:image" content="https://www.odergroup.com.tr/mimari-proje-magaza-fuar-standi.webp">
+<meta property="og:image" content="https://www.odergroup.com.tr/mimari-proje-magaza-fuar-standi.jpg">
 
+<link rel="preload" as="image" type="image/webp" href="oder-group-fuar-standi.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -1824,13 +1825,7 @@ so.observe(document.querySelector('.stats'));
       dl('teklif_cta_tiklama', {metin: (a.innerText||'').trim().slice(0,40)});
   }, true);
 
-  /* form gönderimi — asıl dönüşüm */
-  var f = document.querySelector('form.form');
-  if (f) f.addEventListener('submit', function(){
-    var k = f.querySelector('[name=konu]');
-    dl('teklif_formu_gonderildi', {konu: k ? k.value : '-'});
-  });
-
+  /* Gönderim onayı lead-form.js içinde sağlayıcı yanıtından sonra ölçülür. */
   /* okuma derinliği — içeriğin ilgi çekip çekmediğini ölçer */
   var esikler = [25,50,75,100], gecilen = {};
   window.addEventListener('scroll', function(){
@@ -1849,5 +1844,6 @@ so.observe(document.querySelector('.stats'));
 })();
 
 </script>
+<script src="lead-form.js" defer></script>
 </body>
 </html>
