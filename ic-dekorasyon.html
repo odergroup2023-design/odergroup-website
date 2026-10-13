@@ -331,11 +331,13 @@ addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;
    Her olay dataLayer'a gönderilir; GTM'de tetikleyici olarak kullanılır.
    GA4 + Google Ads + Meta Pixel aynı olayı dinler. */
 (function(){
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
   var dl = function(ad, ek){
-    window.dataLayer = window.dataLayer || [];
     var o = {event: ad, sayfa: location.pathname};
     if (ek) for (var k in ek) o[k] = ek[k];
     window.dataLayer.push(o);
+    window.gtag('event', ad, Object.assign({sayfa: location.pathname}, ek || {}));
   };
 
   document.addEventListener('click', function(e){

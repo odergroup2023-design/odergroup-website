@@ -44,6 +44,7 @@
         throw new Error('Sağlayıcı gönderimi onaylamadı');
       }
       window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
       window.dataLayer.push({
         event: 'generate_lead',
         legacy_event: 'teklif_formu_gonderildi',
@@ -54,6 +55,7 @@
         method: 'formsubmit_ajax',
         onay_kaynagi: 'formsubmit_api'
       });
+      window.gtag('event', 'generate_lead', {form_name:'kesif_teklif_formu', lead_type:'kesif_teklif', konu:payload.konu || 'Genel teklif', method:'formsubmit_ajax'});
       status.textContent = 'Form hizmeti talebinizi kabul etti. Teşekkür sayfasına yönlendiriliyorsunuz.';
       window.setTimeout(function () {
         window.location.assign('tesekkurler.html');
@@ -63,6 +65,8 @@
       status.textContent = 'Gönderim onayı alınamadı. Bilgileriniz bu formda duruyor. Yeniden deneyebilir veya +90 534 547 22 39 numarasından telefon/WhatsApp ile ulaşabilirsiniz.';
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: 'form_error', legacy_event: 'teklif_formu_hata', sayfa: window.location.pathname, form_name: 'kesif_teklif_formu' });
+      window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+      window.gtag('event', 'form_error', {form_name:'kesif_teklif_formu'});
       busy = false;
       button.disabled = false;
       button.textContent = originalText;
