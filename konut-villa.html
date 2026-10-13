@@ -270,6 +270,7 @@ footer a:hover{color:#fff}
 <div class="mobcta">
   <a class="c1" href="tel:+905345472239">Hemen Ara</a>
   <a class="c2" href="https://wa.me/905345472239" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="c3" href="index.html#iletisim" aria-label="Teklif al">✦ <span>Teklif Al</span></a>
 </div>
 
 <div class="lb" id="lb">
@@ -336,10 +337,10 @@ addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;
     var h = a.getAttribute('href') || '';
 
     if (h.indexOf('tel:') === 0)
-      dl('telefon_tiklama', {numara: h.replace('tel:','')});
+      dl('phone_click', {legacy_event:'telefon_tiklama'});
 
     else if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1)
-      dl('whatsapp_tiklama', {konum: a.closest('.mobcta') ? 'mobil_alt_cta' : 'sayfa_ici'});
+      dl('whatsapp_click', {legacy_event:'whatsapp_tiklama',konum: a.closest('.mobcta') ? 'mobil_alt_cta' : 'sayfa_ici'});
 
     else if (h.indexOf('mailto:') === 0)
       dl('eposta_tiklama');
@@ -347,8 +348,8 @@ addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;
     else if (h.indexOf('oderenerji.com') > -1)
       dl('magaza_yonlendirme');
 
-    else if (a.classList.contains('go') || a.classList.contains('btn-solid'))
-      dl('teklif_cta_tiklama', {metin: (a.innerText||'').trim().slice(0,40)});
+    else if (a.classList.contains('go') || a.classList.contains('btn-solid') || a.classList.contains('c3') || h.indexOf('#iletisim') > -1)
+      dl('quote_cta_click', {legacy_event:'teklif_cta_tiklama',metin: (a.innerText||'').trim().slice(0,40)});
   }, true);
 
   /* form gönderimi — asıl dönüşüm */

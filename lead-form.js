@@ -45,9 +45,13 @@
       }
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
-        event: 'teklif_formu_gonderildi',
+        event: 'generate_lead',
+        legacy_event: 'teklif_formu_gonderildi',
         sayfa: window.location.pathname,
+        form_name: 'kesif_teklif_formu',
+        lead_type: 'kesif_teklif',
         konu: payload.konu || 'Genel teklif',
+        method: 'formsubmit_ajax',
         onay_kaynagi: 'formsubmit_api'
       });
       status.textContent = 'Form hizmeti talebinizi kabul etti. Teşekkür sayfasına yönlendiriliyorsunuz.';
@@ -58,7 +62,7 @@
       status.setAttribute('role', 'alert');
       status.textContent = 'Gönderim onayı alınamadı. Bilgileriniz bu formda duruyor. Yeniden deneyebilir veya +90 534 547 22 39 numarasından telefon/WhatsApp ile ulaşabilirsiniz.';
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: 'teklif_formu_hata', sayfa: window.location.pathname });
+      window.dataLayer.push({ event: 'form_error', legacy_event: 'teklif_formu_hata', sayfa: window.location.pathname, form_name: 'kesif_teklif_formu' });
       busy = false;
       button.disabled = false;
       button.textContent = originalText;

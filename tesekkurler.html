@@ -115,10 +115,10 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:34px 0;font-weight:300;font
     var h = a.getAttribute('href') || '';
 
     if (h.indexOf('tel:') === 0)
-      dl('telefon_tiklama', {numara: h.replace('tel:','')});
+      dl('phone_click', {legacy_event:'telefon_tiklama'});
 
     else if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1)
-      dl('whatsapp_tiklama', {konum: a.closest('.mobcta') ? 'mobil_alt_cta' : 'sayfa_ici'});
+      dl('whatsapp_click', {legacy_event:'whatsapp_tiklama',konum: a.closest('.mobcta') ? 'mobil_alt_cta' : 'sayfa_ici'});
 
     else if (h.indexOf('mailto:') === 0)
       dl('eposta_tiklama');
@@ -126,8 +126,8 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:34px 0;font-weight:300;font
     else if (h.indexOf('oderenerji.com') > -1)
       dl('magaza_yonlendirme');
 
-    else if (a.classList.contains('go') || a.classList.contains('btn-solid'))
-      dl('teklif_cta_tiklama', {metin: (a.innerText||'').trim().slice(0,40)});
+    else if (a.classList.contains('go') || a.classList.contains('btn-solid') || a.classList.contains('c3') || h.indexOf('#iletisim') > -1)
+      dl('quote_cta_click', {legacy_event:'teklif_cta_tiklama',metin: (a.innerText||'').trim().slice(0,40)});
   }, true);
 
   /* form gönderimi — asıl dönüşüm */
