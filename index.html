@@ -1205,6 +1205,22 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   </div>
 </section>
 
+
+<section class="case-notes rv" aria-labelledby="case-notes-title">
+  <div class="wrap">
+    <span class="eyebrow">Proje notları</span>
+    <h2 class="sec" id="case-notes-title">Sahadan beş uygulama senaryosu</h2>
+    <p class="lead">Aşağıdaki vaka sayfaları ilk içerik taslaklarıdır. Gerçek proje detayları, fotoğraflar ve ölçülebilir sonuçlar doğrulandıkça güncellenecektir.</p>
+    <div class="case-grid">
+      <a href="vaka-istanbul-magaza-donusumu.html"><b>İstanbul mağaza dönüşümü</b><span>Etaplı uygulama ve teslim</span></a>
+      <a href="vaka-fuar-standi-kurulumu.html"><b>Fuar standı kurulumu</b><span>Tasarım, üretim ve montaj</span></a>
+      <a href="vaka-cati-ges-fizibilitesi.html"><b>Çatı GES fizibilitesi</b><span>Keşif ve üretim öngörüsü</span></a>
+      <a href="vaka-fabrika-otomasyonu.html"><b>Fabrika otomasyonu</b><span>Etaplı modernizasyon</span></a>
+      <a href="vaka-teknik-tesis-bakim.html"><b>Teknik tesis bakımı</b><span>Planlı bakım ve tek muhatap</span></a>
+    </div>
+  </div>
+</section>
+
 <!-- ===== CTA + FORM ===== -->
 <div class="cta rv" id="iletisim">
   <div class="wrap">
@@ -1360,6 +1376,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6.6 3h3l1.5 4-2 1.4a12 12 0 0 0 5.5 5.5l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.6 5.2 2 2 0 0 1 6.6 3z"/></svg><span data-i18n="ara">Hemen Ara</span></a>
   <a class="c2" href="https://wa.me/905345472239" target="_blank" rel="noopener" aria-label="WhatsApp ile yaz">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.94.53 3.75 1.45 5.3L2 22l5-1.3a9.8 9.8 0 0 0 5.04 1.38h.01c5.43 0 9.84-4.4 9.84-9.84C21.89 6.4 17.47 2 12.04 2zm5.75 14.03c-.24.68-1.4 1.3-1.93 1.35-.53.05-1.02.24-3.47-.72-2.96-1.17-4.82-4.24-4.97-4.44-.14-.2-1.17-1.56-1.17-2.97 0-1.42.73-2.11 1-2.4.26-.3.57-.37.77-.37h.55c.17 0 .41-.07.63.48.24.58.8 1.99.87 2.13.07.15.12.32.02.51-.1.2-.2.32-.34.5-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.75 1.23 1.6 2 1.1.98 2.02 1.28 2.32 1.43.29.15.46.12.63-.07.17-.2.73-.85.93-1.14.19-.29.39-.24.65-.15.26.1 1.66.79 1.95.93.29.15.48.22.55.34.07.13.07.75-.17 1.43z"/></svg><span>WhatsApp</span></a>
+  <a class="c3" href="#iletisim" aria-label="Teklif al">✦ <span>Teklif Al</span></a>
 </div>
 
 <script>
@@ -1500,7 +1517,7 @@ function dilBelirle(){
   try{const k=localStorage.getItem('oderDil'); if(k&&DILLER[k]) return k;}catch(e){}
   const q=new URLSearchParams(location.search).get('lang'); if(q&&DILLER[q]) return q;
   const t=(navigator.language||'tr').slice(0,2).toLowerCase();
-  return DILLER[t]?t:'en';   /* tanınmayan dil → İngilizce */
+  return DILLER[t]?t:'tr';   /* tanınmayan dil → Türkçe */
 }
 (function kurDil(){
   const m=document.getElementById('langmenu');
@@ -1792,10 +1809,10 @@ so.observe(document.querySelector('.stats'));
     var h = a.getAttribute('href') || '';
 
     if (h.indexOf('tel:') === 0)
-      dl('telefon_tiklama', {numara: h.replace('tel:','')});
+      dl('phone_click', {legacy_event:'telefon_tiklama'});
 
     else if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1)
-      dl('whatsapp_tiklama', {konum: a.closest('.mobcta') ? 'mobil_alt_cta' : 'sayfa_ici'});
+      dl('whatsapp_click', {legacy_event:'whatsapp_tiklama',konum: a.closest('.mobcta') ? 'mobil_alt_cta' : 'sayfa_ici'});
 
     else if (h.indexOf('mailto:') === 0)
       dl('eposta_tiklama');
@@ -1803,11 +1820,16 @@ so.observe(document.querySelector('.stats'));
     else if (h.indexOf('oderenerji.com') > -1)
       dl('magaza_yonlendirme');
 
-    else if (a.classList.contains('go') || a.classList.contains('btn-solid'))
-      dl('teklif_cta_tiklama', {metin: (a.innerText||'').trim().slice(0,40)});
+    else if (a.classList.contains('go') || a.classList.contains('btn-solid') || a.classList.contains('c3') || h.indexOf('#iletisim') > -1)
+      dl('quote_cta_click', {legacy_event:'teklif_cta_tiklama',metin: (a.innerText||'').trim().slice(0,40)});
   }, true);
 
-  /* Gönderim onayı lead-form.js içinde sağlayıcı yanıtından sonra ölçülür. */
+  var formBasladi = false;
+  var f = document.querySelector('form.form');
+  if (f) f.addEventListener('focusin', function(){
+    if (!formBasladi) { formBasladi = true; dl('form_start', {form_name:'kesif_teklif_formu'}); }
+  });
+  /* Başarı olayı yalnızca lead-form.js sağlayıcı onayından sonra gönderilir. */
   /* okuma derinliği — içeriğin ilgi çekip çekmediğini ölçer */
   var esikler = [25,50,75,100], gecilen = {};
   window.addEventListener('scroll', function(){
