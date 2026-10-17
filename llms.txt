@@ -24,6 +24,13 @@
 - [Kentsel Dönüşüm](https://www.odergroup.com.tr/kentsel-donusum.html): Riskli yapı tespiti, hak sahipleriyle mutabakat, ruhsat, yıkım ve yeni yapı uygulaması.
 - [Tiny House ve Prefabrik Yapı](https://www.odergroup.com.tr/tiny-house.html): Modüler yapı üretimi, iç mekân donanımı ve vinçle montaj.
 
+## Uygulama yaklaşımları (örnek senaryolar)
+- [İstanbul Mağaza Dönüşümü](https://www.odergroup.com.tr/vaka-istanbul-magaza-donusumu.html): İşletmeyi kapatmadan mağaza yenileme için etaplı planlama, gece çalışma penceresi ve teslim kontrolü.
+- [Fuar Standı Kurulumu](https://www.odergroup.com.tr/vaka-fuar-standi-kurulumu.html): Tasarım onayından üretim, saha kurulumu ve söküme kadar fuar tarihine bağlı geri planlama.
+- [Teknik Tesis Bakım Yönetimi](https://www.odergroup.com.tr/vaka-teknik-tesis-bakim.html): Mekanik-elektrik bakım, arıza, inşai onarım ve raporlamayı tek proje sorumlusuyla takip yaklaşımı.
+- [Fabrika Otomasyonu Modernizasyonu](https://www.odergroup.com.tr/vaka-fabrika-otomasyonu.html): Üretimi gereksiz yere durdurmadan PLC, SCADA, pano ve devreye alma adımlarının etaplandırılması.
+- [Çatı GES Fizibilitesi](https://www.odergroup.com.tr/vaka-cati-ges-fizibilitesi.html): Çatı GES yatırımı öncesinde statik, gölgelenme, yönelim ve bağlantı gücünün birlikte incelenmesi.
+
 ## Kimlere hizmet veriyoruz
 - AVM'ler ve mağaza zincirleri: anahtar teslim mağaza kurulumu, söküm, yenileme; AVM'lerde gece vardiyasıyla uygulama; ortak alan teknik işletmesi
 - Hastaneler ve sağlık tesisleri: işletmeyi durdurmadan, enfeksiyon kontrol protokolüne uygun tadilat, iç dekorasyon ve teknik bakım
