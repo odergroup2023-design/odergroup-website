@@ -64,3 +64,6 @@ Merkez ofis Ataşehir / İstanbul; projeler Türkiye genelinde.
 - Facebook: https://www.facebook.com/profile.php?id=61559327394052
 - LinkedIn (şirket): https://www.linkedin.com/company/101615980/
 - YouTube: https://www.youtube.com/@umitoder
+
+## Ayrıntılı içerik
+- [llms-full.txt](https://www.odergroup.com.tr/llms-full.txt): Tüm hizmet ve uygulama sayfalarının metin içeriği, süreç adımları ve sık sorulan sorular tek dosyada.
