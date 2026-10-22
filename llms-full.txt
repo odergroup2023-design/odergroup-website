@@ -1,0 +1,819 @@
+# Öder Group — Ayrıntılı Site İçeriği (llms-full.txt)
+
+> Bu dosya www.odergroup.com.tr sayfalarının metin içeriğini yapay zekâ sistemlerinin kolayca okuyabilmesi için tek dosyada toplar. Kısa özet için: https://www.odergroup.com.tr/llms.txt
+> Son güncelleme: 2026-10-22
+
+## İç Dekorasyon, Mağaza ve Fuar Standında Anahtar Teslim Uygulama
+URL: https://www.odergroup.com.tr/
+Özet: Türkiye genelinde mağaza, fuar, teknik bakım, fabrika otomasyonu, GES/RES ve YG/OG saha işleri. Öder Group'tan keşif ve teklif isteyin.
+İç mekân tasarımından mağaza kurulumuna, fuar standından tadilata; tasarımdan üretime ve montajdan teslime tek muhatap.
+Fabrika Otomasyonu ve Kesintisiz İşletme
+PLC-SCADA modernizasyonu, trafo-pano yenileme ve koruyucu bakım ile üretim duruşlarını en aza indiriyoruz.
+Çatı GES ve Enerji Verimliliği Danışmanlığı
+Çatı fizibilitesinden devreye almaya, teşvik ve finansman danışmanlığına kadar bütün süreç tek elden yürütülür.
+
+### İç dekorasyondan enerjiye, tek mühendislik sorumluluğu
+Fuar standından fabrika otomasyonuna kadar bütün işler aynı proje yönetimi standardıyla yürütülür: keşif, teklif, uygulama, teslim ve bakım.
+#### İç Dekorasyon, Mağaza ve Yapı Uygulamaları
+İç mekân dekorasyonundan mağaza kurulumuna; marka deneyimini mekâna çeviren tasarım, uygulama ve yenileme.
+- İç Dekorasyon ve Mekân Tasarımı AVM · hastane · ofis
+- Mağaza / Showroom Kurulum ve Söküm Perakende fit-out
+- Tadilat, Restorasyon ve Restitüsyon Yapı yenileme
+- Fuar Standı Tasarım ve Uygulama Kurulum + söküm
+- Konut ve Villa Projeleri Anahtar teslim yapı
+- Kentsel Dönüşüm Riskli yapı → yeni bina
+- Tiny House ve Prefabrik Yapı Fabrikada üretim, sahada montaj
+- Mimari Proje ve Uygulama Konsept → teslim
+- Peyzaj Tasarım ve Uygulama Dış mekân
+#### Fabrika Otomasyonu, Yüksek Gerilim ve 5G Altyapısı
+Üretim, enerji ve haberleşme altyapısını sahada uygulanabilir bir planla yönetiyoruz.
+- Fabrika / Endüstriyel Otomasyon PLC · SCADA
+- Elektrik Taahhüt, Trafo ve Pano Proje · devreye alma
+- Koruyucu Bakım ve Teknik İşletme Periyodik sözleşme
+- Proje Danışmanlık ve Müşavirlik Kontrollük
+- Yüksek Gerilim Proje ve Saha İşleri Trafo · hücre · test · devreye alma
+- 5G Altyapı ve Saha Uygulamaları Enerji · kablolama · saha koordinasyonu
+#### Çatı GES ve Enerji Danışmanlığı
+Enerji maliyetini ölçen, düşüren ve finanse eden çözümler.
+- Çatı GES — Güneş Enerjisi Santrali Fizibilite → devreye alma
+- GES & RES Saha Teknik Hizmetleri Trafo · pano · bakım · koordinasyon
+- Elektrikli Araç Şarj İstasyonu AC / DC · yük analizi → devreye alma
+- Enerji Verimliliği Danışmanlığı (EVD) Etüt · raporlama
+- Enerji Tedarik, Teşvik ve Finansman Piyasa endeksli
+AVM, otel, iş merkezi, fabrika ve site otoparklarında AC ve DC şarj istasyonu kuruyoruz. İşin belirleyicisi cihaz değil altyapıdır : mevcut abone gücü, pano kapasitesi, kablo kesiti ve topraklama yeterli değilse istasyon çalışmaz. Bu yüzden her projeye tesisin yük analiziyle başlıyoruz.
+- Yük analizi — mevcut abone gücü ve trafo kapasitesinin ölçülmesi
+- Altyapı — pano, kablolama, koruma ve topraklama düzenlemesi
+- Kurulum — AC (yavaş/orta) veya DC (hızlı) istasyon montajı
+- Devreye alma — test, etiketleme ve kullanıcıya teslim
+Şarj ağı işletmeciliği lisansı ve EPDK süreçleri yatırımcıya aittir; biz elektriksel altyapı ve kurulum tarafını üstleniriz.
+Yatırımın saha elektrik altyapısı, trafo ve pano kapasitesi, enerji verimliliği, koruyucu bakım, ölçüm ve devreye alma süreçleri birlikte değerlendirilmelidir. Proje kapsamı mevcut tesis ve işletme hedeflerine göre netleştirilir.
+GES ve RES yöneticileri için: saha elektrik altyapısı, trafo-pano, enerji verimliliği, bakım ve teknik koordinasyon başlıklarını yatırımın işletme hedefleriyle birlikte değerlendiriyoruz.
+
+### Her işin kendine ait mühendisliği var
+İç dekorasyondan çatı GES'e; ölçü, imalat, montaj ve devreye alma süreçlerini temsili görsellerle anlattık.
+#### Mekânı markaya çeviren iç tasarım
+AVM, hastane, ofis ve iş merkezlerinde iç mekân tasarımı, tavan-duvar-aydınlatma imalatları ve dekorasyon bakım-onarımı; işletmeyi aksatmayan etaplı çalışma.
+#### Tasarımdan anahtar teslime
+Müstakil konut ve villa projelerinde mimari tasarım, ruhsat süreci, kaba ve ince yapı, peyzaj ve teslim; tek sözleşme, tek sorumlu.
+#### Riskli yapıdan güvenli binaya
+Riskli yapı tespiti, hak sahipleriyle mutabakat, ruhsat ve proje süreçleri, yıkım ve yeni yapı uygulaması; süreç şeffaf yürütülür.
+#### Fabrikada üretim, sahada montaj
+Modüler yapı üretimi, iç mekân donanımı ve vinçle montaj; kısa sürede, kontrollü kalitede ve düşük şantiye yüküyle teslim.
+#### Tasarım, imalat, kurulum ve söküm
+Fuar takvimine göre geriye planlama; modüler taşıyıcı sistem, aydınlatma ve teslim sonrası demontaj.
+#### Anahtar teslim perakende uygulaması
+Mimari tasarım, elektrik-mekanik tesisat, aydınlatma, dekorasyon imalatı ve açılışa hazır teslim.
+#### Yapıyı aslına uygun yenileme
+AVM, hastane ve iş merkezlerinde etaplı tadilat; restorasyon ve restitüsyon çalışmaları.
+#### Fizibiliteden devreye almaya
+Statik ve gölgelenme analizi, üretim öngörüsü, montaj, şebeke bağlantısı ve geçici kabul.
+#### PLC, SCADA ve hat modernizasyonu
+Duruşu en aza indiren etaplı geçiş; izleme, raporlama ve uzaktan kontrol altyapısı.
+#### Trafo, pano ve periyodik işletme
+Projelendirme, imalat, devreye alma ve sözleşmeli bakımla kesintisiz enerji sürekliliği.
+
+### Dört adımda öngörülebilir süreç
+Saha ziyareti, ölçüm ve hedeflerin netleştirilmesi.
+Çözüm önerisi, iş kalemleri ve takvimle birlikte fiyatlandırma.
+Üretim, montaj ve devreye alma; tek proje sorumlusuyla takip.
+Test, dokümantasyon ve isteğe bağlı periyodik bakım sözleşmesi.
+
+### Sahada kanıtlanmış proje geçmişi
+Öder Group'un kurucusu Ümit Öder'in; enerji santralleri, teknik tesis yönetimi ve perakende mimari uygulama alanlarında görev aldığı kurumlarda yönettiği ve koordine ettiği projeler.
+#### Yaklaşık 21 MW kurulu güç
+Legrand-Inform Elektronik A.Ş. bünyesinde proje yöneticisi olarak tasarım, tedarik, kurulum ve devreye alma koordinasyonu (2016–2018).
+- Kirlioğlu Kimya GES 6 MW İzmir
+- Sures-1/2, Renavel-1/2 4 MW Nevşehir
+- Kayzer-1/1-4 4 MW Yozgat
+- Konya Organize Sanayi Bölgesi 3 MW Konya
+- Kayseri Şeker Fabrikası 1 MW Kayseri
+- Altunges 1 MW Kayseri
+- Karaman Belediyesi 1 MW Karaman
+- Eskişehir Organize Sanayi Bölgesi 1 MW Eskişehir
+PVsyst ve PVSol ile saha performans analizi ve simülasyon; elektrik şemaları, saha şebekesi ve izleme sistemleri dahil PV sistem tasarımı.
+#### Zincir mağaza, hastane, veri merkezi ve endüstriyel tesis
+ProAsist Teknik Hizmetler bünyesinde müşteri yöneticisi olarak mekanik-elektrik bakım, arıza, inşai onarım, projelendirme, ihale ve teklif süreçlerinin yönetimi (2019–2022). 2020 Novartis bakım sözleşmesi sürecinde proje yöneticisi.
+#### Mağaza kurulum-söküm, tadilat ve iç dekorasyon
+LC Waikiki – Zirve Mimarlık bünyesinde perakende, ofis ve sanayi yapılarının kurumsal kimlik ve konsept tasarımı ile inşaat uygulama süreçlerinde teklif, ihale analizi, maliyet ve satınalma yönetimi (2013–2014). ProAsist döneminde (2019–2022) AVM, hastane, iş merkezi ve zincir mağazaların inşai onarım, tadilat ve iç dekorasyon bakım-onarım süreçlerinin yönetimi. Mağaza kurulum ve söküm operasyonlarındaki bu disiplin, fuar standı kurulum-söküm süreçlerinin de temelidir: hızlı montaj, planlı demontaj, takvime bağlı teslim.
+Ayrıca Özler Kalıp ve İskele Sistemleri'nde proje satış koordinatörlüğü, ERB Yapı bünyesinde kentsel tasarım ve peyzaj projelerinde iş geliştirme ve ihale yönetimi.
+#### Mühendislik eğitimi, ihale mevzuatı ve sosyal sorumluluk
+- Trakya Üniversitesi, Teknik Eğitim Fakültesi — Yapı Öğretmenliği 3,7 / 4
+- Anadolu Üniversitesi — İşletme
+- 4734 ve 4735 sayılı Kamu İhale Kanunu eğitmenliği (AMP Yazılım, 2010–2013) EĞİTMENLİK
+- Kamu eğitim ve destek referansları: İzmir Bornova Belediyesi, BUSKİ, Bursa Gençlik ve Spor İl Müdürlüğü, Konya OSB KAMU KURUMU
+- Millî Eğitim Bakanlığı — Yapı öğretmenliği ve tesis sorumluluğu (2018–2019) KAMU KURUMU
+- Habitat Gündem 21 / UNDP — Yerel Gündem 21 Programı 2003–2006 KATILIM BELGESİ
+Kırklareli Yerel Gençlik Lideri ve Kuzey Marmara (Trakya) Kolaylaştırıcısı olarak UNDP ve UCLG-MEWA ortaklığındaki programda görev alınmıştır.
+Yukarıdaki projeler, kurucumuzun ilgili kurumlarda görev aldığı dönemde yönettiği veya koordine ettiği işlerdir; anılan markalar bu kurumların müşterileridir. Marka adları yalnız deneyim beyanı amacıyla, belge esas alınarak yazılmıştır.
+Müşteri ve proje sayıları, kurucumuzun önceki görevlerinde yönettiği veya koordine ettiği işleri de kapsar.
+S: Tadilat, restorasyon ve iç dekorasyon işlerini hangi mekânlarda yapıyorsunuz?
+C: Sık Sorulan Sorular Karar öncesi merak edilenler Tadilat, restorasyon ve iç dekorasyon işlerini hangi mekânlarda yapıyorsunuz? Konut ve villalar, zincir mağazalar, AVM'ler, hastaneler, iş merkezleri ve ofisler — altı mekân tipinde de çalışıyoruz. Her birinin kendine ait kuralı var ve biz projeyi ona göre kuruyoruz: AVM ve zincir mağaza: Çalışma gece 22:00 sonrası, mağaza sabah müşteriye açık. Toz bariyeri, gürültü sınırı ve AVM yönetimi izinleri bizim sorumluluğumuzda. Hastane: Hasta ve personel sirkülasyonunu kesmeden, hijyen bariyerli ve etaplı çalışma; enfeksiyon kontrol kurallarına uygun. Ofis ve iş merkezi: Kat kat ilerleyen program, mesai dışı imalat, çalışan konforunu bozmayan geçiş planı. Konut ve villa: Oturulan evlerde bölüm bölüm teslim; taşınma gerekmeden yaşanabilir şantiye düzeni. Tarihi yapı: Restorasyon ve restitüsyonda özgün malzeme ve teknikle, koruma kurulu süreçlerine uygun çalışma. Her işte üç şey sabittir: yazılı takvim, tek proje sorumlusu ve teslim öncesi kontrol listesi. Mağaza ve showroom yapımında hangi işler dahil? Mimari tasarım, mekanik ve elektrik tesisat, aydınlatma, iklimlendirme, dekorasyon imalatları ve teslim öncesi test süreçleri anahtar teslim kapsamda yürütülür. Mağaza kapanış ve taşınmalarında söküm (demontaj) ve mahal teslim işleri de yapılır. Fuar standı yapımı ne kadar sürede tamamlanır? Stand büyüklüğüne ve fuar takvimine göre değişir. Tasarım onayından sonra üretim ve montaj planı, fuarın kurulum takvimine göre geriye doğru kurgulanır; keşif görüşmesinde net süre paylaşılır. Teklif almak ücretli mi, ne kadar sürede dönüş yapıyorsunuz? Keşif ve teklif ücretsizdir . Talebinizi aldıktan sonra sizi arar, mekânı yerinde görür ve iş kalemleri ayrıştırılmış, takvimli bir teklif sunarız. Tekliflerimizde kalem kalem ne yapıldığı yazar; sonradan çıkan sürpriz kalem olmaz. İşi taşerona mı veriyorsunuz, kim sorumlu olacak? Her projeye tek bir proje sorumlusu atanır ve süreç boyunca muhatabınız o kişidir. Mimari, elektrik ve mekanik işler tek sözleşme altında toplanır; koordinasyon yükü sizde değil bizde kalır. Konut, villa ve kentsel dönüşüm projeleri yapıyor musunuz? Evet. Müstakil konut ve villa projelerinde tasarımdan anahtar teslim uygulamaya kadar tüm süreci yürütüyoruz. Kentsel dönüşümde ise riskli yapı tespiti, ruhsat ve proje süreçleri, yıkım ve yeni yapı uygulaması hak sahipleriyle koordineli olarak planlanır. Tiny house ve prefabrik yapı üretiyor musunuz? Evet. Modüler yapılar fabrika ortamında üretilir, iç mekân donanımı tamamlanır ve sahaya vinçle monte edilir. Bu yöntem klasik inşaata göre daha kısa sürede, kontrollü kalitede ve daha az şantiye yüküyle teslim imkânı verir. Çatı GES kurulumu için hangi şartlar aranır? Çatının statik taşıma kapasitesi, yönelim ve gölgelenme durumu ile tesisin bağlantı gücü belirleyicidir. Saha keşfinde bu üç kriter ölçülür ve üretim öngörüsü çıkarılır. Elektrikli araç şarj istasyonu kurulumunda neye bakılır? Belirleyici olan cihaz markası değil tesisin elektriksel altyapısıdır . Üç şey ölçülür: mevcut abone gücü, pano ve trafo kapasitesi, kablo kesiti ile topraklama durumu. Bunlar yetersizse istasyon ya çalışmaz ya da tesisin diğer yüklerini riske atar. Keşifte yük analizi yapılır; gerekiyorsa güç artırımı, pano yenileme ve kablolama işleri kurulumdan önce planlanır. AVM, otel, iş merkezi, fabrika ve site otoparklarında AC (yavaş/orta) ve DC (hızlı) istasyon kurulumu yapıyoruz. Şarj ağı işletmeciliği lisansı ve EPDK süreçleri yatırımcıya aittir; biz altyapı ve kurulum tarafını üstleniriz. Fabrika otomasyonu mevcut hatta uygulanabilir mi? Evet. Mevcut hatlar duruş süresi en aza indirilecek biçimde etaplandırılarak modernize edilir; PLC, SCADA ve pano yenilemeleri üretim takvimine göre planlanır. Hangi bölgelerde hizmet veriyorsunuz? Merkez ofisimiz Ataşehir / İstanbul'dadır; projeler Türkiye genelinde yürütülmektedir.
+
+### Disiplinli mühendislik, şeffaf süreç
+Öder Group; mimari uygulama, teknik işletme ve enerji altyapısında kurucusunun 20 yılı aşkın saha tecrübesini tek çatı altında birleştirir. Fuar standından fabrika otomasyonuna kadar her işi aynı proje yönetimi disipliniyle yürütür; çevresel etkiyi ve enerji maliyetini her projede hesaba katar.
+
+### Beş uygulama senaryosu
+Aşağıdaki vaka sayfaları ilk içerik taslaklarıdır. Gerçek proje detayları, fotoğraflar ve ölçülebilir sonuçlar doğrulandıkça güncellenecektir.
+
+### Projenizi konuşalım
+Fuar standı, mağaza uygulaması, teknik bakım, yüksek gerilim, 5G altyapısı, GES veya RES yatırımınız için kapsamı birlikte değerlendirelim, keşif ve teklif sunalım.
+
+---
+
+## Kurumsal
+URL: https://www.odergroup.com.tr/kurumsal.html
+Özet: Öder Group kurumsal bilgileri: hakkımızda, misyon-vizyon, değerlerimiz, kalite anlayışımız ve ticaret sicil bilgileri. Ataşehir / İstanbul.
+Öder Group; enerji, inşaat-mimarlık ve teknik hizmetler alanlarında 2023'te kurulmuş, saha tecrübesini kurumsal disiplinle birleştiren bir mühendislik şirketidir.
+
+### Bir meşaleyi taşımanın sorumluluğu
+Başta kişisel ve teknik önderimiz olan, emekleri asla yadsınamayacak değerli babam Süleyman Öder 'in teknik alanda başlattığı meşaleyi gururla taşımanın mutluluğuyla çalışıyoruz. Onun Şişecam kurumsallığıyla bize aktardığı deneyim ve ilkeler, bu sağlam temelleri daha ileriye taşıyacaktır.
+İnşaat-mimarlık, enerji ve teknik hizmetler alanındaki 23 yıllık tecrübe birikimini Öder Group çatısı altında bir araya getirdik; yenilikçi çözümlerimiz ve kapsamlı hizmet yelpazemizle sektörde aktif yerimizi aldık.
+Enerji, elektrik, inşaat ve mekanik taahhütleri; solar aydınlatma ve elektrikli araç şarj istasyonları; tiny house ve peyzaj projeleri; enerji verimliliği (IREC sertifikaları) ve ISO belgelendirme hizmetleri; enerji hibe destekleri (KOSGEB, Yatırım Teşviki, TKDK IPARD); güneş ve rüzgâr santralleri bakım-işletme danışmanlığı ile CCTV kamera ve güvenlik sistemleri alanlarında hizmet veriyoruz.
+Ekonomik, hızlı, güvenilir ve profesyonel çözümler üretmek amacıyla; yeniliklere açık, sektörel gelişmeleri takip eden, teknik kapasitesi yüksek ekiplerle çalışıyoruz.
+
+### İnsana ve doğaya saygılı bir yaşam anlayışı
+2023 yılında faaliyetlerine enerji alanında başlayan Öder Group, bugün inşaat-mimarlık ve teknik hizmetler alanlarında da faaliyet göstermektedir. Sürdürülebilirlik ilkelerini iş yapış biçimiyle bütünleştirerek, yaşanabilir bir dünya hedefiyle yola çıkmıştır.
+Amacımız; yarınların mirasçısı çocuklarımıza ve insanlığın ortak değerlerine karşı endüstriyel, sosyal ve çevresel sorumluluklarımızı yerine getirmektir.
+Hedefimiz; bu bilinçle tüm faaliyetlerimizi ülkemize faydalı bir çerçevede geliştirmek ve küresel alanda ülkemizin hak ettiği yeri alması için gayret göstermektir. Enerjinin en verimli şekilde kullanımı ve gelecek nesillere güzel bir dünya bırakmak temel hedefimizdir.
+
+### Sözde değil, sahada da aynı ilkeler
+Sevgi, insana saygı, toplumsal hoşgörü, dostluk ve dayanışma bilinci iş anlayışımızın üstün değerlerini oluşturur. Bireysel başarı ile ekip başarısının farkını her çalışmamıza yansıtır; takım çalışmasını ve iş arkadaşlarımız arasındaki koordinasyonu önemseriz.
+
+### Kalite; verimliliği artırır, maliyeti azaltır
+Öder Group'un kalite anlayışının temelinde, ürettiği mal ve hizmetten müşterinin mutlak memnuniyeti yer alır. Gerçekleşmiş kalite; verimliliği artırırken maliyeti azaltacak, öngörülen sorunları çözecek ve rekabet gücünü yükseltecektir. Bu çerçevede:
+- Uluslararası teknolojik gelişmeleri yakından takip ederek sektörün en iyi ürünleriyle müşterimizi buluştururuz.
+- İşimizi temiz, düzgün ve profesyonel bir anlayışla tamamlar, takım çalışmasıyla hareket ederiz.
+- Müşteri memnuniyetini esas aldığımız için sürekliliği sağlayıcı tedbirleri işin başında alırız.
+- Kalite yönetim sistemi anlayışımız gereği uluslararası kalite standartlarına uygun çalışırız.
+- Çevresel duyarlılık gereği doğaya zarar vermeyecek kaynak kullanımlarına yöneliriz.
+- İş sağlığı ve güvenliğini önemser, personelimizin gerekli eğitim ve sertifikalarını almasını sağlarız.
+- Çalışma alanımızda oluşabilecek kaza, hasar ve tehlikeleri işin başında kontrol ederek her türlü tedbiri alırız.
+
+### Şirket künyesi
+Banka hesap bilgileri, talep üzerine resmî teklif ve sözleşme belgelerinde paylaşılmaktadır. Ödeme öncesi hesap bilgilerini mutlaka telefonla teyit ediniz.
+
+### Projenizi konuşalım
+
+---
+
+## Mekânı markaya çeviren iç dekorasyon
+URL: https://www.odergroup.com.tr/ic-dekorasyon.html
+Özet: AVM, hastane, ofis ve iş merkezlerinde iç mekân tasarımı, tavan-duvar-aydınlatma imalatı ve bakım-onarım. İşletmeyi durdurmadan, etaplı çalışırız.
+AVM, hastane, ofis ve iş merkezlerinde iç mekân tasarımı, tavan-duvar-aydınlatma imalatı ve dekorasyon bakım-onarımı. İşletmeyi durdurmadan, etaplı çalışırız.
+
+### Adım adım nasıl ilerliyoruz
+Her aşamada ne yapıldığını ve ne zaman biteceğini önceden bilirsiniz. Sürpriz kalem çıkmaz.
+Mekânı yerinde ölçer, mevcut tesisatı ve kısıtları tespit ederiz.
+Marka kimliğinize göre konsept, malzeme ve aydınlatma kurgusu.
+Tavan, duvar, mobilya ve özel üretim parçalar atölyede hazırlanır.
+Etaplı montaj; toz bariyeri, gece çalışma, günlük temizlik.
+Kontrol listesi, garanti belgeleri ve bakım planıyla teslim.
+
+### Aynı mekân, aradaki fark
+Süreç fotoğrafları her projede kayıt altına alınır; teslimde dosyayla birlikte verilir.
+
+### İç Dekorasyon ve Mekân Tasarımı
+Görsele tıklayarak büyütebilirsiniz.
+
+### Açık bir mekânda dekorasyon nasıl yapılır
+AVM mağazası, hastane koridoru ya da çalışan bir ofis — bu mekânlarda işin zorluğu imalat değil, imalatı işletme devam ederken yapabilmektir. Program bu kısıta göre kurulur; imalat kalitesi kısıttan taviz vermez.
+#### Çalışma penceresi ve izinler
+AVM ve zincir mağazalarda imalat çoğunlukla kepenk kapandıktan sonra başlar ve sabah müşteri girişinden önce toparlanır. AVM yönetiminin çalışma izni, gürültü sınırı, asansör ve yük kapısı rezervasyonu, personel giriş kartları — bunların tamamı bizim takip ettiğimiz kalemlerdir. Hastanede buna enfeksiyon kontrol kuralları ve hasta sirkülasyonunu kesmeyen geçiş planı eklenir.
+#### Toz, gürültü ve bariyer
+Açık mekânda en çok şikâyet konusu toz ve kokudur. Çalışma alanı kapalı bariyerle ayrılır, gerekli yerde negatif basınçlı toz perdesi kurulur, kesme ve zımpara işleri mekân dışında ya da tozsuz sistemle yapılır. Boya ve yapıştırıcılarda düşük uçucu organik bileşikli (VOC) ürünler tercih edilir — koku ertesi gün müşteriyi karşılamaz.
+#### Malzeme seçimi: görünüş değil, dayanım
+İç mekânda malzeme üç kritere göre seçilir: yangın davranış sınıfı, temizlenebilirlik ve darbe dayanımı. AVM koridorunda bir duvar panelinin yılda kaç kez temizleneceği, hastanede dezenfektana nasıl tepki vereceği, mağazada vitrin önünde nasıl aşınacağı önceden konuşulur. Yanlış malzeme ilk yıl güzel görünür, ikinci yıl değiştirilir.
+#### Aydınlatma ve renk sıcaklığı
+Aydınlatma kararı armatür seçimiyle bitmez. Mahal bazında aydınlık seviyesi, renk sıcaklığı (Kelvin) ve renksel geriverim indeksi (CRI) belirlenir. Perakende alanında ürün rengini doğru gösteren bir armatürle ofis koridorundaki armatür aynı değildir; hastanede ise göz konforu ve gece seviyesi ayrı bir başlıktır.
+#### Tesisat ve sonradan erişim
+Asma tavanın üstüne giren her şeyin — kanal, kablo tavası, yangın borusu, damper — sonradan ulaşılabilir olması gerekir. Revizyon kapakları projede yerleştirilir; sonradan tavan kesmek hem görüntüyü hem garantiyi bozar.
+#### Teslim ve kontrol listesi
+Teslimden önce mahal mahal kontrol listesi yürütülür: eksik ve kusur listesi (punch list) çıkarılır, tamamlanır, ikinci kez kontrol edilir. Elektrik ve mekanik testleri, aydınlatma ölçümü ve temizlik bu listenin parçasıdır. Teslim dosyasında kullanılan malzemelerin listesi ve bakım notları yer alır.
+
+### İlgili hizmetler
+S: AVM içindeki mağazamda gündüz çalışabilir misiniz?
+C: Sık Sorulan Sorular Merak edilenler AVM içindeki mağazamda gündüz çalışabilir misiniz? AVM yönetimleri genelde gürültülü işlere gündüz izin vermez. Biz 22:00 sonrası çalışır, sabaha kadar toz bariyerini kaldırıp alanı temiz teslim ederiz. Hastanede dekorasyon yapılırken hijyen nasıl sağlanıyor? Negatif basınçlı toz bariyeri kurar, enfeksiyon kontrol komitesinin protokolüne uyarız. Malzeme girişi ayrı güzergâhtan yapılır. Mobilya ve donatıyı da siz mi tedarik ediyorsunuz? İsteğe bağlı. Sabit imalatlar (tezgâh, dolap, karkas) bizim işimizdir. Serbest mobilya ve donatı için ya sizin tedarikçinizle koordine oluruz ya da alternatifli teklif sunarız. Hangi kalemin kimde olduğu sözleşmede net yazılır. İş bitiminde eksik kalırsa ne oluyor? Teslim öncesi ortak kontrol listesi (punch list) çıkarılır; eksik ve kusurlu kalemler yazılır, tamamlanma tarihi verilir. Liste kapanmadan iş teslim edilmiş sayılmaz. Bu yöntemi her projede uyguluyoruz. Aydınlatma tasarımı kapsamda mı? Evet, mekânın kullanımına göre aydınlatma kurgusu yapılır. Perakendede ürün vurgusu, ofiste göz konforu, hastanede yönetmelik gereği aydınlık düzeyi öne çıkar. Armatür seçimleri onayınıza sunulur.
+
+### Projenizi konuşalım
+Keşif ve teklif ücretsizdir. 24 saat içinde dönüş yapıyoruz.
+
+---
+
+## Anahtar teslim perakende uygulaması
+URL: https://www.odergroup.com.tr/magaza-showroom.html
+Özet: Mimari tasarımdan elektrik-mekanik tesisata, aydınlatmadan dekorasyon imalatına; açılış gününe hazır mağaza teslimi. Ücretsiz keşif.
+Mimari tasarımdan elektrik-mekanik tesisata, aydınlatmadan dekorasyon imalatına; açılış gününe hazır mağaza teslimi.
+
+### Adım adım nasıl ilerliyoruz
+Her aşamada ne yapıldığını ve ne zaman biteceğini önceden bilirsiniz. Sürpriz kalem çıkmaz.
+Marka kılavuzunuza göre mağaza konsepti ve raf planı.
+AVM teknik onayı, ruhsat ve iş güvenliği evrakları.
+Elektrik, mekanik, yangın ve zayıf akım tesisatı.
+Vitrin sistemi, aydınlatma, raf ve teşhir üniteleri.
+Temizlik, test, eğitim ve açılışa hazır teslim.
+
+### Aynı mekân, aradaki fark
+Süreç fotoğrafları her projede kayıt altına alınır; teslimde dosyayla birlikte verilir.
+
+### Mağaza ve Showroom Kurulum-Söküm
+Görsele tıklayarak büyütebilirsiniz.
+
+### Mağaza kurulumu geriye doğru planlanır
+Perakendede tek bir sabit vardır: açılış günü. Kira o tarihte işlemeye başlar, kampanya o tarihe kurgulanır. Bu yüzden program ileriye değil, açılıştan geriye doğru kurulur ve her kalemin en geç başlama tarihi bellidir.
+#### AVM teslim şartnamesi ve mahal teslimi
+Mağaza boş bir kabuk olarak teslim edilir ve her AVM'nin kendi teknik şartnamesi vardır: izin verilen tavan yüksekliği, cephe hattı, yangın algılama bağlantısı, havalandırma kapasitesi, elektrik ve su sayacı noktası. Proje bu şartnameye göre çizilir ve AVM teknik birimine onaya gönderilir. Onaysız başlayan iş, sökülen iştir.
+#### Kurumsal kimlik ve konsept
+Zincir markalarda mağaza, marka kitabının (brand book) mekâna çevrilmiş hâlidir: malzeme kodları, renk kodları, raf modülasyonu, tabela tipi ve logo oranları bağlayıcıdır. Tek mağazalı markalarda ise konsept sıfırdan kurulur; burada belirleyici olan müşteri akışı ve ürünün nasıl görüneceğidir.
+#### Elektrik, mekanik ve aydınlatma
+Mağazanın abone gücü, pano kapasitesi ve aydınlatma yükü birlikte hesaplanır. Vitrin ve ürün aydınlatması ayrı devrelerden beslenir; kasa bölgesi, deneme kabini ve depo farklı aydınlık seviyeleri ister. İklimlendirme debisi mağaza hacmine ve vitrin cam yüzeyine göre belirlenir.
+#### Vitrin, kasa ve müşteri akışı
+Vitrin mağazanın ilk cümlesidir; kasa ise son cümlesi. İkisinin arasındaki yol — raf yerleşimi, geçiş genişlikleri, deneme kabini konumu — satışı doğrudan etkiler. Engelli erişimi ve yangın kaçış genişlikleri bu yerleşimin pazarlık edilemez sınırlarıdır.
+#### Söküm ve mahal teslimi
+Mağaza kapanışlarında iş bitmez, tersine döner. Demontaj, sökülen malzemenin ayrıştırılması, taşınacak ekipmanın paketlenmesi ve mahallin AVM'ye şartnamedeki hâliyle teslim edilmesi gerekir. Bu süreç de takvimlidir; geciken her gün kira demektir.
+
+### İlgili hizmetler
+S: Mağaza sökümünü de yapıyor musunuz?
+C: Sık Sorulan Sorular Merak edilenler Mağaza sökümünü de yapıyor musunuz? Evet. Kurulum kadar söküm de uzmanlık ister. Demonte edilen malzemeyi etiketleyip depoya teslim eder, mekânı AVM teslim şartlarına uygun bırakırız. Kaç günde mağaza açılışa hazır olur? Metrekare, imalat yoğunluğu ve AVM'nin çalışma izni penceresi belirleyicidir. Açılış tarihi verildiğinde takvim geriye doğru kurulur ve kritik kalemler öne alınır. Keşif yapılmadan gün sayısı söylemeyiz. Marka kimliği kılavuzuna uygun uygulama yapıyor musunuz? Evet. Zincir mağaza işlerinin çoğu kurumsal kimlik kılavuzuna bağlıdır; malzeme, renk kodu ve detay çözümleri kılavuza göre uygulanır. Kılavuzla sahadaki durum çelişirse imalata başlamadan önce yazılı olarak sorarız. Birden fazla şubede aynı anda çalışabiliyor musunuz? Evet, çok şubeli programlar yürütüldü. Her şubeye ayrı ekip ve tek merkezi koordinasyon kurulur; ilerleme tek raporda toplanır. Bu, mağaza kurulum-söküm operasyonlarındaki asıl deneyim alanımızdır.
+
+### Projenizi konuşalım
+Keşif ve teklif ücretsizdir. 24 saat içinde dönüş yapıyoruz.
+
+---
+
+## Fuar takvimine göre geriye planlama
+URL: https://www.odergroup.com.tr/fuar-standi.html
+Özet: Modüler taşıyıcı sistem, aydınlatma, grafik uygulama ve fuar sonrası demontaj. Kurulum penceresi dar olduğu için her şey önceden prova edilir.
+Modüler taşıyıcı sistem, aydınlatma, grafik uygulama ve fuar sonrası demontaj. Kurulum penceresi dar olduğu için her şey önceden prova edilir.
+
+### Adım adım nasıl ilerliyoruz
+Her aşamada ne yapıldığını ve ne zaman biteceğini önceden bilirsiniz. Sürpriz kalem çıkmaz.
+Fuar alanı ölçüleri, yükseklik ve elektrik kısıtları.
+3B görselleştirme, malzeme ve aydınlatma seçimi.
+Stand atölyede kurulur, sorunlar sahada değil önce çözülür.
+Fuar takvimine göre gece dahil kesintisiz montaj.
+Fuar bitiminde söküm, taşıma ve depolama.
+
+### Fuar Standı Tasarım ve Uygulama
+Görsele tıklayarak büyütebilirsiniz.
+
+### Stand işinde gecikmenin telafisi yoktur
+Bir mağaza açılışı bir hafta ertelenebilir; fuar ertelenemez. Kurulum penceresi çoğu fuarda birkaç günle sınırlıdır ve bu pencere kaçtığında stand kurulmaz. Bu yüzden stand işinde planlama, imalattan daha kritiktir.
+#### Fuar idaresi kuralları
+Her fuar alanının kendi teknik yönetmeliği vardır: izin verilen stand yüksekliği, asma (rigging) noktası olup olmadığı, komşu stand sınırına bakan yüzeylerin nasıl kapatılacağı, kullanılabilecek malzemelerin yangın sınıfı. Çift katlı stand ayrı statik onay ister. Proje önce bu yönetmeliğe göre çizilir, sonra fuar idaresine onaylatılır.
+#### Modüler taşıyıcı mı, ahşap imalat mı
+Modüler sistem (truss ve profil) hızlı kurulur, sökülür ve tekrar kullanılır; birden fazla fuara katılan markalar için maliyeti yıllık bazda düşürür. Ahşap imalat ise tasarım özgürlüğü ve yüzey kalitesi verir, ama tek kullanımlıktır. Karar; fuar sayısına, bütçeye ve standın markayı ne kadar birebir temsil etmesi gerektiğine göre verilir.
+#### Elektrik, yük ve bağlantılar
+Stand elektrik ihtiyacı (kW), internet, su-gider ve basınçlı hava gibi kalemler fuar idaresine önceden bildirilir ve ayrı ücretlendirilir. Aydınlatma yükü, ekran ve demo makineleri bu hesabın içindedir. Son dakika talep edilen ek güç her zaman karşılanamaz.
+#### Nakliye ve kurulum penceresi
+İmalat, nakliye ve kurulum tek bir zincirdir. Yurt dışı fuarlarda buna gümrük ve ATA karnesi süreci eklenir; nakliye süresi takvime ileri tarihli değil, geriye doğru işlenir. Malzeme fuar alanına kurulum penceresinin başında olmalıdır, ortasında değil.
+#### Söküm, depolama ve ikinci kullanım
+Fuar bittiğinde alan çoğu zaman birkaç saat içinde boşaltılır. Söküm planı kurulum planıyla birlikte yapılır. Modüler parçalar etiketlenip depolanırsa bir sonraki fuarda yeniden kullanılır; bu, tekrar eden fuar katılımlarında en belirgin tasarruf kalemidir.
+
+### İlgili hizmetler
+S: Yurt dışı fuarlarına da geliyor musunuz?
+C: Sık Sorulan Sorular Merak edilenler Yurt dışı fuarlarına da geliyor musunuz? Modüler sistemle çalışırız; stand parçaları konteynerle sevk edilir, kurulum ekibi yerinde birleştirir. Avrupa ve Körfez fuarları için teklif veriyoruz. Stand tasarımını siz mi yapıyorsunuz, hazır tasarım da olur mu? İkisi de olur. Kendi tasarımımızı üretebiliriz veya ajansınızın tasarımını uygulayabiliriz. Ajans tasarımı geliyorsa, üretime girmeden önce fuarın kurulum yönetmeliğine ve yükseklik-asma kurallarına uygunluğunu kontrol ederiz. Stand malzemeleri sonraki fuarda tekrar kullanılabilir mi? Modüler kurgulanan standlar tekrar kullanılabilir; ahşap üzerine özel imalatların çoğu tek fuara özeldir. Tekrar kullanım isteniyorsa bunu tasarım aşamasında söylemeniz gerekir — konstrüksiyon buna göre kurulur ve depolama planlanır. Fuar sırasında standda görevli bırakıyor musunuz? Talep edilirse fuar süresince teknik nöbet tutulur. Aydınlatma, elektrik ve ekran arızalarına yerinde müdahale edilir. Bu hizmet teklifte ayrı kalem olarak gösterilir.
+
+### Projenizi konuşalım
+Keşif ve teklif ücretsizdir. 24 saat içinde dönüş yapıyoruz.
+
+---
+
+## Yapıyı aslına uygun yenileme
+URL: https://www.odergroup.com.tr/tadilat-restorasyon.html
+Özet: AVM, hastane ve iş merkezlerinde etaplı tadilat; tescilli yapılarda koruma kurulu süreçlerine uygun restorasyon ve restitüsyon. Ücretsiz keşif.
+AVM, hastane ve iş merkezlerinde etaplı tadilat; tescilli yapılarda koruma kurulu süreçlerine uygun restorasyon ve restitüsyon.
+
+### Adım adım nasıl ilerliyoruz
+Her aşamada ne yapıldığını ve ne zaman biteceğini önceden bilirsiniz. Sürpriz kalem çıkmaz.
+Mevcut yapının ölçülmesi ve belgelenmesi.
+Yapının özgün hâlinin araştırılıp projelendirilmesi.
+Koruma kurulu ve ilgili idare onayları.
+Özgün malzeme ve tekniklerle onarım.
+Süreç fotoğrafları ve teslim dosyası.
+
+### Aynı mekân, aradaki fark
+Süreç fotoğrafları her projede kayıt altına alınır; teslimde dosyayla birlikte verilir.
+
+### Tadilat, Restorasyon ve Restitüsyon
+Görsele tıklayarak büyütebilirsiniz.
+
+### Tadilat, restitüsyon ve restorasyon aynı şey değildir
+Günlük konuşmada üçü birbirinin yerine kullanılır; oysa teknik olarak farklı amaçları, farklı belgeleri ve farklı yetkinlikleri olan işlerdir. Hangi işin yapıldığını baştan doğru adlandırmak, sürecin tamamını belirler.
+#### Tadilat
+Mevcut yapının bugünkü ihtiyaca göre yenilenmesidir. Amaç geçmişi korumak değil, kullanımı iyileştirmektir: mekân bölünmesi, tesisat yenileme, yüzey ve donatı değişimi. Tescilli olmayan yapılarda serbestçe yapılır; taşıyıcı sisteme dokunuluyorsa statik proje ve ruhsat gerekir.
+#### Restitüsyon
+Yapının bugün görülmeyen özgün hâlinin, belgeye dayanarak kâğıt üzerinde yeniden kurgulanmasıdır. Dayanağı rölöve (yapının bugünkü hâlinin ölçülü çizimi), arşiv belgeleri, eski fotoğraflar, benzer dönem yapıları ve yapı üzerindeki izlerdir. Restitüsyon bir uygulama değil, bir belgeleme ve yorum çalışmasıdır; restorasyon kararlarının gerekçesini oluşturur.
+#### Restorasyon
+Restitüsyonun ortaya koyduğu bilgiye göre yapının korunması, sağlamlaştırılması ve gerektiğinde özgün hâline uygun biçimde onarılmasıdır. Burada ilke bellidir: yeni eklenen, özgün olandan ayırt edilebilmelidir. Tescilli yapılarda süreç Koruma Bölge Kurulu onayıyla yürür; rölöve, restitüsyon ve restorasyon projeleri birlikte sunulur.
+#### Belgeleme ve dijital ölçüm
+Rölövenin doğruluğu bütün sürecin doğruluğudur. Elle ölçümün yanında lazer tarama ve fotogrametri ile üretilen nokta bulutu, yapının bozulmuş geometrisini olduğu gibi kaydeder — düzgün varsayılan duvarın aslında ne kadar şiştiğini gösterir. Bu kayıt hem proje üretiminde hem ileride yapılacak müdahalelerde başvurulacak kaynaktır.
+#### Etaplı çalışma ve sürpriz kalemler
+Tarihi yapıda sıva açıldığında beklenmeyen bir durumun çıkması istisna değil, kuraldır. Bu yüzden iş etaplandırılır, keşif açık uçlu kalemlerle yazılır ve çıkan her bulgu fotoğrafla kayda alınarak işveren ve kurulla paylaşılır. Tahmini rakam vermek yerine, bulguya göre revize edilen bir bütçe yürütülür.
+
+### İlgili hizmetler
+S: Tescilli binada çalışma izni nasıl alınıyor?
+C: Sık Sorulan Sorular Merak edilenler Tescilli binada çalışma izni nasıl alınıyor? Rölöve ve restitüsyon projeleri hazırlanıp Koruma Bölge Kuruluna sunulur. Onay çıkmadan uygulamaya başlanmaz; bu süreci sizin adınıza yürütürüz. Restorasyon ile restitüsyon arasındaki fark ne? Restorasyon, mevcut yapının özgün haline uygun biçimde onarılmasıdır. Restitüsyon ise yapının kaybolmuş bölümlerinin belge ve izlere dayanarak yeniden kurgulanmasıdır. İkisi farklı belge ve onay süreci gerektirir; hangisinin gerektiği koruma kurulu kararına bağlıdır. Özgün malzeme bulunamazsa ne yapılıyor? Önce eşdeğer malzeme araştırılır; bulunamazsa koruma kurulunun onayıyla ayırt edilebilir çağdaş malzeme kullanılır. Uydurma eskitme yapmayız — müdahale edilen bölüm belgelenir ve raporlanır. Tadilat sırasında çıkan sürprizler fiyatı değiştirir mi? Eski yapıda kapalı imalat açılmadan görülemeyen durumlar olabilir (çürük ahşap, gizli tesisat, taşıyıcı hasarı). Böyle bir durumda iş durdurulur, tespit fotoğraflanır ve ek iş yazılı onayınıza sunulur. Onaysız ek imalat yapıp sonradan faturalamayız.
+
+### Projenizi konuşalım
+Keşif ve teklif ücretsizdir. 24 saat içinde dönüş yapıyoruz.
+
+---
+
+## Tasarımdan anahtar teslime villa
+URL: https://www.odergroup.com.tr/konut-villa.html
+Özet: Müstakil konut ve villa projelerinde mimari tasarım, ruhsat süreci, kaba ve ince yapı, peyzaj ve teslim. Tek sözleşme, tek sorumlu. Ücretsiz keşif.
+Müstakil konut ve villa projelerinde mimari tasarım, ruhsat süreci, kaba ve ince yapı, peyzaj ve teslim. Tek sözleşme, tek sorumlu.
+
+### Adım adım nasıl ilerliyoruz
+Her aşamada ne yapıldığını ve ne zaman biteceğini önceden bilirsiniz. Sürpriz kalem çıkmaz.
+İmar durumu, zemin etüdü ve maliyet öngörüsü.
+Konsept, uygulama projeleri ve ruhsat.
+Temel, karkas, çatı ve dış cephe.
+Mekanik, elektrik, iç mekân ve akıllı ev sistemleri.
+Dış mekân düzenleme ve anahtar teslim.
+
+### Konut ve Villa Projeleri
+Görsele tıklayarak büyütebilirsiniz.
+
+### Anahtar teslim konutta süreç nasıl işler
+Konut yapımında en sık yaşanan sorun teknik değil, koordinasyon kaynaklıdır: mimar, statikçi, mekanikçi ve taşeronlar ayrı ayrı çalıştığında aradaki boşluklar işverene kalır. Anahtar teslim yaklaşımın tek amacı bu boşluğu ortadan kaldırmaktır.
+#### İmar durumu ve yapılabilirlik
+İşin ilk adımı tasarım değil, arsanın ne izin verdiğidir: imar durumu, taban alanı ve kat alanı katsayıları, çekme mesafeleri, yükseklik sınırı ve varsa özel kısıtlar. Zemin etüdü raporu olmadan statik proje başlamaz. Bu aşamada ortaya çıkan kısıt, sonradan çıkacak olandan çok daha ucuzdur.
+#### Proje ekibi ve ruhsat
+Mimari, statik, mekanik ve elektrik projeleri birbiriyle çakıştırılarak üretilir; şaft, kiriş ve tesisat güzergâhları kâğıt üzerinde çözülür. Ruhsat başvurusu, yapı denetim sözleşmesi ve ilgili bildirimler bu dosyayla yapılır.
+#### Kaba yapı ve ince yapı sırası
+Temel, taşıyıcı sistem ve çatı tamamlanmadan ince işe geçilmez. Islak hacim yalıtımı, su testi yapılmadan kapatılmaz. Sıra bozulduğunda ortaya çıkan hasar, kazanılan günden pahalıya mal olur.
+#### Mekanik, elektrik ve altyapı
+Isıtma sistemi seçimi (yerden ısıtma, radyatör, ısı pompası) yalıtım performansıyla birlikte kararlaştırılır. Elektrik tesisatında priz ve aydınlatma yerleşimi mobilya planına göre belirlenir; akıllı ev, güvenlik ve veri altyapısı için boş boru çekmenin maliyeti, sonradan duvar kırmanın yanında yok denecek kadar azdır. Elektrikli araç şarjı düşünülüyorsa pano kapasitesi ve besleme hattı baştan ayrılır.
+#### Peyzaj, iskân ve teslim
+Dış mekân, bahçe tesisatı ve otopark düzeni yapıyla birlikte planlanır. Süreç yapı kullanma izni (iskân) ile kapanır; teslim dosyasında projeler, garanti belgeleri ve kullanılan malzeme listesi yer alır.
+
+### İlgili hizmetler
+S: Yaşarken tadilat mümkün mü?
+C: Sık Sorulan Sorular Merak edilenler Yaşarken tadilat mümkün mü? Evet. Konutlarda bölüm bölüm çalışırız; bir bölüm biterken diğerine geçilir, siz taşınmak zorunda kalmazsınız. Proje çizimi ve ruhsat işleri kapsamda mı? Evet. Mimari ve statik proje, mekanik-elektrik projeler ve ruhsat başvuru süreci yürütülebilir. Elinizde onaylı proje varsa doğrudan uygulamaya da geçebiliriz; bu durumda projeyi uygulanabilirlik açısından inceleyip görüşümüzü yazılı veririz. Ödeme nasıl ilerliyor, hakediş sistemi var mı? İş kalemleri ve ilerleme yüzdeleri sözleşmede tanımlanır; ödeme tamamlanan imalata bağlı hakedişle yapılır. Peşin bloke ödeme talep etmiyoruz. Hangi imalatın hangi hakedişte olduğu baştan bellidir. Teslimden sonra garanti veriyor musunuz? İşçilik garantisi sözleşmede süreyle tanımlanır. Kullanılan malzeme ve cihazların garantisi üreticiye aittir; garanti belgeleri teslim dosyasında size verilir. Garanti kapsamının ne olduğunu ve neyin dışında kaldığını yazılı belirtiriz.
+
+### Projenizi konuşalım
+Keşif ve teklif ücretsizdir. 24 saat içinde dönüş yapıyoruz.
+
+---
+
+## Riskli yapıdan güvenli binaya
+URL: https://www.odergroup.com.tr/kentsel-donusum.html
+Özet: Riskli yapı tespiti, hak sahipleriyle mutabakat, ruhsat ve proje süreçleri, yıkım ve yeni yapı uygulaması. Süreç şeffaf yürütülür. Ücretsiz keşif.
+Riskli yapı tespiti, hak sahipleriyle mutabakat, ruhsat ve proje süreçleri, yıkım ve yeni yapı uygulaması. Süreç şeffaf yürütülür.
+
+### Adım adım nasıl ilerliyoruz
+Her aşamada ne yapıldığını ve ne zaman biteceğini önceden bilirsiniz. Sürpriz kalem çıkmaz.
+Lisanslı kuruluşla riskli yapı raporu.
+Hak sahipleriyle paylaşım ve sözleşme.
+Mimari proje ve yapı ruhsatı.
+Kontrollü yıkım ve moloz bertarafı.
+İnşaat, iskân ve teslim.
+
+### Kentsel Dönüşüm
+Görsele tıklayarak büyütebilirsiniz.
+
+### Kentsel dönüşümde adımlar ve belgeler
+Kentsel dönüşümde işin zor kısmı yıkım değil, karar aşamasıdır. Hak sahipleri aynı binada yıllarca oturmuş komşulardır; süreç şeffaf yürütülmediğinde teknik olarak doğru olan proje bile ilerlemez.
+#### Riskli yapı tespiti
+Süreç, lisanslı kuruluşça yapılan riskli yapı tespitiyle başlar. Rapor ilgili idareye sunulur, tebligat yapılır ve itiraz süresi işler. Bu aşamada binanın gerçekten riskli olup olmadığı teknik bir sorudur; sonucu kimse peşinen varsayamaz.
+#### Hak sahipleriyle mutabakat
+Yıkım ve yeniden yapım kararı kanunda belirlenen çoğunlukla alınır. Paylaşım esasları, geçici konut düzeni ve kira yardımı başvurusu bu aşamada netleşir. Her hak sahibinin mevcut bağımsız bölüm büyüklüğü ve konumu yeni projedeki karşılığıyla birlikte yazılı olarak gösterilir — sözlü mutabakat sonradan anlaşmazlığa döner.
+#### Yıkım ve çevre güvenliği
+Yıkım öncesi abonelikler kapatılır, varsa tehlikeli atık ayrıştırılır, komşu yapılar için gerekli önlemler alınır. Yıkım ruhsatı ve moloz nakli süreçleri idareyle birlikte yürütülür.
+#### Yeni yapı ve güncel deprem yönetmeliği
+Yeni bina, yürürlükteki deprem yönetmeliğine göre projelendirilir. Dönüşümün asıl kazancı metrekare artışı değil, yapının deprem güvenliğidir; bu yüzden statik proje ve zemin etüdü sürecin en kritik kalemidir.
+#### Takvim ve şeffaflık
+Hak sahiplerine aylık ilerleme bildirimi yapılır: hangi imalat bitti, hangisi sırada, takvimde sapma var mı. Kira yardımı ve teslim tarihi gibi başlıklarda tahmin değil, güncel durum paylaşılır.
+
+### İlgili hizmetler
+S: Hak sahipleriyle anlaşmayı siz mi yürütüyorsunuz?
+C: Sık Sorulan Sorular Merak edilenler Hak sahipleriyle anlaşmayı siz mi yürütüyorsunuz? Süreci yönetir, toplantıları düzenler ve teklifleri şeffaf şekilde sunarız. Karar hak sahiplerinindir; biz teknik ve hukuki zemini hazırlarız. Riskli yapı tespiti ne kadar sürüyor? Tespit, laboratuvar ve rapor süreci binanın büyüklüğüne ve numune sayısına bağlıdır. Beton karot alımı, donatı tespiti ve zemin verisi gerekir. Süreyi keşifte binaya bakarak söyleriz — bina görülmeden tarih vermeyiz. Yıkım sırasında komşu binalara zarar gelir mi? Bitişik nizamda bu risk gerçektir ve önlem alınmadan başlanmaz. Yıkım öncesi komşu yapıların mevcut durumu fotoğrafla tespit edilir, gerekiyorsa iksa ve destekleme yapılır, kontrollü yıkım yöntemi seçilir. İnşaat sürerken kira yardımı süreçlerine destek veriyor musunuz? Başvuru süreçleri hak sahiplerinin kendi sorumluluğundadır; biz gerekli teknik belgeleri ve yapı ruhsatı evrakını zamanında sağlarız. Hangi belgenin ne zaman hazır olacağı proje takviminde gösterilir.
+
+### Projenizi konuşalım
+Keşif ve teklif ücretsizdir. 24 saat içinde dönüş yapıyoruz.
+
+---
+
+## Fabrikada üretim, sahada montaj
+URL: https://www.odergroup.com.tr/tiny-house.html
+Özet: Modüler yapı üretimi, iç mekân donanımı ve vinçle montaj. Kısa sürede, kontrollü kalitede, düşük şantiye yüküyle teslim. Ücretsiz keşif.
+Modüler yapı üretimi, iç mekân donanımı ve vinçle montaj. Kısa sürede, kontrollü kalitede, düşük şantiye yüküyle teslim.
+
+### Adım adım nasıl ilerliyoruz
+Her aşamada ne yapıldığını ve ne zaman biteceğini önceden bilirsiniz. Sürpriz kalem çıkmaz.
+Metrekare, plan ve donanım seçimi.
+Taşıyıcı sistem, yalıtım ve cephe fabrikada üretilir.
+Mutfak, banyo, elektrik ve mekanik tesisat.
+Tır ve vinçle sahaya taşıma.
+Zemin bağlantısı, birleştirme ve teslim.
+
+### Aynı mekân, aradaki fark
+Süreç fotoğrafları her projede kayıt altına alınır; teslimde dosyayla birlikte verilir.
+
+### Tiny House ve Prefabrik Yapı
+Görsele tıklayarak büyütebilirsiniz.
+
+### Modüler yapıda neyi önceden bilmek gerekir
+Tiny house ve prefabrik yapının cazibesi hızdır; ama hız, sahada değil fabrikada kazanılır. Sahada geçen süre kısadır — asıl iş, modül fabrikadan çıkmadan önce bitmiş olmalıdır.
+#### Kullanım amacı ve mevzuat
+Yapının kalıcı konut mu, bahçe eki mi, şantiye ofisi mi yoksa turizm amaçlı bir ünite mi olacağı, tabi olduğu izin sürecini belirler. Arsanın imar durumu ve niteliği (tarla, arsa, orman vasfı) ile belediyenin uygulaması belirleyicidir ve yerden yere değişir. Bu yüzden izin konusunda genel geçer cevap vermiyoruz; ilgili idareden alınan yazılı görüşle ilerliyoruz.
+#### Taşıyıcı sistem ve yalıtım
+Çelik ya da ahşap karkas seçimi; taşıma, ömür ve bütçe üçgeninde yapılır. Küçük hacimlerde yalıtım performansı büyük yapılardan daha belirleyicidir: hacim küçüldükçe yüzey/hacim oranı büyür, yani ısı kaybı oransal olarak artar. Duvar, taban ve çatı yalıtım kalınlıkları ile ısı köprüleri baştan çözülür.
+#### Isıtma, soğutma ve yoğuşma
+Küçük yapıda en sık görülen sorun küf ve yoğuşmadır. Buhar kesici katmanın doğru yüzde olması, havalandırmanın (doğal ya da ısı geri kazanımlı) planlanması ve banyo-mutfak egzozunun çözülmesi gerekir. Isıtma seçimi — klima, ısı pompası, elektrikli panel — yalıtım değerleriyle birlikte kararlaştırılır.
+#### Altyapı bağlantıları
+Modül yerine konduğunda hazır olması gereken üç şey vardır: elektrik beslemesi, temiz su hattı ve atık su çözümü (kanalizasyon bağlantısı ya da uygun arıtma/fosseptik). Şebeke yoksa güneş enerjili bağımsız sistem ayrı bir tasarım konusudur ve tüketim profiline göre boyutlandırılır.
+#### Nakliye, vinç ve montaj günü
+Modül genişliği ve yüksekliği karayolu taşıma sınırlarına göre belirlenir; gerekirse özel izin alınır. Montaj günü için vinç kapasitesi, aracın yanaşma mesafesi ve zeminin vinci taşıyıp taşımayacağı önceden kontrol edilir. Temel ya da beton kaideler modül gelmeden tamamlanmış ve kürünü almış olmalıdır.
+
+### İlgili hizmetler
+S: Tiny house için ruhsat gerekiyor mu?
+C: Sık Sorulan Sorular Merak edilenler Tiny house için ruhsat gerekiyor mu? Sabit temele oturuyorsa yapı ruhsatı gerekir; tekerlekli/taşınabilir modellerde mevzuat farklıdır. Arsanızın imar durumuna göre doğru modeli birlikte belirleriz. Kışın yaşanabilir mi, yalıtım nasıl? Yalıtım kalınlığı ve pencere seçimi kurulacak iklime göre belirlenir; dört sezon kullanım isteniyorsa bu baştan söylenmeli çünkü konstrüksiyonu değiştirir. Isıtma çözümü (klima, ısı pompası, soba) ayrı kalem olarak planlanır. Nakliye ve vinç masrafı fiyata dahil mi? Teslim yerine göre değişir; teklifte ayrı kalem olarak gösterilir. Arazinin vinç erişimi, yol genişliği ve zemin durumu önceden kontrol edilmelidir — modül sahaya girmiyorsa nakliye planı baştan farklı kurulur. Su, elektrik ve atık su bağlantısı kime ait? Modülün içindeki tesisat bize aittir ve hazır teslim edilir. Arazideki altyapı bağlantıları (şebeke elektriği, su, fosseptik veya kanal) arsa sahibinin sorumluluğundadır. Hangi noktada devraldığımız teklifte açıkça yazılır.
+
+### Projenizi konuşalım
+Keşif ve teklif ücretsizdir. 24 saat içinde dönüş yapıyoruz.
+
+---
+
+## Fizibiliteden devreye almaya çatı GES
+URL: https://www.odergroup.com.tr/cati-ges.html
+Özet: Statik ve gölgelenme analizi, üretim öngörüsü, montaj, şebeke bağlantısı ve geçici kabul. Yaklaşık 21 MW kurulu güç deneyimi.
+Statik ve gölgelenme analizi, üretim öngörüsü, montaj, şebeke bağlantısı ve geçici kabul. Yaklaşık 21 MW kurulu güç deneyimi.
+
+### Adım adım nasıl ilerliyoruz
+Her aşamada ne yapıldığını ve ne zaman biteceğini önceden bilirsiniz. Sürpriz kalem çıkmaz.
+Çatı statiği, gölgelenme ve üretim simülasyonu.
+Elektrik projesi, dağıtım şirketi başvurusu.
+Panel, invertör ve taşıyıcı sistem temini.
+Taşıyıcı, panel, DC-AC tesisat ve topraklama.
+Test, şebeke bağlantısı ve geçici kabul.
+
+### Aynı mekân, aradaki fark
+Süreç fotoğrafları her projede kayıt altına alınır; teslimde dosyayla birlikte verilir.
+
+### Çatı GES — Güneş Enerjisi Santrali
+Görsele tıklayarak büyütebilirsiniz.
+
+### Zor olan, 25 yıl sorunsuz üretmesi
+Bir çatı GES yatırımında paneller maliyetin bir parçasıdır; sistemin ömrünü belirleyen ise çatının kendisi, taşıyıcı detay ve elektriksel tasarımdır. Yanlış kurgulanan bir sistem ilk yıl üretir, üçüncü yıl sızdırır.
+#### Çatı tipi ve taşıyıcı detay
+Sandviç panel, trapez sac, membran kaplı beton ve kiremit çatıların her birinde montaj detayı farklıdır. Membran çatıda delme yerine ağırlıklı (balast) sistem gündeme gelir; sandviç panelde vida sızdırmazlığı ve panel kalınlığı belirleyicidir. Su yalıtımını bozan her detay, elektrikten önce bir yapı sorunudur.
+#### Statik: kar, rüzgâr ve panel yükü
+Hesap sadece panel ağırlığı değildir. Bölgenin kar yükü, rüzgâr emme kuvveti ve panel dizisinin oluşturduğu yelken etkisi birlikte hesaplanır. Çatı mevcut hâliyle yetmiyorsa güçlendirme seçenekleri ve maliyeti fizibilite raporunda ayrı kalem olarak gösterilir.
+#### Gölgelenme ve dize tasarımı
+Baca, asansör kulesi, klima dış ünitesi ve komşu yapı gölgeleri gün ve mevsim boyunca değişir. Gölgelenme analizi, panellerin hangi dizelere (string) ayrılacağını ve güç optimize edici gerekip gerekmediğini belirler. Tek bir panelin gölgelenmesi, kötü kurgulanmış bir dizede bütün dizenin üretimini düşürür.
+#### Bağlantı gücü ve şebeke süreci
+Tesisin mevcut sözleşme gücü ve trafo kapasitesi, kurulabilecek santral gücünün üst sınırını belirler. Çağrı mektubu başvurusu, proje onayı, sayaç değişimi ve geçici kabul adımları dağıtım şirketiyle yürütülür. Bu sürecin takvimi bölgeye göre değişir; görmeden süre taahhüdü vermeyiz.
+#### İzleme, temizlik ve bakım
+Devreye alma işin sonu değil başıdır. İzleme sistemi dize bazında üretim gösterdiğinde düşüş erken fark edilir. Üretim kaybının en sık üç sebebi kirlenme, yeni oluşan gölgelenme ve dize/konnektör arızasıdır. Periyodik bakım kapsamı sözleşmede kalem kalem yazılır.
+
+### İlgili hizmetler
+S: Çatım GES taşır mı?
+C: Sık Sorulan Sorular Merak edilenler Çatım GES taşır mı? Önce statik hesap yaparız. Mevcut çatının kar ve rüzgâr yüküyle birlikte panel yükünü taşıyıp taşımadığı raporlanır; taşımıyorsa güçlendirme seçenekleri sunulur. Yatırım kaç yılda geri döner? Tüketim profilinize, çatı yönelimine ve elektrik tarifenize bağlıdır. Fizibilite raporunda gerçek verilerle geri ödeme süresi hesaplanır — tahmini rakam vermeyiz. Çatı GES için hangi izinler gerekiyor? Bağlantı gücüne ve tesisin tipine göre değişir. Çağrı mektubu başvurusu, proje onayı ve geçici kabul süreçleri yürütülür; dağıtım şirketiyle yazışmaları biz takip ederiz. Hangi izinlerin gerektiği keşif sonrası netleşir — tesisin durumunu görmeden liste vermeyiz. Panelleri kim temizliyor, bakım kime ait? Devreye almadan sonra periyodik bakım ayrı bir sözleşme konusudur. İzleme sistemi üretim düşüşünü gösterdiğinde müdahale edilir; kirlenme, gölgelenme ve dize arızası en sık üç sebeptir. Bakım kapsamını sözleşmede kalem kalem yazarız. Şebeke kesildiğinde GES elektrik veriyor mu? Şebekeye bağlı (on-grid) sistemler kesinti anında güvenlik gereği devre dışı kalır — bu bir arıza değil, yönetmelik gereğidir. Kesintide de elektrik isteniyorsa akü destekli hibrit sistem kurulması gerekir; bu farklı bir yatırım kalemidir ve fizibilitede ayrı değerlendirilir.
+
+### Projenizi konuşalım
+Keşif ve teklif ücretsizdir. 24 saat içinde dönüş yapıyoruz.
+
+---
+
+## Ölçülmeyen enerji yönetilemez
+URL: https://www.odergroup.com.tr/enerji-verimliligi-danismanligi.html
+Özet: Sanayi ve ticari tesislerde enerji etüdü, termal kamera ölçümü, kayıp analizi ve verimlilik projesi. Tasarruf tahmin edilmez, ölçülür ve raporlanır.
+Sanayi ve ticari tesislerde enerji etüdü, termal kamera ölçümü, kayıp analizi ve verimlilik projesi. Tasarruf tahmin edilmez, ölçülür ve raporlanır.
+
+### Adım adım nasıl ilerliyoruz
+Enerji faturasının hangi kalemden şiştiğini tahminle değil ölçümle buluruz. Her adımda ne yapıldığı ve ne bulunduğu yazılı olarak paylaşılır.
+12 aylık fatura, tüketim ve üretim verisinin okunması.
+Pano, aydınlatma, motor, kompresör ve ısıl ölçümler.
+Nerede, ne kadar ve hangi maliyetle kaybedildiği.
+Önlem listesi, yatırım tutarı ve geri ödeme süresi.
+İşin yapılması ve aynı noktaların tekrar ölçülmesi.
+
+### Enerji maliyeti tek kalem değildir
+Bir tesisin elektrik faturası tek bir rakam gibi görünür; oysa içinde birbirinden bağımsız en az beş ayrı kayıp kalemi vardır. Hangisinin ne kadar tuttuğunu ölçmeden yapılan her yatırım kumardır. Etüdün amacı, parayı en çok geri getirecek kalemi önce bulmaktır.
+#### Reaktif ceza ve güç faktörü
+Kompanzasyon panosu arızalı ya da yetersiz olan tesislerde fatura, tüketilen enerjiden bağımsız olarak ceza kalemiyle büyür. Bu çoğu zaman tesisin fark etmediği, ama en ucuz çözülen kalemdir: kondansatör grubunun ve reaktif rölesinin kontrolü, çoğu durumda yeni bir yatırım bile gerektirmez.
+#### Pano ısınması ve kayıp
+Gevşek klemens, aşırı yüklenmiş baraya ve dengesiz faz dağılımı hem enerji kaybıdır hem de yangın riskidir. Termal kamera ölçümü bu noktaları tesisi durdurmadan, gerçek yük altında gösterir. Isınan her bağlantı, faturaya ısı olarak yazılan elektriktir.
+#### Aydınlatma
+Eski armatürlerde harcanan enerjinin büyük bölümü ışığa değil ısıya gider. Dönüşüm kararı, sadece armatür değişimiyle değil; mahal bazında ölçülen aydınlık seviyesi, çalışma saatleri ve hareket/gün ışığı sensörü ihtiyacıyla birlikte verilir. Gereğinden fazla aydınlatmak da bir kayıptır.
+#### Motor, kompresör ve basınçlı hava
+Sanayi tesislerinde elektriğin büyük kısmını motorlar çeker. Sürekli tam yükte çalışan ama kısmi yük gören motorlarda sürücü (invertör) uygulaması, basınçlı hava hattındaki kaçakların tespiti ve kompresör çalışma rejiminin düzenlenmesi, çoğu tesiste en hızlı geri dönen üç kalemdir. Basınçlı hava kaçağı görünmez; ama yıl boyu ödenir.
+#### Isıtma, soğutma ve yalıtım
+Isıl kameranın ikinci işi cephedir: kaçak ısı, köprüleşen detaylar, yalıtımsız vana ve hatlar. Mekanik tesisatın işletme rejimi (ayar değerleri, çalışma saatleri, taze hava oranı) çoğu zaman yatırım yapmadan iyileştirilebilir.
+Raporda her önlem; hangi ölçüme dayandığı, tahmini yatırım tutarı ve geri ödeme süresiyle birlikte yazılır. Mevzuat gereği yetkilendirilmiş EVD şirketi onayı gerektiren resmî etüt ve Verimlilik Artırıcı Proje (VAP) başvurularında lisanslı şirketle birlikte çalışılır; ölçüm, analiz, projelendirme ve uygulama tarafı Öder Group tarafından yürütülür.
+
+### Ölçüm ve saha çalışması
+Görsele tıklayarak büyütebilirsiniz.
+
+### İlgili hizmetler
+S: Enerji etüdü ne kadar sürer?
+C: Sık Sorulan Sorular Merak edilenler Enerji etüdü ne kadar sürer? Tesisin büyüklüğüne ve ölçülecek ekipman sayısına bağlıdır. Saha çalışması çoğu ticari tesiste birkaç gün, büyük sanayi tesislerinde daha uzun sürer. Süreyi keşif sonrası yazılı olarak bildiririz; görmeden gün sayısı vermeyiz. Yetkilendirilmiş EVD şirketi onayı gereken işlerde ne oluyor? Mevzuat gereği yetkilendirilmiş enerji verimliliği danışmanlık (EVD) şirketi onayı gerektiren resmî etüt ve Verimlilik Artırıcı Proje (VAP) başvurularında, lisanslı şirketle birlikte çalışılır. Ölçüm, analiz, projelendirme ve uygulama tarafını biz yürütürüz. Hangi ölçümleri yapıyorsunuz? Elektrik panolarında termal kamera ile ısıl kontrol, güç kalitesi ve güç faktörü ölçümü, aydınlatma seviyesi ölçümü, motor ve kompresör yük takibi, basınçlı hava kaçağı tespiti ve tüketim profili analizi. Hangi ölçümün gerektiği tesise göre belirlenir. Tasarruf garantisi veriyor musunuz? Garanti yüzdesi vermiyoruz. Raporda her önlemin hangi ölçüme dayandığı, tahmini yatırım tutarı ve geri ödeme süresi kalem kalem yazılır. Uygulamadan sonra aynı noktalar tekrar ölçülür; fark rakamla gösterilir. Üretimi durdurmadan etüt yapılabilir mi? Evet. Ölçümlerin büyük bölümü tesis çalışırken yapılır — zaten gerçek yük altındaki veri anlamlıdır. Durdurma gerektiren tek tük ölçüm varsa, planlı bakım duruşuna denk getirilir.
+
+### Projenizi konuşalım
+Keşif ve teklif ücretsizdir. 24 saat içinde dönüş yapıyoruz.
+
+---
+
+## PLC, SCADA ve hat modernizasyonu
+URL: https://www.odergroup.com.tr/fabrika-otomasyonu.html
+Özet: PLC ve SCADA modernizasyonu: duruşu en aza indiren etaplı geçiş; izleme, raporlama ve uzaktan kontrol altyapısı. Keşif ve teklif ücretsizdir.
+Duruşu en aza indiren etaplı geçiş; izleme, raporlama ve uzaktan kontrol altyapısı.
+
+### Adım adım nasıl ilerliyoruz
+Her aşamada ne yapıldığını ve ne zaman biteceğini önceden bilirsiniz. Sürpriz kalem çıkmaz.
+Mevcut hat, panolar ve otomasyon envanteri.
+PLC/SCADA mimarisi ve geçiş planı.
+Yeni panolar atölyede üretilir ve test edilir.
+Duruş penceresinde hızlı değişim.
+Test, operatör eğitimi ve dokümantasyon.
+
+### Aynı mekân, aradaki fark
+Süreç fotoğrafları her projede kayıt altına alınır; teslimde dosyayla birlikte verilir.
+
+### Fabrika Otomasyonu
+Görsele tıklayarak büyütebilirsiniz.
+
+### Çalışan bir hat nasıl modernize edilir
+Otomasyon modernizasyonunda teknik zorluk PLC programı değildir; üretimi durdurmadan geçişi planlamaktır. Bir saatlik plansız duruşun maliyeti, çoğu tesiste projenin kendisiyle kıyaslanabilir.
+#### Mevcut durum envanteri
+İşe sahadaki gerçeği yazmakla başlanır: hangi PLC ailesi, hangi sürüm, program yedeği var mı, dokümantasyon güncel mi, saha cihazları hangi protokolle konuşuyor. Eski sistemlerde en sık karşılaşılan sorun, çalışan ama kaynak kodu kaybolmuş bir programdır. Bu durum baştan tespit edilmezse geçiş planı kurulamaz.
+#### Etaplandırma ve geçiş penceresi
+Geçiş, planlı bakım duruşlarına ve vardiya programına göre bölünür. Her etap için geri dönüş senaryosu yazılır: yeni sistem beklendiği gibi çalışmazsa hattın eski hâline kaç dakikada döneceği önceden bellidir. Bu senaryo olmadan devreye alma yapılmaz.
+#### SCADA, veri ve raporlama
+SCADA'nın asıl değeri ekranlarda değil, biriken veridedir: duruş sebepleri, çevrim süreleri, fire oranları ve enerji tüketimi. Hangi verinin toplanacağı, üretim yönetiminin hangi soruya cevap aradığına göre belirlenir. Her etiketi toplamak, hiçbirini toplamamak kadar işe yaramaz.
+#### Yedekleme ve dokümantasyon
+Teslimde verilen dosya; PLC ve HMI program yedekleri, etiket listesi, elektrik şemaları, parametre kayıtları ve devreye alma testlerinin sonuçlarını içerir. Yedek, tesiste erişilebilir bir yerde saklanır — sadece yükleniciyle kalan yedek, yedek değildir.
+#### Uzaktan erişim ve güvenlik
+Uzaktan bağlantı bakım süresini kısaltır, ama üretim ağını açık bırakmanın yolu değildir. Ofis ağı ile üretim ağı ayrılır, bağlantı denetimli ve kayıtlı bir kanaldan verilir, yetkiler kişi bazında tanımlanır. Operatör panelinin internete doğrudan açık olması, otomasyon tarafında en sık rastlanan açıktır.
+Periyodik bakım sözleşmesinde nelere dikkat edilmeli? →
+
+### İlgili hizmetler
+S: Üretimi durdurmadan geçiş mümkün mü?
+C: Sık Sorulan Sorular Merak edilenler Üretimi durdurmadan geçiş mümkün mü? Çoğu projede evet. Yeni panolar önceden hazırlanır, geçiş planlı duruş penceresinde yapılır. Duruş süresi sözleşmede yazılı olarak taahhüt edilir. Mevcut PLC'yi değiştirmek zorunda mıyız? Hayır. Önce mevcut donanımın hangi kısmının kullanılabilir olduğu tespit edilir. Bazı tesislerde yalnız SCADA katmanı ve haberleşme yenilenerek hedefe ulaşılır; komple değişim ancak donanım destek dışı kaldığında veya kapasite yetmediğinde önerilir. Devreye alma sonrası personel eğitimi var mı? Evet. Operatör ve bakım personeline sistem devredeyken uygulamalı eğitim verilir, ekranlar ve alarm mantığı anlatılır. Yazılı kullanım dokümanı ve alarm listesi teslim edilir; sonradan personel değişirse doküman üzerinden devir yapılabilir. Yazılımın kaynak kodu ve yedeği bizde kalıyor mu? Evet. PLC ve SCADA projelerinin yedekleri teslimde size verilir. Bu şart sözleşmede yazılıdır; tesisin kendi otomasyonuna bağımlı kalmaması gerektiğine inanıyoruz.
+
+### Projenizi konuşalım
+Keşif ve teklif ücretsizdir. 24 saat içinde dönüş yapıyoruz.
+
+---
+
+## Kesintisiz enerji için koruyucu bakım
+URL: https://www.odergroup.com.tr/elektrik-bakim.html
+Özet: Trafo ve pano projelendirme, imalat, devreye alma ve sözleşmeli periyodik bakım. Arıza beklemeden önlem alırız. Ücretsiz keşif.
+Trafo ve pano projelendirme, imalat, devreye alma ve sözleşmeli periyodik bakım. Arıza beklemeden önlem alırız.
+
+### Adım adım nasıl ilerliyoruz
+Her aşamada ne yapıldığını ve ne zaman biteceğini önceden bilirsiniz. Sürpriz kalem çıkmaz.
+Trafo, pano ve dağıtım hatlarının tespiti.
+Termal kamera, izolasyon ve topraklama ölçümleri.
+Riskli noktalar ve öncelik sırası.
+Onarım, yenileme veya kapasite artırımı.
+Periyodik bakım takvimi ve raporlama.
+
+### Aynı mekân, aradaki fark
+Süreç fotoğrafları her projede kayıt altına alınır; teslimde dosyayla birlikte verilir.
+
+### Elektrik Taahhüt, Trafo, Pano ve Koruyucu Bakım
+Görsele tıklayarak büyütebilirsiniz.
+
+### Koruyucu bakım neyi önceden gösterir
+Elektrik arızalarının büyük bölümü aniden oluşmaz; haftalar önce ısınma, ses, koku ya da ölçüm sapması olarak kendini gösterir. Koruyucu bakımın tek amacı bu sinyalleri arıza hâline gelmeden yakalamaktır.
+#### Trafo ve orta gerilim
+Yağ seviyesi ve sızıntı kontrolü, silikajel durumu, buşing temizliği, koruma rölesi ayarlarının teyidi ve hücre kilit-topraklama düzeninin kontrolü periyodik olarak yapılır. Orta gerilim tarafındaki her işlem kesme-topraklama prosedürüyle ve yetkili personelle yürütülür.
+#### Pano ve termal ölçüm
+Alçak gerilim panolarında en sık arıza sebebi gevşek bağlantıdır. Termal kamera ile yük altında yapılan ölçüm, ısınan klemensi, dengesiz yüklenmiş fazı ve aşırı yüklü çıkışı tesis durmadan gösterir. Ölçüm raporunda her bulgu fotoğraf, sıcaklık farkı ve öncelik sırasıyla verilir.
+#### Kompanzasyon ve güç kalitesi
+Reaktif ceza, çoğu tesiste arızalı kondansatör ya da hatalı röle ayarından doğar ve fark edilmeden aylarca ödenir. Harmonik bozulma ise sürücü ve LED ağırlıklı tesislerde artar; kondansatör ömrünü kısaltır, nötr iletkenini ısıtır. İkisi de ölçümle tespit edilir, tahminle değil.
+#### Topraklama ve koruma
+Topraklama direnci ölçümü, süreklilik kontrolü ve kaçak akım korumalarının test edilmesi yasal yükümlülük olduğu kadar can güvenliği konusudur. Ölçüm sonuçları raporlanır ve bir önceki ölçümle karşılaştırılır — asıl bilgi tek bir değerde değil, değerin yıllar içindeki değişimindedir.
+#### Arıza müdahalesi ve yedek parça
+Sözleşmeli işletmede müdahale süresi, çağrı kanalı ve kritik yedek parça listesi önceden yazılır. Hangi malzemenin tesiste stokta bulunacağı, temin süresi uzun olan kalemlere göre belirlenir. Bakım sonrası her müdahale kayda geçer; bu kayıt bir sonraki yılın bakım planını oluşturur.
+Periyodik bakım sözleşmesinde nelere dikkat edilmeli? →
+
+### İlgili hizmetler
+S: Koruyucu bakım neden gerekli?
+C: Sık Sorulan Sorular Merak edilenler Koruyucu bakım neden gerekli? Elektrik arızalarının çoğu önceden görülebilir. Termal kamerayla ısınan bağlantı noktaları arıza çıkmadan tespit edilir; plansız duruş maliyeti bakım maliyetinin çok üzerindedir. Trafo bakımı üretimi durdurur mu? Bakım penceresi tesisin çalışma takvimine göre planlanır; çoğu işlem hafta sonu veya vardiya dışında yapılır. Kesinti gerekiyorsa süresi önceden yazılı olarak bildirilir, jeneratör veya geçici besleme seçenekleri konuşulur. Termal kamera ölçümü ne işe yarıyor? Pano, bara ve bağlantı noktalarındaki anormal ısınmayı, arıza çıkmadan önce gösterir. Gevşek klemens, dengesiz yük ve aşırı yüklenen kablo bu yöntemle tespit edilir. Ölçüm raporlanır; hangi noktaya ne yapılacağı önem sırasıyla yazılır. Arıza durumunda ne kadar sürede geliyorsunuz? Müdahale süresi sözleşmede tanımlanır ve tesisin kritikliğine göre belirlenir. Veri merkezi ile depo aynı sürede ele alınmaz. Sözleşme yoksa da acil çağrılara döneriz, ancak taahhütlü süre yalnız sözleşmeli tesisler için geçerlidir.
+
+### Projenizi konuşalım
+Keşif ve teklif ücretsizdir. 24 saat içinde dönüş yapıyoruz.
+
+---
+
+## Tesisi durdurmayan teknik işletme
+URL: https://www.odergroup.com.tr/teknik-hizmetler-tesis-yonetimi.html
+Özet: AVM, hastane, iş merkezi, zincir mağaza ve fabrikalarda periyodik bakım sözleşmesi, teknik işletme, inşai onarım ve elektrik taahhüt. Kapsam kalem kalem.
+AVM, hastane, iş merkezi, zincir mağaza ve fabrikalarda periyodik bakım sözleşmesi, arıza müdahalesi, inşai onarım ve elektrik taahhüt. Kapsamı kalem kalem yazarız.
+
+### Her tesisin kendi kuralı var
+Bir AVM ile bir hastanenin teknik işletmesi aynı işin iki farklı adı değildir. Çalışma penceresi, izin süreci, risk kalemleri ve kesinti toleransı birbirinden ayrıdır; sözleşme de buna göre kurulur.
+Çalışma penceresi kepenk kapandıktan sonra başlar. Toz bariyeri, gürültü sınırı, AVM yönetimi çalışma izni, yük asansörü rezervasyonu ve personel giriş kartları takip edilmesi gereken kalemlerdir. Ortak alan aydınlatması, iklimlendirme, yangın algılama ve yürüyen merdiven periyodik bakımı ile mağaza içi inşai onarım aynı sözleşme altında toplanabilir.
+Hasta ve personel sirkülasyonu kesilmeden, hijyen bariyerli ve etaplı çalışma esastır. Elektrik, su ve tıbbi gaz hatlarının kesintisizliği; basınçlı kap, asansör ve jeneratör kontrolleri; acil çıkışların işlevselliği teknik işletmenin ayrı başlıklarıdır. Enfeksiyon kontrol kurallarına uyum sözleşmeye yazılır.
+Kat kat ilerleyen program, mesai dışı imalat ve çalışan konforunu bozmayan geçiş planı. İklimlendirme, aydınlatma, UPS ve jeneratör periyodik bakımı; veri merkezi ve sistem odası bulunan binalarda soğutma sürekliliği ayrı bir risk kalemidir.
+Üretim takvimi belirleyicidir; bakım planlı duruşlara göre kurgulanır. Trafo ve orta gerilim hücreleri, kompanzasyon, pano termal kontrolü, kompresör ve basınçlı hava hattı, PLC-SCADA sistemleri. Plansız duruşun maliyeti bakım sözleşmesinin kendisinden büyüktür.
+
+### Bakım sözleşmesi imzalamadan önce sorulacak 8 soru
+Teknik hizmet firmaları arasındaki fark fiyat listesinde değil, sözleşmenin ayrıntısında görünür. Aşağıdaki sekiz başlık net yazılmamışsa, yıl içinde mutlaka tartışma çıkar. Bu listeyi bizimle çalışmasanız bile kullanın.
+#### 1. Kapsam sistem bazında mı yazılmış, genel ifadelerle mi?
+"Tüm elektrik ve mekanik sistemlerin bakımı" cümlesi hiçbir şey anlatmaz. İyi bir sözleşmede ekipman envanteri vardır: kaç adet asansör, hangi marka jeneratör, kaç pano, hangi klima santrali. Envanter yoksa bakım sayısı ve fiyat da gerçekçi değildir.
+#### 2. Koruyucu bakım ile arıza müdahalesi ayrılmış mı?
+Koruyucu bakım takvime bağlı, planlı bir mühendislik hizmetidir; üretici servis el kitabındaki kontrol listelerine göre yapılır. Arıza müdahalesi ise çağrı üzerinedir. İkisi tek kalemde toplanmışsa, yıl içinde hangi işin sözleşmeye dahil olduğu tartışma konusu olur.
+#### 3. Parça dahil mi, hariç mi?
+Sektörde en çok anlaşmazlık çıkaran kalem budur. Sözleşmede sarf malzeme (filtre, kayış, yağ) ile yedek parçanın (kompresör, kart, motor) ayrı ayrı tanımlanması gerekir. Hangi tutara kadar yüklenicinin, hangi tutardan sonra işverenin olduğu yazılmalıdır.
+#### 4. Müdahale süresi tanımlı mı, kademeli mi?
+Tek bir "en kısa sürede" ifadesi yeterli değildir. Arızalar kritikliğine göre ayrılır: üretimi veya tesisi durduran arıza, konforu etkileyen arıza, planlanabilir iş. Her kademe için ayrı müdahale ve çözüm süresi yazılır. Sürelere bağlı cezai şart varsa iki taraf için de olmalıdır.
+#### 5. Kimler sahada olacak, kaç kişi?
+Yerinde sürekli personel mi (in-house ekip), yoksa çağrı üzerine gelen mobil ekip mi? Sürekli personel varsa kaç kişi, hangi vardiya, hangi yetkinlik belgeleriyle. Yetkili elektrikçi, yüksek gerilim işletme sorumlusu ve İSG belgeleri kontrol edilmelidir.
+#### 6. Raporlama nasıl yapılacak?
+Her bakımın kayda geçmesi, bir sonraki yılın planını oluşturur. Aylık rapor; yapılan bakımlar, açılan ve kapanan arıza çağrıları, tekrarlayan arızalar ve önerilen yatırımları içermelidir. Ölçüm raporları (termal, topraklama, güç kalitesi) önceki ölçümle karşılaştırmalı verilmelidir.
+#### 7. Alt yüklenici kullanılacak mı, sorumluluk kimde?
+Asansör, yangın sistemi ve bazı özel ekipmanlarda yetkili servis zorunluluğu olabilir. Bu normaldir; sorun, koordinasyon yükünün kime kaldığıdır. İşvereni alt yüklenicilerle tek tek muhatap bırakan bir sözleşme, aslında bakım sözleşmesi değildir.
+#### 8. Devir ve fesih nasıl işleyecek?
+Sözleşme bittiğinde ekipman geçmişi, program yedekleri, anahtarlar, şifreler ve dokümantasyon işverene teslim edilmelidir. Bunlar yazılı değilse, firma değiştirirken tesisin geçmişi kaybolur ve yeni yüklenici sıfırdan başlar.
+Kamu tarafında bu başlıkların karşılığı idari ve teknik şartnamededir; 4734 sayılı Kamu İhale Kanunu kapsamındaki hizmet alımlarında kapsam, benzer iş tanımı ve yeterlik kriterleri şartnamede belirlenir. Özel sektörde ise aynı ayrıntı sözleşmeye yazılmadığı sürece bağlayıcı değildir.
+
+### Sahadan teknik işletme çalışmaları
+Görsele tıklayarak büyütebilirsiniz.
+
+### İlgili hizmetler
+S: Periyodik bakım sözleşmesi ne kadar süreyle yapılır?
+C: Sık Sorulan Sorular Merak edilenler Periyodik bakım sözleşmesi ne kadar süreyle yapılır? Yaygın uygulama bir yıldır; işletme bütçeleri yıllık kurulduğu için böyledir. Daha uzun süreli sözleşmelerde fiyat güncelleme formülünün baştan yazılması gerekir. Süreyi görmeden söylemiyoruz; keşif sonrası tesise uygun süreyi teklifte belirtiyoruz. Sadece belirli bir sistemin bakımını alabilir miyiz? Evet. Yalnız elektrik tarafı, yalnız trafo ve pano, ya da yalnız inşai onarım kapsamında sözleşme yapılabilir. Kapsamın dar olması sorun değil; tanımsız olması sorundur. Mevcut bakım firmamız var, geçiş nasıl olur? Devir aşamasında ekipman envanteri çıkarılır, mevcut bakım kayıtları ve ölçüm raporları incelenir, açık arıza listesi devralınır. Bu tespit yapılmadan verilen fiyat gerçekçi olmaz; biz keşif yapmadan teklif vermiyoruz. Hangi bölgelerde hizmet veriyorsunuz? Merkez ofisimiz Ataşehir / İstanbul'dadır; projeler Türkiye genelinde yürütülmektedir. Sürekli personel gerektiren sözleşmelerde mesafe ve ulaşım planı teklifte ayrıca değerlendirilir. Teklif almak için ne gerekiyor? Saha keşfi. Ekipman envanteri, pano ve trafo durumu, mevcut arıza listesi ve çalışma kısıtları yerinde görülmeden kapsam yazılamaz. Keşif ve teklif ücretsizdir; teklifte hangi sistemin hangi sıklıkla bakıma gireceği kalem kalem yazar. İhale usulüyle çalışıyor musunuz? Evet. Kurucumuz 4734 sayılı Kamu İhale Kanunu ve 4735 sayılı Kamu İhale Sözleşmeleri Kanunu konusunda eğitmenlik yapmıştır (AMP Yazılım, 2010–2013). İdari ve teknik şartname okuma, birim fiyat analizi ve teklif hazırlama süreçleri bizim için standart iştir.
+
+### Projenizi konuşalım
+Keşif ve teklif ücretsizdir. 24 saat içinde dönüş yapıyoruz.
+
+---
+
+## Yüksek Gerilim (YG/OG) Proje ve Saha İşleri
+URL: https://www.odergroup.com.tr/yuksek-gerilim.html
+Özet: Öder Group; YG/OG elektrik altyapısı, trafo, hücre, pano, test ve devreye alma süreçlerinde keşif ve teklif sunar.
+Trafo, hücre, pano, test ve devreye alma gerektiren yüksek gerilim işlerinde kapsamı sahaya ve mevzuata göre netleştirin.
+
+### Proje değerlendirmesinde hangi bilgiler gerekir?
+Yüksek gerilim taleplerinde işin gerilim seviyesi, saha lokasyonu, mevcut tek hat şeması, ekipman durumu, kesinti penceresi ve devreye alma hedefi birlikte değerlendirilir. Uygulama; yetkili ekip, iş güvenliği ve ilgili mevzuat gereklilikleriyle planlanır.
+
+### Süreç nasıl ilerler?
+- Keşif: saha, tek hat şeması, trafo/hücre/pano durumu ve kesinti olanakları yerinde incelenir.
+- Kapsam ve teklif: proje, tedarik, montaj, test ve devreye alma kalemleri ayrı ayrı yazılır.
+- Uygulama: işler yetkili ekip ve iş güvenliği planıyla, tesisin işletme takvimine uygun kesinti pencerelerinde yürütülür.
+- Test, devreye alma ve teslim: kontrol ve testler tamamlanır, teslim dokümantasyonu hazırlanır.
+
+### Hangi işlerde destek verilir?
+Trafo ve hücre yenileme, OG/AG pano işleri, bağlantı ve saha koordinasyonu, planlı kesinti organizasyonu, test ve devreye alma ile mevcut tesislerin periyodik bakım kapsamı değerlendirilir. Tahmini süre ve fiyat keşif ve şartname incelemesinden sonra yazılı olarak paylaşılır.
+
+### Sık sorulan sorular
+S: Yüksek gerilim işlerinde hangi bilgiler gerekir?
+C: Saha lokasyonu, gerilim seviyesi, mevcut ekipman, tek hat şeması ve hedef tarih ilk değerlendirme için yeterli başlangıç bilgileridir.
+S: Trafo ve hücre işleri teklif kapsamına alınabilir mi?
+C: Evet. Kapsam, mevcut saha ve teknik şartname incelendikten sonra proje, tedarik, montaj, test ve devreye alma adımlarına ayrılır.
+S: Kesinti planı hazırlanır mı?
+C: Kesinti ve devreye alma takvimi, tesisin işletme şartları ve iş güvenliği gereklilikleri dikkate alınarak planlanır.
+S: Hangi bölgelerde çalışıyorsunuz?
+C: Merkez ofisimiz Ataşehir / İstanbul'dadır; saha işleri Türkiye genelinde, kapsam ve takvime göre planlanır.
+S: Keşif ve teklif ücretli mi?
+C: Keşif ve teklif ücretsizdir; teklifte iş kalemleri ayrı ayrı yazılır.
+S: Mevcut tesiste periyodik bakım yapılabilir mi?
+C: Evet. Trafo, hücre ve pano bakımları, tesisin işletme şartlarına göre sözleşmeli periyodik bakım kapsamında planlanabilir.
+
+---
+
+## 5G Altyapı ve Saha Uygulamaları
+URL: https://www.odergroup.com.tr/5g-altyapi.html
+Özet: Öder Group; 5G saha enerji, kablolama, pano ve teknik koordinasyon ihtiyaçları için Türkiye genelinde keşif ve teklif sunar.
+5G yatırımlarında saha enerjisi, kablolama, ekipman yerleşimi ve devreye alma koordinasyonunu tek kapsamda değerlendirin.
+
+### Proje değerlendirmesinde hangi bilgiler gerekir?
+5G saha taleplerinde lokasyon, enerji beslemesi, pano ve kablo güzergâhı, saha erişimi, ekipman yerleşimi, iş güvenliği ve devreye alma takvimi birlikte incelenir. Nihai kapsam, operatör veya altyapı sağlayıcısının teknik şartnamesine göre netleştirilir.
+
+### Süreç nasıl ilerler?
+- Keşif ve şartname incelemesi: saha tipi, enerji beslemesi, erişim koşulları ve operatör teknik şartnamesi birlikte değerlendirilir.
+- Kapsam ve teklif: enerji, pano, kablolama, montaj koordinasyonu ve test kalemleri ayrı ayrı yazılır.
+- Uygulama: saha besleme, pano, kablo güzergâhı ve topraklama işleri iş güvenliği planıyla yürütülür.
+- Test ve teslim: ölçüm, etiketleme ve teslim dokümantasyonu tamamlanarak saha devreye almaya hazır teslim edilir.
+
+### Teklifte neler yer alır?
+Teklifte saha bazında iş kalemleri, kullanılacak malzeme kapsamı, saha ekip ve iş güvenliği gereklilikleri, test adımları ve teslim dokümantasyonu ayrı başlıklar hâlinde yer alır. Tahmini süre ve fiyat keşif ve şartname incelemesinden sonra yazılı olarak paylaşılır.
+
+### Sık sorulan sorular
+S: 5G saha işlerinde hangi bilgiler gerekir?
+C: Lokasyon, saha tipi, mevcut enerji altyapısı, teknik şartname ve hedef devreye alma tarihi ilk değerlendirme için gereklidir.
+S: 5G işi yalnızca haberleşme ekipmanı montajı mıdır?
+C: Hayır. Projeye göre enerji beslemesi, pano, kablolama, saha erişimi, iş güvenliği ve devreye alma koordinasyonu da gerekir.
+S: Operatör teknik şartnamesiyle çalışılabilir mi?
+C: Evet. Teklif ve uygulama kapsamı, ilgili operatör veya altyapı sağlayıcısının şartnamesiyle birlikte netleştirilir.
+S: Saha işleri hangi bölgelerde yapılıyor?
+C: Merkez ofisimiz Ataşehir / İstanbul'dadır; saha işleri Türkiye genelinde, kapsam ve takvime göre planlanır.
+S: Keşif ve teklif ücretli mi?
+C: Keşif ve teklif ücretsizdir; teklifte iş kalemleri ayrı ayrı yazılır.
+S: Süre ve fiyat önceden verilir mi?
+C: Hayır. Rakamlar keşif ve teknik şartname incelemesinden sonra yazılı olarak paylaşılır.
+
+---
+
+## İstanbul'da işletmeyi kapatmadan mağaza dönüşümü nasıl yapılır?
+URL: https://www.odergroup.com.tr/vaka-istanbul-magaza-donusumu.html
+Özet: İşletmeyi kapatmadan mağaza yenileme için etaplı planlama, gece çalışma penceresi ve teslim kontrolü. Öder Group ücretsiz keşif yaklaşımı.
+İşletmeyi kapatmadan mağaza yenileme için etaplı planlama, gece çalışma penceresi ve teslim kontrolü.
+Mağaza dönüşümünde hedef yalnızca yeni bir görünüm oluşturmak değildir. Müşteri akışını, AVM veya mülk yönetimi kurallarını, malzeme girişini ve açılış tarihini aynı plan içinde yönetmek gerekir.
+
+### Keşif ve kapsam
+Mevcut mahal, elektrik ve mekanik bağlantılar, söküm kalemleri, yeni imalatlar ve çalışma saatleri birlikte çıkarılır.
+
+### Etaplı uygulama
+Söküm, altyapı, sabit imalat, aydınlatma ve son temizlik adımları mağazanın açılış tarihine göre geriye doğru planlanır.
+
+### Teslim kontrolü
+Mahal kontrol listesi, elektrik testleri, yüzey ve donatı kontrolü tamamlanır; açık kalan kalemler teslim notuna yazılır.
+
+### Karar öncesi merak edilenler
+
+### Projenizi konuşalım
+Ücretsiz keşif ve teklif için kapsamı birlikte değerlendirelim.
+
+---
+
+## Fuar standı kurulumu fuar tarihine göre nasıl planlanır?
+URL: https://www.odergroup.com.tr/vaka-fuar-standi-kurulumu.html
+Özet: Tasarım onayından üretim, saha kurulumu ve söküme kadar fuar tarihine bağlı geri planlama. Öder Group ücretsiz keşif yaklaşımı.
+Tasarım onayından üretim, saha kurulumu ve söküme kadar fuar tarihine bağlı geri planlama.
+Fuar standında kritik konu, tasarımın üretilebilir olması ve fuar alanının kısa kurulum penceresine sığmasıdır. Bu nedenle tasarım, üretim, elektrik ve lojistik kararları aynı takvimde ele alınır.
+
+### Tasarım ve teknik kontrol
+Stand ölçüsü, yükseklik, malzeme, grafik yüzeyleri, aydınlatma ve elektrik ihtiyaçları üretim öncesi netleştirilir.
+
+### Üretim ve lojistik
+Kesim, boya, grafik ve donatı kalemleri fuar teslim tarihine göre sıralanır; sahaya gidecek parçalar kontrol listesiyle hazırlanır.
+
+### Kurulum ve söküm
+Kurulum alanı, elektrik bağlantıları, son temizlik ve açılış öncesi kontrol tamamlanır. Söküm de planlı ve güvenli şekilde yürütülür.
+
+### Karar öncesi merak edilenler
+
+### Projenizi konuşalım
+Ücretsiz keşif ve teklif için kapsamı birlikte değerlendirelim.
+
+---
+
+## Çatı GES yatırımı öncesinde fizibilitede neler incelenir?
+URL: https://www.odergroup.com.tr/vaka-cati-ges-fizibilitesi.html
+Özet: Çatı GES yatırımı öncesinde statik, gölgelenme, yönelim ve bağlantı gücünün birlikte incelenmesi. Öder Group ücretsiz keşif yaklaşımı.
+Çatı tipi güneş enerjisi yatırımı öncesinde statik, gölgelenme, yönelim ve bağlantı gücünün birlikte incelenmesi.
+Çatı GES kararında yalnızca panel alanına bakmak yeterli değildir. Çatının taşıma kapasitesi, saha gölgelenmesi, mevcut tüketim profili, pano ve bağlantı kapasitesi yatırımın uygulanabilirliğini belirler.
+
+### Saha ve çatı incelemesi
+Çatı geometrisi, yönelim, gölgelenme, erişim, bakım güzergâhı ve mevcut elektrik altyapısı birlikte değerlendirilir.
+
+### Üretim ve bağlantı öngörüsü
+Panel yerleşimi, inverter yaklaşımı, kablo güzergâhları ve tesis bağlantı koşulları için ön çalışma hazırlanır.
+
+### Yatırım karar notu
+Teknik bulgular, riskler, varsayımlar ve sonraki adımlar anlaşılır bir keşif notunda toplanır; kesin değerler onaylı mühendislik çalışmasına bağlanır.
+
+### Karar öncesi merak edilenler
+
+### Projenizi konuşalım
+Ücretsiz keşif ve teklif için kapsamı birlikte değerlendirelim.
+
+---
+
+## Fabrika otomasyonu üretimi durdurmadan nasıl modernize edilir?
+URL: https://www.odergroup.com.tr/vaka-fabrika-otomasyonu.html
+Özet: Üretimi gereksiz yere durdurmadan PLC, SCADA, pano ve devreye alma adımlarının etaplandırılması. Öder Group ücretsiz keşif yaklaşımı.
+Üretimi gereksiz yere durdurmadan PLC, SCADA, pano ve devreye alma adımlarının etaplandırılması.
+Fabrika otomasyonunda modernizasyonun başarısı, yeni sistem kadar geçiş planına bağlıdır. Mevcut hattın duruş süreleri, kritik sinyaller, pano altyapısı ve operatör alışkanlıkları uygulama öncesinde haritalanır.
+
+### Mevcut hat analizi
+PLC, saha sinyalleri, pano, haberleşme, SCADA ekranları ve kritik üretim adımları kayıt altına alınır.
+
+### Etaplı geçiş
+Duruş gerektiren işler planlı bakım pencerelerine dağıtılır; kritik üretim fonksiyonları için geri dönüş ve test adımları hazırlanır.
+
+### Test ve devreye alma
+Sinyal testleri, alarm senaryoları, kullanıcı kontrolleri ve işletme teslim notları birlikte yürütülür.
+
+### Karar öncesi merak edilenler
+
+### Projenizi konuşalım
+Ücretsiz keşif ve teklif için kapsamı birlikte değerlendirelim.
+
+---
+
+## Teknik tesis bakımı tek proje sorumlusuyla nasıl yönetilir?
+URL: https://www.odergroup.com.tr/vaka-teknik-tesis-bakim.html
+Özet: Mekanik-elektrik bakım, arıza, inşai onarım ve raporlamayı tek proje sorumlusuyla takip yaklaşımı. Öder Group ücretsiz keşif yaklaşımı.
+Mekanik-elektrik bakım, arıza, inşai onarım ve raporlamayı tek proje sorumlusu ile takip etme yaklaşımı.
+Teknik tesis bakımında yalnızca arızaya müdahale etmek yerine, kritik ekipmanları ve tekrar eden sorunları görünür kılan planlı bir takip düzeni gerekir. İşletme sorumlusu için tek muhatap, açık iş emri ve raporlanabilir ilerleme önemlidir.
+
+### Envanter ve öncelik
+Tesis ekipmanları, kritik sistemler, bakım geçmişi ve riskli noktalar sınıflandırılır.
+
+### Planlı bakım ve arıza
+Periyodik bakım, acil arıza, küçük inşai onarım ve tedarik adımları önceliklendirilir.
+
+### Raporlama ve kapanış
+Yapılan işlem, kullanılan malzeme, açık risk ve sonraki öneri kayıt altına alınarak iş kapatılır.
+
+### Karar öncesi merak edilenler
+
+### Projenizi konuşalım
+Ücretsiz keşif ve teklif için kapsamı birlikte değerlendirelim.
