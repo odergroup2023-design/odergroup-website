@@ -56,6 +56,12 @@ Merkez ofis Ataşehir / İstanbul; projeler Türkiye genelinde.
 - E-posta: info@odergroup.com.tr
 - Adres: Barbaros Mah. Lale Sk. Ağaoğlu My Office No:2 İç Kapı:13, 34746 Ataşehir / İstanbul
 
+## Rehberler (blog)
+- [Blog ana sayfası](https://www.odergroup.com.tr/blog.html): Ümit Öder'in saha notları ve karar rehberleri.
+- [Çatı GES için çatının uygunluğu nasıl değerlendirilir?](https://www.odergroup.com.tr/blog-cati-ges-uygunluk.html): Statik taşıma, kaplama, yönelim, gölgelenme, elektrik bağlantısı ve izin süreci.
+- [AVM'de mağaza tadilatı: gece çalışma ve AVM yönetimi izinleri](https://www.odergroup.com.tr/blog-avm-magaza-tadilati-izinleri.html): Kiracı teknik şartnamesi, proje onayı, çalışma izni, gece vardiyası, sıcak iş ve teslim.
+- [Bakım sözleşmesi imzalamadan önce sorulacak 8 soru](https://www.odergroup.com.tr/blog-bakim-sozlesmesi-8-soru.html): Kapsam, müdahale süresi, yedek parça, personel, raporlama ve fesih.
+
 ## Kurumsal
 - [Hakkımızda](https://www.odergroup.com.tr/kurumsal.html)
 
