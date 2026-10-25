@@ -61,6 +61,7 @@ Merkez ofis Ataşehir / İstanbul; projeler Türkiye genelinde.
 - [Çatı GES için çatının uygunluğu nasıl değerlendirilir?](https://www.odergroup.com.tr/blog-cati-ges-uygunluk.html): Statik taşıma, kaplama, yönelim, gölgelenme, elektrik bağlantısı ve izin süreci.
 - [AVM'de mağaza tadilatı: gece çalışma ve AVM yönetimi izinleri](https://www.odergroup.com.tr/blog-avm-magaza-tadilati-izinleri.html): Kiracı teknik şartnamesi, proje onayı, çalışma izni, gece vardiyası, sıcak iş ve teslim.
 - [Bakım sözleşmesi imzalamadan önce sorulacak 8 soru](https://www.odergroup.com.tr/blog-bakim-sozlesmesi-8-soru.html): Kapsam, müdahale süresi, yedek parça, personel, raporlama ve fesih.
+- [Salon ve antrede LED aydınlatmalı duvar paneli ve özel ölçü dolap](https://www.odergroup.com.tr/blog-led-duvar-paneli-ozel-olcu-dolap.html): Elektrik altyapısı, gizli LED, ölçü, malzeme ve montaj sırası; gerçek uygulama fotoğraflarıyla.
 
 ## Kurumsal
 - [Hakkımızda](https://www.odergroup.com.tr/kurumsal.html)
