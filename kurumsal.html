@@ -131,7 +131,12 @@ footer a:hover{color:#fff}
   .kat,.eyebrow{font-size:.75rem;letter-spacing:.16em}
   .nav .geri,.mobcta a,.btn,.fq > button,.lbn{min-height:48px;display:inline-flex;align-items:center;justify-content:center}
   .fq > button{justify-content:space-between;text-align:left}
+  body{padding-bottom:calc(62px + env(safe-area-inset-bottom))}
+  .mobcta{display:grid !important;grid-template-columns:repeat(3,1fr);position:fixed;bottom:0;left:0;right:0;z-index:80;box-shadow:0 -8px 26px rgba(21,24,28,.25);padding-bottom:env(safe-area-inset-bottom)}
+  .mobcta a{padding:14px 6px;text-align:center;font-weight:600;font-size:.8rem;color:#fff}
+  .mobcta .c1{background:#2f5d50} .mobcta .c2{background:#3E8E62} .mobcta .c3{background:#15181c}
 }
+.mobcta{display:none}
 </style>
 <link rel="stylesheet" href="mobile.css?v=20261012-2">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.odergroup.com.tr/"}, {"@type": "ListItem", "position": 2, "name": "Hakkımızda, Değerler ve Kalite Anlayışı", "item": "https://www.odergroup.com.tr/kurumsal.html"}]}</script>
@@ -219,7 +224,7 @@ footer a:hover{color:#fff}
     <h2 class="sec">Kalite; verimliliği artırır, maliyeti azaltır</h2>
     <p>Öder Group'un kalite anlayışının temelinde, ürettiği mal ve hizmetten müşterinin mutlak memnuniyeti yer alır. Gerçekleşmiş kalite; verimliliği artırırken maliyeti azaltacak, öngörülen sorunları çözecek ve rekabet gücünü yükseltecektir. Bu çerçevede:</p>
     <ul class="klist">
-      <li>Uluslararası teknolojik gelişmeleri yakından takip ederek sektörün en iyi ürünleriyle müşterimizi buluştururuz.</li>
+      <li>Uluslararası teknolojik gelişmeleri yakından takip ederek projeye uygun seçilmiş ürünlerle müşterimizi buluştururuz.</li>
       <li>İşimizi temiz, düzgün ve profesyonel bir anlayışla tamamlar, takım çalışmasıyla hareket ederiz.</li>
       <li>Müşteri memnuniyetini esas aldığımız için sürekliliği sağlayıcı tedbirleri işin başında alırız.</li>
       <li>Kalite yönetim sistemi anlayışımız gereği uluslararası kalite standartlarına uygun çalışırız.</li>
@@ -248,7 +253,7 @@ footer a:hover{color:#fff}
 <div class="cta2">
   <div class="wrap">
     <h2>Projenizi konuşalım</h2>
-    <p>Keşif ve teklif ücretsiz.</p>
+    <p>Keşif ve teklif ücretsizdir. 24 saat içinde dönüş yapıyoruz.</p>
     <a class="btn btn-l" href="tel:+905345472239">+90 534 547 22 39</a>
     <a class="btn btn-l" href="https://wa.me/905345472239" target="_blank" rel="noopener">WhatsApp</a>
     <a class="btn btn-l" href="index.html#iletisim">Teklif Formu</a>
@@ -261,6 +266,13 @@ footer a:hover{color:#fff}
     <span><a href="index.html">Ana Sayfa</a> · <a href="gizlilik-politikasi.html">Gizlilik Politikası</a> · <a href="#sicil">Ticaret Sicil</a></span>
   </div>
 </footer>
+
+<div class="mobcta">
+  <a class="c1" href="tel:+905345472239">Ara</a>
+  <a class="c2" href="https://wa.me/905345472239?text=Merhaba%2C%20%C3%96der%20Group%20hakk%C4%B1nda%20ke%C5%9Fif%20ve%20teklif%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp</a>
+  <a class="c3" href="index.html#iletisim" aria-label="Teklif al"><span>Teklif Al</span></a>
+</div>
+
 
 <!-- ===== ÖLÇÜM: dönüşüm olayları ===== -->
 <script>

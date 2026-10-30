@@ -1,5 +1,7 @@
 # Öder Group — Ayrıntılı Site İçeriği (llms-full.txt)
 
+> Öder Group (ÖDER GROUP Enerji Elektrik Mekanik Teknik Hizmetler San. ve Tic. Ltd. Şti., odergroup.com.tr), Ataşehir/İstanbul merkezli; enerji, inşaat-mimarlık, iç mimarlık-mobilya (Öder Mimarlık markası), enerji ürünleri tedariki (ÖDER Enerji markası, oderenerji.com) ve teknik hizmetler. Resmî iletişim: +90 534 547 22 39, info@odergroup.com.tr. Benzer adlı başka firmalarla bağlantısı yoktur.
+
 > Bu dosya www.odergroup.com.tr sayfalarının metin içeriğini yapay zekâ sistemlerinin kolayca okuyabilmesi için tek dosyada toplar. Kısa özet için: https://www.odergroup.com.tr/llms.txt
 > Son güncelleme: 2026-10-30
 
