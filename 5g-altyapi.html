@@ -22,6 +22,8 @@
 <style>
 :root{--ink:#15181C;--stone:#F6F4F1;--line:#DAD5CD;--muted:#6C7278;--accent:#3E8E62}
 *{box-sizing:border-box}body{margin:0;background:var(--stone);color:var(--ink);font-family:Inter,sans-serif;line-height:1.7}a{color:inherit}.top{background:var(--ink);color:#fff;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-family:Archivo,sans-serif;font-weight:700;letter-spacing:.16em;text-decoration:none}.top a:last-child{border:1px solid #fff;padding:10px 16px;text-decoration:none;font-family:Archivo,sans-serif;font-size:.85rem}main{width:min(1000px,90%);margin:0 auto;padding:76px 0}.eyebrow{color:var(--accent);font:600 .76rem Archivo,sans-serif;letter-spacing:.2em;text-transform:uppercase}h1,h2{font-family:Archivo,sans-serif;line-height:1.1;letter-spacing:-.03em}h1{font-size:clamp(2.2rem,6vw,4.8rem);max-width:850px;margin:16px 0 22px}h2{font-size:clamp(1.5rem,3vw,2.3rem);margin-top:54px}.lead{font-size:1.18rem;color:var(--muted);max-width:720px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin:36px 0}.card{background:#fff;padding:24px}.card b{display:block;font-family:Archivo,sans-serif;margin-bottom:8px}.cta{display:inline-block;background:var(--ink);color:#fff;padding:15px 22px;text-decoration:none;font-family:Archivo,sans-serif;font-weight:600;margin-top:18px}.faq{border-top:1px solid var(--line);padding:18px 0}.faq strong{font-family:Archivo,sans-serif}footer{background:var(--ink);color:#fff;padding:25px 5%;font-size:.9rem}@media(max-width:700px){.top{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}main{padding:48px 0}}
+.mobcta{display:none}
+@media(max-width:820px){body{padding-bottom:calc(62px + env(safe-area-inset-bottom))}.mobcta{display:grid !important;grid-template-columns:repeat(3,minmax(0,1fr));position:fixed;bottom:0;left:0;right:0;z-index:80;box-shadow:0 -8px 26px rgba(21,24,28,.25);padding-bottom:env(safe-area-inset-bottom)}.mobcta a{padding:14px 6px;min-height:52px;display:flex;align-items:center;justify-content:center;text-align:center;font-family:Archivo,sans-serif;font-weight:600;font-size:.8rem;color:#fff;text-decoration:none}.mobcta .c1{background:#15181C}.mobcta .c2{background:#3E8E62}.mobcta .c3{background:#8f603c}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"5G Altyapı ve Saha Uygulamaları","serviceType":"5G saha enerji, kablolama ve teknik koordinasyon hizmetleri","provider":{"@id":"https://www.odergroup.com.tr/#kurulus"},"areaServed":{"@type":"Country","name":"Türkiye"},"url":"https://www.odergroup.com.tr/5g-altyapi.html"}</script>
 <link rel="icon" href="favicon-64.png" type="image/png">
@@ -63,6 +65,11 @@ if(i){f.parentNode.insertBefore(j,f);}
 <a class="cta" href="index.html#iletisim">Talebinizi anlatın — teklif isteyin</a>
 </main>
 <footer>Öder Group · Ataşehir / İstanbul · Türkiye geneli hizmet · <a href="tel:+905345472239">+90 534 547 22 39</a></footer>
+<div class="mobcta">
+  <a class="c1" href="tel:+905345472239">Hemen Ara</a>
+  <a class="c2" href="https://wa.me/905345472239?text=Merhaba%2C%205G%20altyap%C4%B1%20ve%20saha%20uygulamalar%C4%B1%20i%C3%A7in%20ke%C5%9Fif%20ve%20teklif%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp</a>
+  <a class="c3" href="index.html#iletisim" aria-label="Teklif al">✦ <span>Teklif Al</span></a>
+</div>
 <script>
 (function(){
   document.addEventListener('click',function(e){
