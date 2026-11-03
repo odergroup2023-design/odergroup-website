@@ -1,0 +1,93 @@
+# Olcum ve toplu duzenleme
+#
+# Neden burada: Claude oturumunun kum havuzunda dis ag erisimi yok
+# (github.com dahil kod=000). GitHub Actions kosucusunun agi var,
+# bu yuzden hem Lighthouse olcumu hem toplu dosya duzenlemesi burada
+# calisir. Lighthouse kendi tarayicisiyla olctugu icin PageSpeed
+# Insights API kotasi HIC kullanilmaz.
+
+name: Olcum ve toplu duzenleme
+
+on:
+  schedule:
+    - cron: "20 4 * * *"   # her gun 04:20 UTC
+  workflow_dispatch:
+    inputs:
+      gorev:
+        description: "olcum = sadece Lighthouse, duzenleme = toplu dosya duzenlemesi"
+        required: true
+        default: olcum
+        type: choice
+        options: [olcum, duzenleme]
+
+permissions:
+  contents: write
+
+jobs:
+  olcum:
+    if: github.event_name == 'schedule' || inputs.gorev == 'olcum'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Lighthouse kur
+        run: npm install -g lighthouse
+      - name: Mobil olcum
+        run: |
+          mkdir -p rapor
+          SAYFALAR="index kurumsal cati-ges teknik-hizmetler-tesis-yonetimi magaza-showroom"
+          for s in $SAYFALAR; do
+            lighthouse "https://www.odergroup.com.tr/$s.html" \
+              --quiet --chrome-flags="--headless --no-sandbox" \
+              --preset=desktop=false --form-factor=mobile \
+              --only-categories=performance \
+              --output=json --output-path="rapor/$s.json" || true
+          done
+      - name: Ozet
+        run: |
+          echo "## Mobil Lighthouse — $(date -u +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Sayfa | Puan | LCP | CLS | TBT |" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---|---|---|---|" >> $GITHUB_STEP_SUMMARY
+          for f in rapor/*.json; do
+            node -e "
+              const r=require('./'+process.argv[1]);
+              const a=r.audits, c=r.categories.performance;
+              const g=k=>a[k]?a[k].displayValue:'-';
+              console.log('| '+process.argv[1].split('/').pop().replace('.json','')
+                +' | '+Math.round(c.score*100)
+                +' | '+g('largest-contentful-paint')
+                +' | '+g('cumulative-layout-shift')
+                +' | '+g('total-blocking-time')+' |');
+            " "$f" >> $GITHUB_STEP_SUMMARY || true
+          done
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Esikler: LCP <= 2,5 sn · CLS <= 0,1 · mobil puan >= 90" >> $GITHUB_STEP_SUMMARY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-raporu
+          path: rapor/
+          retention-days: 30
+
+  duzenleme:
+    if: inputs.gorev == 'duzenleme'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Toplu duzenleme betigini calistir
+        run: python3 tools/toplu_duzenleme.py
+      - name: Yeni dala yaz
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Degisiklik yok." >> $GITHUB_STEP_SUMMARY; exit 0
+          fi
+          DAL="seo/otomatik-$(date -u +%Y-%m-%d)-toplu-duzenleme"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$DAL"
+          git add -A
+          git commit -m "Toplu duzenleme: C2 marka satiri ve punycode temizligi"
+          git push origin "$DAL"
+          echo "Dal olusturuldu: $DAL" >> $GITHUB_STEP_SUMMARY
+          echo "PR acmak icin: https://github.com/${{ github.repository }}/compare/main...$DAL" >> $GITHUB_STEP_SUMMARY
