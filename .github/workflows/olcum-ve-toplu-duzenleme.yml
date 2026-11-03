@@ -1,93 +1,187 @@
-# Olcum ve toplu duzenleme
+# Gunluk otomasyon — olcum, guvenli duzeltme, yayin, dogrulama, durum kaydi
 #
-# Neden burada: Claude oturumunun kum havuzunda dis ag erisimi yok
-# (github.com dahil kod=000). GitHub Actions kosucusunun agi var,
-# bu yuzden hem Lighthouse olcumu hem toplu dosya duzenlemesi burada
-# calisir. Lighthouse kendi tarayicisiyla olctugu icin PageSpeed
-# Insights API kotasi HIC kullanilmaz.
+# Tasarim ilkesi: "dar sinif" bir inceleyiciyle degil, BETIKLERIN KENDISIYLE
+# sinirlanir. tools/ altindaki betikler yalnizca asagidaki donusumleri
+# yapabilir; baska bir sey uretemezler. Bu yuzden ciktilari dogrudan main e
+# birlesebilir:
+#   - gorsel boyutu / webp, width-height oznitelikleri, loading, decoding
+#   - kritik olmayan betiklerin defer edilmesi, font-display
+#   - punycode adres temizligi
+#   - C2 marka satiri
+#   - CTA renk standardi (D-7)
+#   - sitemap lastmod
+#
+# Metin, iddia, fiyat, sema yapisi ve yeni sayfa ASLA bu betiklerden cikmaz.
+# Onlar ayri PR olarak insan onayi bekler.
+#
+# Lighthouse kendi tarayicisiyla olcer: PageSpeed Insights API kotasi
+# hic kullanilmaz.
 
-name: Olcum ve toplu duzenleme
+name: Gunluk otomasyon
 
 on:
   schedule:
-    - cron: "20 4 * * *"   # her gun 04:20 UTC
+    - cron: "20 4 * * *"
   workflow_dispatch:
     inputs:
-      gorev:
-        description: "olcum = sadece Lighthouse, duzenleme = toplu dosya duzenlemesi"
-        required: true
-        default: olcum
-        type: choice
-        options: [olcum, duzenleme]
+      kuru_calisma:
+        description: "true ise degisiklikler yayinlanmaz, yalnizca raporlanir"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
+  issues: write
+
+concurrency:
+  group: gunluk-otomasyon
+  cancel-in-progress: false
 
 jobs:
-  olcum:
-    if: github.event_name == 'schedule' || inputs.gorev == 'olcum'
+  otomasyon:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+
       - uses: actions/setup-node@v4
         with: { node-version: "20" }
+
       - name: Lighthouse kur
         run: npm install -g lighthouse
-      - name: Mobil olcum
+
+      - name: 1 — Olcum (oncesi)
         run: |
           mkdir -p rapor
-          SAYFALAR="index kurumsal cati-ges teknik-hizmetler-tesis-yonetimi magaza-showroom"
-          for s in $SAYFALAR; do
+          for s in index kurumsal cati-ges teknik-hizmetler-tesis-yonetimi magaza-showroom; do
             lighthouse "https://www.odergroup.com.tr/$s.html" \
               --quiet --chrome-flags="--headless --no-sandbox" \
-              --preset=desktop=false --form-factor=mobile \
-              --only-categories=performance \
+              --form-factor=mobile --only-categories=performance \
               --output=json --output-path="rapor/$s.json" || true
           done
-      - name: Ozet
+
+      - name: 2 — Guvenli duzeltmeler
+        run: |
+          python3 tools/toplu_duzenleme.py | tee -a $GITHUB_STEP_SUMMARY
+          python3 tools/lcp_duzeltme.py   | tee -a $GITHUB_STEP_SUMMARY
+
+      - name: 3 — Durum kaydini olcumden uret
+        run: python3 tools/durum_yaz.py | tee -a $GITHUB_STEP_SUMMARY
+
+      - name: 4 — Yayin (dar sinif, dogrudan main)
+        id: yayin
+        if: inputs.kuru_calisma != true
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Degisiklik yok." >> $GITHUB_STEP_SUMMARY
+            echo "yayinlandi=hayir" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          echo "ONCEKI=$(git rev-parse HEAD)" >> $GITHUB_ENV
+          git add -A
+          git commit -m "Gunluk otomasyon: guvenli duzeltmeler ve durum kaydi"
+          git push origin HEAD:main
+          echo "yayinlandi=evet" >> $GITHUB_OUTPUT
+          echo "Yayinlandi: $(git rev-parse --short HEAD)" >> $GITHUB_STEP_SUMMARY
+
+      - name: 5 — Kuru calisma farki
+        if: inputs.kuru_calisma == true
+        run: |
+          echo "### Kuru calisma — yayinlanmadi" >> $GITHUB_STEP_SUMMARY
+          echo '```diff' >> $GITHUB_STEP_SUMMARY
+          git --no-pager diff --stat >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+      - name: 6 — Canli dogrulama
+        id: dogrula
+        if: steps.yayin.outputs.yayinlandi == 'evet'
+        run: |
+          echo "GitHub Pages yayini icin bekleniyor..."
+          sleep 150
+          HATA=0
+          for s in index kurumsal cati-ges tiny-house teknik-hizmetler-tesis-yonetimi \
+                   magaza-showroom fuar-standi ic-dekorasyon konut-villa kentsel-donusum \
+                   tadilat-restorasyon elektrik-bakim yuksek-gerilim fabrika-otomasyonu \
+                   5g-altyapi enerji-verimliligi-danismanligi \
+                   vaka-istanbul-magaza-donusumu vaka-fuar-standi-kurulumu \
+                   vaka-cati-ges-fizibilitesi vaka-fabrika-otomasyonu vaka-teknik-tesis-bakim; do
+            U="https://www.odergroup.com.tr/$s.html"
+            KOD=$(curl -s -o /tmp/s.html -w "%{http_code}" "$U?v=$RANDOM")
+            BOYUT=$(wc -c < /tmp/s.html)
+            if [ "$KOD" != "200" ] || [ "$BOYUT" -lt 3000 ] \
+               || ! grep -q "</footer>" /tmp/s.html || ! grep -q "<h1" /tmp/s.html; then
+              echo "BOZUK: $s (kod=$KOD boyut=$BOYUT)" >> $GITHUB_STEP_SUMMARY
+              HATA=1
+            fi
+          done
+          echo "hata=$HATA" >> $GITHUB_OUTPUT
+          [ "$HATA" = "0" ] && echo "Canli dogrulama: 21 sayfa saglam." >> $GITHUB_STEP_SUMMARY
+          exit 0
+
+      - name: 7 — Bozulma varsa geri al
+        if: steps.dogrula.outputs.hata == '1'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git revert --no-edit HEAD
+          git push origin HEAD:main
+          echo "### GERI ALINDI — canli dogrulama basarisiz" >> $GITHUB_STEP_SUMMARY
+
+      - name: 8 — Olcum (sonrasi) ve ozet tablo
+        if: always()
         run: |
           echo "## Mobil Lighthouse — $(date -u +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "| Sayfa | Puan | LCP | CLS | TBT |" >> $GITHUB_STEP_SUMMARY
           echo "|---|---|---|---|---|" >> $GITHUB_STEP_SUMMARY
           for f in rapor/*.json; do
+            [ -s "$f" ] || continue
             node -e "
-              const r=require('./'+process.argv[1]);
-              const a=r.audits, c=r.categories.performance;
-              const g=k=>a[k]?a[k].displayValue:'-';
+              const r=require(process.cwd()+'/'+process.argv[1]);
+              const a=r.audits,c=r.categories.performance;
+              const g=k=>a[k]&&a[k].displayValue?a[k].displayValue:'-';
               console.log('| '+process.argv[1].split('/').pop().replace('.json','')
-                +' | '+Math.round(c.score*100)
-                +' | '+g('largest-contentful-paint')
-                +' | '+g('cumulative-layout-shift')
-                +' | '+g('total-blocking-time')+' |');
+                +' | '+Math.round((c.score||0)*100)+' | '+g('largest-contentful-paint')
+                +' | '+g('cumulative-layout-shift')+' | '+g('total-blocking-time')+' |');
             " "$f" >> $GITHUB_STEP_SUMMARY || true
           done
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "Esikler: LCP <= 2,5 sn · CLS <= 0,1 · mobil puan >= 90" >> $GITHUB_STEP_SUMMARY
+
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: lighthouse-raporu
           path: rapor/
           retention-days: 30
 
-  duzenleme:
-    if: inputs.gorev == 'duzenleme'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Toplu duzenleme betigini calistir
-        run: python3 tools/toplu_duzenleme.py
-      - name: Yeni dala yaz
-        run: |
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "Degisiklik yok." >> $GITHUB_STEP_SUMMARY; exit 0
-          fi
-          DAL="seo/otomatik-$(date -u +%Y-%m-%d)-toplu-duzenleme"
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$DAL"
-          git add -A
-          git commit -m "Toplu duzenleme: C2 marka satiri ve punycode temizligi"
-          git push origin "$DAL"
-          echo "Dal olusturuldu: $DAL" >> $GITHUB_STEP_SUMMARY
-          echo "PR acmak icin: https://github.com/${{ github.repository }}/compare/main...$DAL" >> $GITHUB_STEP_SUMMARY
+      - name: 9 — Basarisizsa issue ac veya guncelle
+        if: failure() || steps.dogrula.outputs.hata == '1'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const baslik = "Gunluk otomasyon basarisiz";
+            const govde = [
+              "Calisma: " + context.runId,
+              "Baglanti: https://github.com/" + context.repo.owner + "/" +
+                context.repo.repo + "/actions/runs/" + context.runId,
+              "",
+              "Ayrinti is ozetinde. Canli dogrulama basarisiz olduysa degisiklik",
+              "otomatik geri alindi; site onceki saglam haline dondu."
+            ].join("\n");
+            const acik = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: "open", labels: "otomasyon"
+            });
+            const mevcut = acik.data.find(i => i.title === baslik);
+            if (mevcut) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: mevcut.number, body: govde });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title: baslik, body: govde, labels: ["otomasyon"] });
+            }
