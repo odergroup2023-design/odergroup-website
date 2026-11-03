@@ -201,8 +201,12 @@
 .page-technical .eyebrow { color:#2b6c48; }
 .page-home .dtab small { color:#a5adb5; }
 .page-service .btn:not(.btn-line) { background:#8f603c; }
-.page-service .mobcta .c1 { background:#15181C; }
-.page-service .mobcta .c2,.page-home .mobcta .c2 { background:#28764b; }
+/* CTA renk standardi (D-7): butun sayfa tiplerinde ayni.
+   Kapsamsiz birakildi; onceden .page-company / .page-legal /
+   .page-technical sayfalari kendi eski gomulu renklerine dusuyordu
+   (kurumsal.html Ara butonu #2F5D50 yesil goruyordu). */
+.mobcta .c1 { background:#15181C; }
+.mobcta .c2 { background:#28764b; }
 .osimg img { height:auto; }
 @media (max-width:1080px) {
  .page-home .burger { z-index:2; }
