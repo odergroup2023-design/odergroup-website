@@ -8,11 +8,33 @@
      GTM arayüzünden yönetilir, siteye tekrar dokunulmaz. -->
 <script>
 window.dataLayer = window.dataLayer || [];
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var _gtmYukle=function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
 var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
 j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
 if(i){f.parentNode.insertBefore(j,f);}
-})(window,document,'script','dataLayer','GTM-5V2QJ5ZR');
+};
+/* ===== LCP: GTM YUKLEMESI ERTELENDI =====
+   Olculdu (Lighthouse, 4 kosu medyani): ucuncu taraf kodu ana is
+   parcacigini 3 saniye bloke ediyordu; ana sayfa LCP 4,4 sn.
+   Render engelleme 0 ms, gorsel 124 KB — sebep JavaScript idi.
+
+   GTM artik ilk boyamadan sonra yukleniyor. OLCUM KAYBI YOK:
+   sayfa ici kod dataLayer'a yazmaya devam ediyor, diziye birikiyor
+   ve GTM yuklenince hepsi islenir. Tetikleyiciler: ilk etkilesim,
+   load sonrasi 1,2 sn, ve her halukarda 4 sn guvenlik siniri. */
+(function(){
+  var yuklendi=false;
+  function basla(){
+    if(yuklendi) return; yuklendi=true;
+    _gtmYukle(window,document,'script','dataLayer','GTM-5V2QJ5ZR');
+  }
+  ['click','touchstart','keydown','scroll','mousemove'].forEach(function(o){
+    addEventListener(o,basla,{once:true,passive:true});
+  });
+  if(document.readyState==='complete'){ setTimeout(basla,1200); }
+  else { addEventListener('load',function(){ setTimeout(basla,1200); },{once:true}); }
+  setTimeout(basla,4000);
+})();
 </script>
 <!-- ===== GÜVENLİK ===== -->
 <!-- Not: GitHub Pages HTTP başlığı gönderemez. Bunlar HTML seviyesinde
