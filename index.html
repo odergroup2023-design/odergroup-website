@@ -28,7 +28,7 @@ if(i){f.parentNode.insertBefore(j,f);}
     if(yuklendi) return; yuklendi=true;
     _gtmYukle(window,document,'script','dataLayer','GTM-5V2QJ5ZR');
   }
-  ['click','touchstart','keydown','scroll','mousemove'].forEach(function(o){
+  ['click','touchstart','keydown','scroll'].forEach(function(o){
     addEventListener(o,basla,{once:true,passive:true});
   });
   if(document.readyState==='complete'){ setTimeout(basla,1200); }
