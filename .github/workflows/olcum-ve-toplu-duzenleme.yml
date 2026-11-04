@@ -50,14 +50,16 @@ jobs:
       - name: Lighthouse kur
         run: npm install -g lighthouse
 
-      - name: 1 — Olcum (oncesi)
+      - name: 1 — Olcum (3 kosu, medyan icin)
         run: |
           mkdir -p rapor
           for s in index kurumsal cati-ges teknik-hizmetler-tesis-yonetimi magaza-showroom; do
-            lighthouse "https://www.odergroup.com.tr/$s.html" \
-              --quiet --chrome-flags="--headless --no-sandbox" \
-              --form-factor=mobile --only-categories=performance \
-              --output=json --output-path="rapor/$s.json" || true
+            for i in 1 2 3; do
+              lighthouse "https://www.odergroup.com.tr/$s.html" \
+                --quiet --chrome-flags="--headless --no-sandbox" \
+                --form-factor=mobile --only-categories=performance \
+                --output=json --output-path="rapor/$s-$i.json" || true
+            done
           done
 
       - name: 2 — Guvenli duzeltmeler
@@ -129,69 +131,9 @@ jobs:
           git push origin HEAD:main
           echo "### GERI ALINDI — canli dogrulama basarisiz" >> $GITHUB_STEP_SUMMARY
 
-      - name: 8 — Olcum (sonrasi) ve ozet tablo
+      - name: 8 — Medyan ozet ve firsat listesi
         if: always()
-        run: |
-          echo "## Mobil Lighthouse — $(date -u +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "| Sayfa | Puan | LCP | CLS | TBT |" >> $GITHUB_STEP_SUMMARY
-          echo "|---|---|---|---|---|" >> $GITHUB_STEP_SUMMARY
-          for f in rapor/*.json; do
-            [ -s "$f" ] || continue
-            node -e "
-              const r=require(process.cwd()+'/'+process.argv[1]);
-              const a=r.audits,c=r.categories.performance;
-              const g=k=>a[k]&&a[k].displayValue?a[k].displayValue:'-';
-              console.log('| '+process.argv[1].split('/').pop().replace('.json','')
-                +' | '+Math.round((c.score||0)*100)+' | '+g('largest-contentful-paint')
-                +' | '+g('cumulative-layout-shift')+' | '+g('total-blocking-time')+' |');
-            " "$f" >> $GITHUB_STEP_SUMMARY || true
-          done
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Esikler: LCP <= 2,5 sn · CLS <= 0,1 · mobil puan >= 90" >> $GITHUB_STEP_SUMMARY
-
-      - name: 8b — Lighthouse FIRSAT LISTESI (LCP nin kesin sebebi)
-        if: always()
-        run: |
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "## Lighthouse firsatlari — hangi kaynak kac ms geciktiriyor" >> $GITHUB_STEP_SUMMARY
-          for f in rapor/*.json; do
-            [ -s "$f" ] || continue
-            node -e "
-              const r=require(process.cwd()+'/'+process.argv[1]);
-              const ad=process.argv[1].split('/').pop().replace('.json','');
-              const a=r.audits||{};
-              const lcp=(a['largest-contentful-paint']||{}).numericValue||0;
-              if(lcp<=2500) return;
-              console.log('');
-              console.log('### '+ad+' — LCP '+(lcp/1000).toFixed(1)+' sn');
-              console.log('');
-              const el=a['largest-contentful-paint-element'];
-              if(el&&el.details&&el.details.items&&el.details.items[0]){
-                const n=el.details.items[0].items&&el.details.items[0].items[0];
-                if(n&&n.node) console.log('**LCP ogesi:** \\`'+String(n.node.snippet||n.node.selector||'-').slice(0,120)+'\\`');
-                console.log('');
-              }
-              const ph=a['lcp-lazy-loaded'];
-              const sira=['render-blocking-resources','server-response-time','uses-rel-preload',
-                'uses-responsive-images','modern-image-formats','unused-javascript','unused-css-rules',
-                'unminified-javascript','third-party-summary','font-display','total-byte-weight','bootup-time','mainthread-work-breakdown'];
-              console.log('| Firsat | Kazanc | Not |');
-              console.log('|---|---|---|');
-              let n=0;
-              for(const k of sira){
-                const x=a[k]; if(!x) continue;
-                const ms=(x.details&&x.details.overallSavingsMs)||x.numericValue||0;
-                if(x.score!==null&&x.score>=0.9&&ms<100) continue;
-                console.log('| '+(x.title||k)+' | '+(ms?Math.round(ms)+' ms':'-')+' | '+String(x.displayValue||'').slice(0,40)+' |');
-                n++;
-              }
-              if(!n) console.log('| (Lighthouse belirgin firsat bulmadi) | - | - |');
-              console.log('');
-              const zincir=a['critical-request-chains'];
-              if(zincir&&zincir.displayValue) console.log('**Kritik istek zinciri:** '+zincir.displayValue);
-            " "$f" >> $GITHUB_STEP_SUMMARY || true
-          done
+        run: python3 tools/firsat_raporu.py >> $GITHUB_STEP_SUMMARY || true
 
       - uses: actions/upload-artifact@v4
         if: always()
