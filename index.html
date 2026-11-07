@@ -85,7 +85,13 @@ if(i){f.parentNode.insertBefore(j,f);}
 <meta property="og:image:alt" content="İç Dekorasyon, Mağaza Yapımı, GES ve Otomasyon — Öder Group">
 
 
-<link rel="stylesheet" href="fonts.css?v=20261012-2">
+<!-- LCP: fonts.css render engelliyordu (Lighthouse: 920 ms).
+     Engellemeyen yukleme; font-display:swap zaten tanimli oldugu icin
+     metin once yedek fontla cizilir, sonra gercek font gecer.
+     mobile.css BILEREK engelleyici birakildi: yerlesim kurallari
+     iceriyor, gec gelirse sayfa ziplar. -->
+<link rel="preload" href="fonts.css?v=20261012-2" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="fonts.css?v=20261012-2"></noscript>
 
 <!-- ===== AEO / SEO: YAPISAL VERİ (schema.org) =====
      Google, Gemini, ChatGPT ve Bing gibi yanıt motorları firmayı bu blokla tanır. -->
@@ -913,13 +919,13 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
           <h3>İç Dekorasyon, Mağaza ve Yapı Uygulamaları</h3>
           <p class="sub">İç mekân dekorasyonundan mağaza kurulumuna; marka deneyimini mekâna çeviren tasarım, uygulama ve yenileme.</p>
           <ul>
-            <li id="dekorasyon"><a href="#iletisim">İç Dekorasyon ve Mekân Tasarımı <span>AVM · hastane · ofis</span></a></li>
-            <li id="magaza"><a href="#iletisim">Mağaza / Showroom Kurulum ve Söküm <span>Perakende fit-out</span></a></li>
-            <li id="tadilat"><a href="#iletisim">Tadilat, Restorasyon ve Restitüsyon <span>Yapı yenileme</span></a></li>
-            <li id="fuar"><a href="#iletisim">Fuar Standı Tasarım ve Uygulama <span>Kurulum + söküm</span></a></li>
-            <li id="konut"><a href="#iletisim">Konut ve Villa Projeleri <span>Anahtar teslim yapı</span></a></li>
-            <li id="kentsel"><a href="#iletisim">Kentsel Dönüşüm <span>Riskli yapı → yeni bina</span></a></li>
-            <li id="tinyhouse"><a href="#iletisim">Tiny House ve Prefabrik Yapı <span>Fabrikada üretim, sahada montaj</span></a></li>
+            <li id="dekorasyon"><a href="ic-dekorasyon.html">İç Dekorasyon ve Mekân Tasarımı <span>AVM · hastane · ofis</span></a></li>
+            <li id="magaza"><a href="magaza-showroom.html">Mağaza / Showroom Kurulum ve Söküm <span>Perakende fit-out</span></a></li>
+            <li id="tadilat"><a href="tadilat-restorasyon.html">Tadilat, Restorasyon ve Restitüsyon <span>Yapı yenileme</span></a></li>
+            <li id="fuar"><a href="fuar-standi.html">Fuar Standı Tasarım ve Uygulama <span>Kurulum + söküm</span></a></li>
+            <li id="konut"><a href="konut-villa.html">Konut ve Villa Projeleri <span>Anahtar teslim yapı</span></a></li>
+            <li id="kentsel"><a href="kentsel-donusum.html">Kentsel Dönüşüm <span>Riskli yapı → yeni bina</span></a></li>
+            <li id="tinyhouse"><a href="tiny-house.html">Tiny House ve Prefabrik Yapı <span>Fabrikada üretim, sahada montaj</span></a></li>
             <li id="mimari"><a href="#iletisim">Mimari Proje ve Uygulama <span>Konsept → teslim</span></a></li>
             <li id="peyzaj"><a href="#iletisim">Peyzaj Tasarım ve Uygulama <span>Dış mekân</span></a></li>
           </ul>
@@ -935,8 +941,8 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
           <h3>Fabrika Otomasyonu, Yüksek Gerilim ve 5G Altyapısı</h3>
           <p class="sub">Üretim, enerji ve haberleşme altyapısını sahada uygulanabilir bir planla yönetiyoruz.</p>
           <ul>
-            <li id="otomasyon"><a href="#iletisim">Fabrika / Endüstriyel Otomasyon <span>PLC · SCADA</span></a></li>
-            <li id="elektrik"><a href="#iletisim">Elektrik Taahhüt, Trafo ve Pano <span>Proje · devreye alma</span></a></li>
+            <li id="otomasyon"><a href="fabrika-otomasyonu.html">Fabrika / Endüstriyel Otomasyon <span>PLC · SCADA</span></a></li>
+            <li id="elektrik"><a href="elektrik-bakim.html">Elektrik Taahhüt, Trafo ve Pano <span>Proje · devreye alma</span></a></li>
             <li id="bakim"><a href="teknik-hizmetler-tesis-yonetimi.html">Koruyucu Bakım ve Teknik İşletme <span>Periyodik sözleşme</span></a></li>
             <li id="musavirlik"><a href="#iletisim">Proje Danışmanlık ve Müşavirlik <span>Kontrollük</span></a></li>
             <li id="yuksek-gerilim"><a href="yuksek-gerilim.html">Yüksek Gerilim Proje ve Saha İşleri <span>Trafo · hücre · test · devreye alma</span></a></li>
@@ -957,7 +963,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
           <h3>Çatı GES ve Enerji Danışmanlığı</h3>
           <p class="sub">Enerji maliyetini ölçen, düşüren ve finanse eden çözümler.</p>
           <ul>
-            <li id="ges"><a href="#iletisim">Çatı GES — Güneş Enerjisi Santrali <span>Fizibilite → devreye alma</span></a></li>
+            <li id="ges"><a href="cati-ges.html">Çatı GES — Güneş Enerjisi Santrali <span>Fizibilite → devreye alma</span></a></li>
             <li id="res"><a href="#iletisim">GES &amp; RES Saha Teknik Hizmetleri <span>Trafo · pano · bakım · koordinasyon</span></a></li>
             <li id="sarj"><a href="#iletisim">Elektrikli Araç Şarj İstasyonu <span>AC / DC · yük analizi → devreye alma</span></a></li>
             <li id="evd"><a href="enerji-verimliligi-danismanligi.html">Enerji Verimliliği Danışmanlığı (EVD) <span>Etüt · raporlama</span></a></li>

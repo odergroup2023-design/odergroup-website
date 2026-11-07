@@ -1,6 +1,0 @@
-- Google Isletme Profili (her 7 gunde bir): kategoriler, hizmet listesi, yeni yorumlar, haftalik gonderi
-- LinkedIn sirket sayfasi (her 14 gunde bir): adres alani, sahipsiz ikinci Oder Group sayfasi, gonderi
-- Bing Webmaster Tools (her 30 gunde bir): site ve sitemap kaydi, dizin durumu
-- Instagram / YouTube / Facebook (her 30 gunde bir): ad, adres, telefon, site baglantisi
-- Kompass ve sektor dizinleri (her 30 gunde bir): kayit var mi, bilgiler ayni mi
-- FM / AVM / zincir magaza tedarikci portallari (her 30 gunde bir): kayit durumu
