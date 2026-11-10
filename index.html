@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J36PFJFTB5"></script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};window.gtag("js",new Date());window.gtag("config","G-J36PFJFTB5",{send_page_view:false});</script><meta charset="UTF-8">
+<!-- LCP: gtag.js aninda yuklenmiyor; asagidaki basla() icinde GTM ile birlikte ertelenir. gtag() cagrilari dataLayer kuyruguna yazilir, kayip olmaz. --><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};window.gtag("js",new Date());window.gtag("config","G-J36PFJFTB5",{send_page_view:false});</script><meta charset="UTF-8">
 <!-- ===== ÖLÇÜM: Google Tag Manager ===== -->
 <!-- Konteyner: GTM-5V2QJ5ZR (ÖDER GROUP / odergroup.com.tr).
      Tek konteyner; GA4, Google Ads, Meta Pixel ve LinkedIn etiketleri
@@ -27,6 +27,7 @@ if(i){f.parentNode.insertBefore(j,f);}
   function basla(){
     if(yuklendi) return; yuklendi=true;
     _gtmYukle(window,document,'script','dataLayer','GTM-5V2QJ5ZR');
+    var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-J36PFJFTB5';document.head.appendChild(g);
   }
   ['click','touchstart','keydown','scroll'].forEach(function(o){
     addEventListener(o,basla,{once:true,passive:true});
