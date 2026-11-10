@@ -57,6 +57,7 @@ esik_asan = []
 if RAPOR.exists():
     y("| Sayfa | Puan | LCP (ms) | CLS | TBT (ms) | Durum |")
     y("|---|---|---|---|---|---|")
+    kosular = {}
     for f in sorted(RAPOR.glob("*.json")):
         # Sonu -1/-2/-3 ile bitmeyen dosyalar (index.json gibi) 4 Kasim kosusundan kalma,
         # her gun yenilenmiyor. Eski degeri guncel gibi gostermemek icin atlanir.
@@ -75,14 +76,29 @@ if RAPOR.exists():
         lcp, cls_, tbt = sayi("largest-contentful-paint"), sayi("cumulative-layout-shift"), sayi("total-blocking-time")
         lcp_sn = (a.get("largest-contentful-paint", {}).get("numericValue") or 0) / 1000.0
         kotu = lcp_sn > 2.5 or puan < 90
-        if kotu:
-            esik_asan.append((f.stem, round(lcp_sn, 1), puan))
+        kosular.setdefault(re.sub(r"-\d+$", "", f.stem), []).append((lcp_sn, puan))
         y("| %s | %d | %s | %s | %s | %s |" % (
             f.stem, puan,
             lcp if lcp is not None else "-",
             a.get("cumulative-layout-shift", {}).get("displayValue", "-"),
             tbt if tbt is not None else "-",
             "ESIK ASILDI" if kotu else "uygun"))
+    # Karar medyana gore verilir: ilk kosu genelde soguk baslangic,
+    # tek bir kosu sayfayi acil listesine sokmamali.
+    y("")
+    y("**Medyan (karar bu tabloya gore verilir)**")
+    y("")
+    y("| Sayfa | Medyan LCP (sn) | Medyan puan | Durum |")
+    y("|---|---|---|---|")
+    for sayfa in sorted(kosular):
+        lcps = sorted(k[0] for k in kosular[sayfa])
+        puanlar = sorted(k[1] for k in kosular[sayfa])
+        m_lcp = lcps[len(lcps) // 2]
+        m_puan = puanlar[len(puanlar) // 2]
+        kotu_m = m_lcp > 2.5 or m_puan < 90
+        if kotu_m:
+            esik_asan.append((sayfa, round(m_lcp, 1), m_puan))
+        y("| %s | %.1f | %d | %s |" % (sayfa, m_lcp, m_puan, "ESIK ASILDI" if kotu_m else "uygun"))
 else:
     y("Olcum raporu bulunamadi.")
 y("")
