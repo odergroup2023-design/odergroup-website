@@ -58,6 +58,10 @@ if RAPOR.exists():
     y("| Sayfa | Puan | LCP (ms) | CLS | TBT (ms) | Durum |")
     y("|---|---|---|---|---|---|")
     for f in sorted(RAPOR.glob("*.json")):
+        # Sonu -1/-2/-3 ile bitmeyen dosyalar (index.json gibi) 4 Kasim kosusundan kalma,
+        # her gun yenilenmiyor. Eski degeri guncel gibi gostermemek icin atlanir.
+        if not re.search(r"-\d+$", f.stem):
+            continue
         try:
             r = json.loads(f.read_text(encoding="utf-8"))
         except Exception:
