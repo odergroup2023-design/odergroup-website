@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="tr">
-<head><script async src="https://www.googletagmanager.com/gtag/js?id=G-J36PFJFTB5"></script>
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>5G Altyapı ve Saha Uygulamaları | Öder Group</title>
@@ -29,11 +29,26 @@
 <link rel="icon" href="favicon-64.png" type="image/png">
 <script>
 window.dataLayer = window.dataLayer || [];
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var _gtmYukle=function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
 var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
 j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
 if(i){f.parentNode.insertBefore(j,f);}
-})(window,document,'script','dataLayer','GTM-5V2QJ5ZR');
+};
+/* LCP: olcum etiketleri ilk boyamadan sonra yuklenir (tools/gtag_ertele.py).
+   Etkilesim aninda, aksi halde load + 3,5 sn. dataLayer kuyrugu korunur. */
+(function(){
+  var yuklendi=false;
+  function basla(){
+    if(yuklendi) return; yuklendi=true;
+    _gtmYukle(window,document,'script','dataLayer','GTM-5V2QJ5ZR');
+    var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-J36PFJFTB5';document.head.appendChild(g);
+  }
+  ['click','touchstart','keydown','scroll'].forEach(function(o){
+    addEventListener(o,basla,{once:true,passive:true});
+  });
+  if(document.readyState==='complete'){ setTimeout(basla,3500); }
+  else { addEventListener('load',function(){ setTimeout(basla,3500); },{once:true}); }
+})();
 </script>
 <link rel="stylesheet" href="mobile.css?v=20261012-2">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"5G saha işlerinde hangi bilgiler gerekir?","acceptedAnswer":{"@type":"Answer","text":"Lokasyon, saha tipi, mevcut enerji altyapısı, teknik şartname ve hedef devreye alma tarihi ilk değerlendirme için gereklidir."}},{"@type":"Question","name":"5G işi yalnızca haberleşme ekipmanı montajı mıdır?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Projeye göre enerji beslemesi, pano, kablolama, saha erişimi, iş güvenliği ve devreye alma koordinasyonu da gerekir."}},{"@type":"Question","name":"Operatör teknik şartnamesiyle çalışılabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Teklif ve uygulama kapsamı, ilgili operatör veya altyapı sağlayıcısının şartnamesiyle birlikte netleştirilir."}},{"@type":"Question","name":"Saha işleri hangi bölgelerde yapılıyor?","acceptedAnswer":{"@type":"Answer","text":"Merkez ofisimiz Ataşehir / İstanbul'dadır; saha işleri Türkiye genelinde, kapsam ve takvime göre planlanır."}},{"@type":"Question","name":"Keşif ve teklif ücretli mi?","acceptedAnswer":{"@type":"Answer","text":"Keşif ve teklif ücretsizdir; teklifte iş kalemleri ayrı ayrı yazılır."}},{"@type":"Question","name":"Süre ve fiyat önceden verilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Rakamlar keşif ve teknik şartname incelemesinden sonra yazılı olarak paylaşılır."}}]}</script>

@@ -1,15 +1,30 @@
 <!doctype html>
-<html lang="tr"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-J36PFJFTB5"></script><!-- ===== ÖLÇÜM: Google Tag Manager ===== -->
+<html lang="tr"><head><!-- ===== ÖLÇÜM: Google Tag Manager ===== -->
 <!-- Konteyner: GTM-5V2QJ5ZR (ÖDER GROUP / odergroup.com.tr).
      Tek konteyner; GA4, Google Ads, Meta Pixel ve LinkedIn etiketleri
      GTM arayüzünden yönetilir, siteye tekrar dokunulmaz. -->
 <script>
 window.dataLayer = window.dataLayer || [];
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var _gtmYukle=function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
 var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
 j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
 if(i){f.parentNode.insertBefore(j,f);}
-})(window,document,'script','dataLayer','GTM-5V2QJ5ZR');
+};
+/* LCP: olcum etiketleri ilk boyamadan sonra yuklenir (tools/gtag_ertele.py).
+   Etkilesim aninda, aksi halde load + 3,5 sn. dataLayer kuyrugu korunur. */
+(function(){
+  var yuklendi=false;
+  function basla(){
+    if(yuklendi) return; yuklendi=true;
+    _gtmYukle(window,document,'script','dataLayer','GTM-5V2QJ5ZR');
+    var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-J36PFJFTB5';document.head.appendChild(g);
+  }
+  ['click','touchstart','keydown','scroll'].forEach(function(o){
+    addEventListener(o,basla,{once:true,passive:true});
+  });
+  if(document.readyState==='complete'){ setTimeout(basla,3500); }
+  else { addEventListener('load',function(){ setTimeout(basla,3500); },{once:true}); }
+})();
 </script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};window.gtag("js",new Date());window.gtag("config","G-J36PFJFTB5",{send_page_view:false});</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Fuar Standı Kurulumu | Öder Group</title><meta name="description" content="Tasarım onayından üretim, saha kurulumu ve söküme kadar fuar tarihine bağlı geri planlama. Öder Group ücretsiz keşif yaklaşımı."><meta name="robots" content="index,follow"><link rel="canonical" href="https://www.odergroup.com.tr/vaka-fuar-standi-kurulumu.html"><link rel="icon" href="favicon-64.png" type="image/png"><meta property="og:type" content="article"><meta property="og:locale" content="tr_TR"><meta property="og:site_name" content="Öder Group"><meta property="og:title" content="Fuar Standı Kurulumu | Öder Group"><meta property="og:description" content="Tasarım onayından üretim, saha kurulumu ve söküme kadar fuar tarihine bağlı geri planlama."><meta property="og:url" content="https://www.odergroup.com.tr/vaka-fuar-standi-kurulumu.html"><meta property="og:image" content="https://www.odergroup.com.tr/fuar-standi-kurulumu-istanbul.jpg">
 <meta property="og:image:width" content="1600">
