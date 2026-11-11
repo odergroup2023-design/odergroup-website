@@ -1,6 +1,6 @@
 # DURUM — otomatik uretildi
 
-Son olcum: **2026-11-11 18:44 UTC**
+Son olcum: **2026-11-11 19:28 UTC**
 
 > Bu dosya her otomasyon calismasinda OLCUMDEN yeniden yazilir.
 > Elle duzenlemeyin; bir sonraki calismada ustune yazilir.
@@ -9,30 +9,30 @@ Son olcum: **2026-11-11 18:44 UTC**
 
 | Sayfa | Puan | LCP (ms) | CLS | TBT (ms) | Durum |
 |---|---|---|---|---|---|
-| cati-ges-1 | 97 | 2631 | 0.02 | 0 | ESIK ASILDI |
-| cati-ges-2 | 97 | 2562 | 0.02 | 0 | ESIK ASILDI |
-| cati-ges-3 | 100 | 1536 | 0.02 | 0 | uygun |
-| index-1 | 90 | 1828 | 0 | 388 | uygun |
-| index-2 | 96 | 2575 | 0 | 107 | ESIK ASILDI |
-| index-3 | 85 | 4228 | 0 | 129 | ESIK ASILDI |
-| kurumsal-1 | 100 | 908 | 0.052 | 0 | uygun |
-| kurumsal-2 | 99 | 929 | 0.061 | 0 | uygun |
-| kurumsal-3 | 99 | 903 | 0.061 | 0 | uygun |
-| magaza-showroom-1 | 86 | 4231 | 0.02 | 0 | ESIK ASILDI |
-| magaza-showroom-2 | 79 | 5706 | 0.02 | 0 | ESIK ASILDI |
-| magaza-showroom-3 | 98 | 1815 | 0.083 | 0 | uygun |
-| teknik-hizmetler-tesis-yonetimi-1 | 99 | 2178 | 0.019 | 0 | uygun |
-| teknik-hizmetler-tesis-yonetimi-2 | 99 | 2185 | 0.019 | 0 | uygun |
-| teknik-hizmetler-tesis-yonetimi-3 | 99 | 1979 | 0.019 | 0 | uygun |
+| cati-ges-1 | 97 | 2563 | 0.02 | 0 | ESIK ASILDI |
+| cati-ges-2 | 94 | 3159 | 0.02 | 0 | ESIK ASILDI |
+| cati-ges-3 | 97 | 2676 | 0.02 | 0 | ESIK ASILDI |
+| index-1 | 81 | 2807 | 0 | 596 | ESIK ASILDI |
+| index-2 | 97 | 2358 | 0 | 100 | uygun |
+| index-3 | 98 | 2140 | 0 | 95 | uygun |
+| kurumsal-1 | 100 | 924 | 0.052 | 0 | uygun |
+| kurumsal-2 | 99 | 902 | 0.061 | 0 | uygun |
+| kurumsal-3 | 100 | 903 | 0.052 | 0 | uygun |
+| magaza-showroom-1 | 88 | 3861 | 0.02 | 0 | ESIK ASILDI |
+| magaza-showroom-2 | 98 | 2413 | 0.02 | 0 | uygun |
+| magaza-showroom-3 | 97 | 2556 | 0.02 | 0 | ESIK ASILDI |
+| teknik-hizmetler-tesis-yonetimi-1 | 99 | 2224 | 0.019 | 0 | uygun |
+| teknik-hizmetler-tesis-yonetimi-2 | 99 | 2252 | 0.019 | 0 | uygun |
+| teknik-hizmetler-tesis-yonetimi-3 | 99 | 2180 | 0.019 | 0 | uygun |
 
 **Medyan (karar bu tabloya gore verilir)**
 
 | Sayfa | Medyan LCP (sn) | Medyan puan | Durum |
 |---|---|---|---|
-| cati-ges | 2.6 | 97 | ESIK ASILDI |
-| index | 2.6 | 90 | ESIK ASILDI |
-| kurumsal | 0.9 | 99 | uygun |
-| magaza-showroom | 4.2 | 86 | ESIK ASILDI |
+| cati-ges | 2.7 | 97 | ESIK ASILDI |
+| index | 2.4 | 97 | uygun |
+| kurumsal | 0.9 | 100 | uygun |
+| magaza-showroom | 2.6 | 97 | ESIK ASILDI |
 | teknik-hizmetler-tesis-yonetimi | 2.2 | 99 | uygun |
 
 Esikler: LCP <= 2,5 sn · CLS <= 0,1 · mobil puan >= 90
@@ -68,9 +68,8 @@ Ayrica otomasyonun ureteMEYECEGI, yalnizca senden gelebilecek veriler:
 
 ## ACIL — esik asan sayfalar
 
-- **cati-ges**: LCP 2.6 sn, mobil puan 97
-- **index**: LCP 2.6 sn, mobil puan 90
-- **magaza-showroom**: LCP 4.2 sn, mobil puan 86
+- **cati-ges**: LCP 2.7 sn, mobil puan 97
+- **magaza-showroom**: LCP 2.6 sn, mobil puan 97
 
 Guvenli duzeltmeler ayni calismada uygulandi. Hala esigin ustundeyse
 tasarimi etkileyen mudahale gerekiyor demektir; bu otomatik yapilmaz.
