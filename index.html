@@ -322,9 +322,10 @@ nav.menu{display:flex;gap:30px;align-items:center}
 .dtab small{font-family:'Archivo';font-size:.66rem;letter-spacing:.22em;font-weight:600;display:block;margin-bottom:3px;opacity:.7}
 .dtab b{font-family:'Archivo';font-size:.97rem;font-weight:600;color:#fff;display:block}
 .dtab:hover,.dtab.on{background:rgba(15,18,22,.9)}
-.dtab i.prog{position:absolute;left:0;bottom:0;height:2px;width:0;display:block}
+.dtab i.prog{position:absolute;left:0;bottom:0;height:2px;width:100%;display:block;transform:scaleX(0);transform-origin:left center}
 .dtab.on i.prog{animation:fill 4.2s linear forwards}
-@keyframes fill{to{width:100%}}
+/* LCP: width yerine transform; her karede yerlesim hesabi (layout) yapilmaz, GPU da calisir. Gorunum ayni. */
+@keyframes fill{to{transform:scaleX(1)}}
 
 /* ---- BANNER OKLARI + SAYAÇ ---- */
 .hero{cursor:pointer}
