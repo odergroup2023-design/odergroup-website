@@ -41,11 +41,11 @@ jobs:
   otomasyon:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with: { fetch-depth: 0 }
 
-      - uses: actions/setup-node@v4
-        with: { node-version: "20" }
+      - uses: actions/setup-node@v5
+        with: { node-version: "22" }
 
       - name: Lighthouse kur
         run: npm install -g lighthouse
@@ -135,7 +135,7 @@ jobs:
         if: always()
         run: python3 tools/firsat_raporu.py >> $GITHUB_STEP_SUMMARY || true
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         if: always()
         with:
           name: lighthouse-raporu
@@ -144,7 +144,7 @@ jobs:
 
       - name: 9 — Basarisizsa issue ac veya guncelle
         if: failure() || steps.dogrula.outputs.hata == '1'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const baslik = "Gunluk otomasyon basarisiz";
