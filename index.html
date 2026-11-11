@@ -32,9 +32,10 @@ if(i){f.parentNode.insertBefore(j,f);}
   ['click','touchstart','keydown','scroll'].forEach(function(o){
     addEventListener(o,basla,{once:true,passive:true});
   });
-  if(document.readyState==='complete'){ setTimeout(basla,1200); }
-  else { addEventListener('load',function(){ setTimeout(basla,1200); },{once:true}); }
-  setTimeout(basla,4000);
+  /* LCP: 4 sn zorunlu yukleme kaldirildi; olcum penceresine (LCP ~4,3 sn) denk geliyordu.
+     Etkilesim (tiklama/dokunma/tus/kaydirma) aninda, aksi halde load + 3,5 sn. */
+  if(document.readyState==='complete'){ setTimeout(basla,3500); }
+  else { addEventListener('load',function(){ setTimeout(basla,3500); },{once:true}); }
 })();
 </script>
 <!-- ===== GÜVENLİK ===== -->
