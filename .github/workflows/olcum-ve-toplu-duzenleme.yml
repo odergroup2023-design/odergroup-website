@@ -132,6 +132,12 @@ jobs:
           git push origin HEAD:main
           echo "### GERI ALINDI — canli dogrulama basarisiz" >> $GITHUB_STEP_SUMMARY
 
+      - name: 7b — IndexNow (son 26 saatte degisen sayfalari bildir)
+        continue-on-error: true
+        run: |
+          ONCE=$(git rev-list -n1 --before="26 hours ago" HEAD || true)
+          if [ -n "$ONCE" ]; then python3 tools/indexnow.py "$ONCE" HEAD | tee -a $GITHUB_STEP_SUMMARY; else python3 tools/indexnow.py | tee -a $GITHUB_STEP_SUMMARY; fi
+
       - name: 8 — Medyan ozet ve firsat listesi
         if: always()
         run: python3 tools/firsat_raporu.py >> $GITHUB_STEP_SUMMARY || true
