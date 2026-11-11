@@ -66,6 +66,7 @@ jobs:
         run: |
           python3 tools/toplu_duzenleme.py | tee -a $GITHUB_STEP_SUMMARY
           python3 tools/lcp_duzeltme.py   | tee -a $GITHUB_STEP_SUMMARY
+          python3 tools/gtag_ertele.py    | tee -a $GITHUB_STEP_SUMMARY
 
       - name: 3 — Durum kaydini olcumden uret
         run: python3 tools/durum_yaz.py | tee -a $GITHUB_STEP_SUMMARY
