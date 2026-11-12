@@ -1,0 +1,37 @@
+# Bir kerelik: mobil LCP icin kucuk font ve kapak gorseli uretir.
+# Yalniz perf-mobil-varlik dalina itildiginde calisir; sonucu ayni dala
+# commit eder. main'e birlestikten sonra tetiklenmez (etkisizdir).
+name: Mobil varlik uretimi (bir kerelik)
+
+on:
+  push:
+    branches: [perf-mobil-varlik]
+    paths:
+      - tools/mobil_varlik.py
+      - .github/workflows/mobil-varlik.yml
+
+permissions:
+  contents: write
+
+jobs:
+  uret:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.10"
+      - name: Paketler
+        run: pip install "fonttools==4.*" brotli pillow
+      - name: Uret ve dogrula
+        run: python tools/mobil_varlik.py
+      - name: Ayni dala kaydet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fonts/archivo-2-tr.woff2 fonts/inter-9-tr.woff2 fonts.css \
+                  optimized/oder-group-fuar-standi-760.webp index.html
+          git diff --cached --stat
+          git commit -m "perf: mobil font alt kumeleri ve 760 px kapak gorseli (otomatik uretim)"
+          git push
