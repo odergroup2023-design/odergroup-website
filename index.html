@@ -767,8 +767,14 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .mqtrack{animation:none}
 }
+
+/* LCP: ekran disindaki bolumler ekrana yaklasinca cizilir (stil/yerlesim isi azalir). Sayfa ici baglantida ve yazdirmada kapanir. */
+.cv{content-visibility:auto;contain-intrinsic-size:auto 1200px}
+.cv-off .cv{content-visibility:visible}
+@media print{.cv{content-visibility:visible}}
 </style>
 <link rel="stylesheet" href="mobile.css?v=20261012-2">
+<script>if(location.hash)document.documentElement.classList.add('cv-off')</script>
 </head>
 <body class="page-home">
 
@@ -909,7 +915,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 </div>
 
 <!-- ===== HİZMETLER ===== -->
-<section class="rv">
+<section class="rv cv">
   <div class="wrap">
     <span class="eyebrow">Hizmetlerimiz</span>
     <h2 class="sec">İç dekorasyondan enerjiye, tek mühendislik sorumluluğu</h2>
@@ -1005,7 +1011,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 </section>
 
 <!-- ===== İLLÜSTRASYONLU HİZMET ANLATIMI ===== -->
-<section class="illu rv">
+<section class="illu rv cv">
   <div class="wrap">
     <span class="eyebrow">Nasıl Çalışıyoruz</span>
     <h2 class="sec">Her işin kendine ait mühendisliği var</h2>
@@ -1128,7 +1134,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 </section>
 
 <!-- ===== SÜREÇ (CRO: belirsizliği azaltır) ===== -->
-<section class="proc rv">
+<section class="proc rv cv">
   <div class="wrap">
     <span class="eyebrow">Çalışma Şeklimiz</span>
     <h2 class="sec">Dört adımda öngörülebilir süreç</h2>
@@ -1142,7 +1148,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 </section>
 
 <!-- ===== KURUCU DENEYİMİ / REFERANSLAR — tamamı CV ile doğrulanmıştır ===== -->
-<section class="refs rv" id="referanslar">
+<section class="refs rv cv" id="referanslar">
   <div class="wrap">
     <span class="eyebrow">Kurucu Deneyimi</span>
     <h2 class="sec">Sahada kanıtlanmış proje geçmişi</h2>
@@ -1208,7 +1214,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 </section>
 
 <!-- ===== SAYILAR ===== -->
-<div class="stats rv">
+<div class="stats rv cv">
   <div class="wrap">
     <div class="stat"><b data-n="20">20+</b><span>Yıl Kurucu Saha Deneyimi</span></div>
     <div class="stat"><b data-n="250">250+</b><span>Hizmet Verilen Müşteri</span></div>
@@ -1219,7 +1225,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 </div>
 
 <!-- ===== SSS / AEO ===== -->
-<section class="faq rv" id="sss">
+<section class="faq rv cv" id="sss">
   <div class="wrap">
     <span class="eyebrow">Sık Sorulan Sorular</span>
     <h2 class="sec">Karar öncesi merak edilenler</h2>
@@ -1240,7 +1246,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 </section>
 
 <!-- ===== KURUMSAL ===== -->
-<section class="rv" id="kurumsal" style="background:#fff">
+<section class="rv cv" id="kurumsal" style="background:#fff">
   <div class="wrap" style="display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center">
     <img alt="Öder Group teknik ekibi — iç mekân bakım ve teknik kontrol çalışması" decoding="async" height="900" sizes="(max-width:640px) calc(100vw - 32px), (max-width:900px) 50vw, 600px" src="optimized/ic-dekorasyon-bakim-onarim-1200.webp" srcset="optimized/ic-dekorasyon-bakim-onarim-640.webp 640w, optimized/ic-dekorasyon-bakim-onarim-1200.webp 1200w" style="height:440px;width:100%;object-fit:cover;filter:grayscale(.08) saturate(1.05)" width="1600"/ loading="lazy" decoding="async">
     <div>
@@ -1253,7 +1259,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 </section>
 
 
-<section class="case-notes rv" aria-labelledby="case-notes-title">
+<section class="case-notes rv cv" aria-labelledby="case-notes-title">
   <div class="wrap">
     <span class="eyebrow">Proje notları</span>
     <h2 class="sec" id="case-notes-title">Beş uygulama senaryosu</h2>
@@ -1269,7 +1275,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
 </section>
 
 <!-- ===== CTA + FORM ===== -->
-<div class="cta rv" id="iletisim">
+<div class="cta rv cv" id="iletisim">
   <div class="wrap">
     <div>
       <h2 data-i18n="cta">Projenizi konuşalım</h2>
@@ -1323,7 +1329,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
   </div>
 </div>
 
-<footer>
+<footer class="cv">
   <div class="wrap">
     <div class="fgrid">
       <div class="footer-brand">
@@ -1922,5 +1928,6 @@ so.observe(document.querySelector('.stats'));
   }else{diger.forEach(yukle);}
 })();
 </script>
+<script>/* Sayfa ici baglantida tum bolumler cizilir; hedef konumu kaymaz. */document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');if(a)document.documentElement.classList.add('cv-off')},true);addEventListener('hashchange',function(){document.documentElement.classList.add('cv-off')});</script>
 </body>
 </html>
