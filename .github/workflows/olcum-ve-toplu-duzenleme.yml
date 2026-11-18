@@ -50,6 +50,9 @@ jobs:
       - name: Lighthouse kur
         run: npm install -g lighthouse
 
+      # GA4 KIRLILIGI: Lighthouse gercek tarayici acar; Google etiketleri engellenmezse
+      # her kosu GA4'e ABD veri merkezinden "ziyaretci" olarak yazilir.
+      # Etiketler zaten yuklemeden 3,5 sn sonra geldigi icin LCP olcumu degismez.
       - name: 1 — Olcum (3 kosu, medyan icin)
         run: |
           mkdir -p rapor
@@ -58,6 +61,10 @@ jobs:
               lighthouse "https://www.odergroup.com.tr/$s.html" \
                 --quiet --chrome-flags="--headless --no-sandbox" \
                 --form-factor=mobile --only-categories=performance \
+                --blocked-url-patterns="*googletagmanager.com*" \
+                --blocked-url-patterns="*google-analytics.com*" \
+                --blocked-url-patterns="*analytics.google.com*" \
+                --blocked-url-patterns="*doubleclick.net*" \
                 --output=json --output-path="rapor/$s-$i.json" || true
             done
           done
