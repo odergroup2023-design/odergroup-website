@@ -7,7 +7,9 @@ Her blog-*.html icin:
   3. Hizmet sayfasinin <main> icindeki gorunen metni, rehberin bu tarihle
      ilk kaydedildigi commit'teki surumle bugunku surum arasinda karsilastirilir. Yalniz kod, stil veya
      olcum etiketi degisikligi sayilmaz; metin degistiyse rehber
-     "guncellenmeli" olarak isaretlenir.
+     "guncellenmeli" olarak isaretlenir. Baslik, alt bilgi ve mobil serit
+     karsilastirmaya girmez. Elle gozden gecirilen rehberler
+     tools/rehber_kontrol.json ile o tarihten itibaren izlenir.
   4. sitemap.xml lastmod ile dateModified uyumu ve 12 aydan eski rehberler
      ayrica listelenir.
 
@@ -33,7 +35,9 @@ def git(*a):
 def gorunen_metin(kaynak):
     m = re.search(r"<main[\s>].*?</main>", kaynak, re.S | re.I)
     s = m.group(0) if m else kaynak
-    s = re.sub(r"<(script|style|noscript)\b.*?</\1>", " ", s, flags=re.S | re.I)
+    s = re.sub(r"<(script|style|noscript|header|footer|nav)\b.*?</\1>", " ", s, flags=re.S | re.I)
+    # sabit site parcalari: mobil arama/WhatsApp seridi, marka satiri, galeri oklari
+    s = re.sub(r'<div class="(mobcta|fbrand|lb)\b[^"]*".*?</div>\s*(</div>)?', " ", s, flags=re.S)
     s = re.sub(r"<!--.*?-->", " ", s, flags=re.S)
     s = re.sub(r"<[^>]+>", " ", s)
     return re.sub(r"\s+", " ", html.unescape(s)).strip()
@@ -72,6 +76,29 @@ def taban_surum(dosya, tarih):
     return ""
 
 
+def inceleme_surumu(dosya):
+    """tools/rehber_kontrol.json: {"blog-x.html": "YYYY-MM-DD"} - rehber elle
+    gozden gecirilip hizmet sayfasiyla uyumlu bulundugunda eklenir. Kaydin bu
+    degerle ilk girdigi commit, karsilastirma tabani olur."""
+    yol = "tools/rehber_kontrol.json"
+    for rev in git("log", "--reverse", "--format=%H", "--", yol).split():
+        try:
+            d = json.loads(git("show", f"{rev}:{yol}") or "{}")
+        except ValueError:
+            continue
+        guncel = json.loads((KOK / yol).read_text(encoding="utf-8")) if (KOK / yol).exists() else {}
+        if dosya in guncel and d.get(dosya) == guncel[dosya]:
+            return rev
+    return ""
+
+
+def yeni_olan(r1, r2):
+    if not r1 or not r2:
+        return r1 or r2
+    ata = subprocess.run(["git", "merge-base", "--is-ancestor", r1, r2], cwd=KOK).returncode == 0
+    return r2 if ata else r1
+
+
 def main():
     bugun = date.today()
     sitemap = (KOK / "sitemap.xml").read_text(encoding="utf-8")
@@ -91,7 +118,7 @@ def main():
         if bugun - date.fromisoformat(tarih[:10]) > timedelta(days=ESKI_GUN):
             eski.append(f"`{yol.name}` (son güncelleme {tarih[:10]})")
 
-        rev = taban_surum(yol.name, tarih)
+        rev = yeni_olan(taban_surum(yol.name, tarih), inceleme_surumu(yol.name))
         if not rev:
             continue
         for sayfa in dayanilan_sayfalar(kaynak):
