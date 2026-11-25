@@ -1,0 +1,48 @@
+name: Rehber güncellik kontrolü
+
+# Her pazartesi 06:30 UTC (TR 09:30) ve elle. Salt okunur: hiçbir dosyayı
+# değiştirmez, commit atmaz. Güncellenmesi gereken rehber varsa tek bir
+# "Rehber güncellik raporu" kaydı (issue) açar/günceller; sorun yoksa kapatır.
+on:
+  schedule:
+    - cron: "30 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  kontrol:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Rehberleri hizmet sayfalarıyla karşılaştır
+        id: rapor
+        run: |
+          set +e
+          python tools/guncellik_kontrol.py > rapor.md
+          kod=$?
+          set -e
+          cat rapor.md >> "$GITHUB_STEP_SUMMARY"
+          if [ "$kod" = "10" ]; then echo "sorun=1" >> "$GITHUB_OUTPUT";
+          elif [ "$kod" = "0" ]; then echo "sorun=0" >> "$GITHUB_OUTPUT";
+          else exit "$kod"; fi
+      - name: Rapor kaydını aç / güncelle / kapat
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          baslik="Rehber güncellik raporu"
+          no=$(gh issue list --state open --search "in:title \"$baslik\"" --json number --jq '.[0].number')
+          if [ "${{ steps.rapor.outputs.sorun }}" = "1" ]; then
+            if [ -n "$no" ]; then gh issue edit "$no" --body-file rapor.md;
+            else gh issue create --title "$baslik" --body-file rapor.md; fi
+          elif [ -n "$no" ]; then
+            gh issue comment "$no" --body "Tüm rehberler güncel; kayıt kapatıldı."
+            gh issue close "$no"
+          fi
