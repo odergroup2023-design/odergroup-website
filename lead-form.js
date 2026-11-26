@@ -77,6 +77,8 @@
     var payload = {};
     new FormData(form).forEach(function (deger, ad) { if (typeof deger === 'string') payload[ad] = deger; });
     payload._url = window.location.href;
+    /* Her talebe ayri konu: Gmail onceki (silinmis) yazismalara baglamasin. */
+    if (payload.ad) payload._subject = (payload._subject || 'Yeni Keşif/Teklif Talebi') + ' — ' + payload.ad.slice(0, 60);
     var konu = payload.konu || 'Genel teklif';
 
     tesekkur();
