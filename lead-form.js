@@ -31,7 +31,11 @@
     });
     payload._url = window.location.href;
     var controller = new AbortController();
-    var timeout = window.setTimeout(function () { controller.abort(); }, 20000);
+    /* FormSubmit yaniti zaman zaman 20 sn'yi asiyor; e-posta yine de iletiliyor (26.11.2026 testi). */
+    var timeout = window.setTimeout(function () { controller.abort(); }, 60000);
+    var yavas = window.setTimeout(function () {
+      status.textContent = 'Form hizmeti yavaş yanıt veriyor; lütfen sayfayı kapatmayın. Bu işlem bir dakika kadar sürebilir.';
+    }, 8000);
     try {
       var response = await fetch('https://formsubmit.co/ajax/info@odergroup.com.tr', {
         method: 'POST',
@@ -61,6 +65,18 @@
         window.location.assign('tesekkurler.html');
       }, 300);
     } catch (error) {
+      if (error && error.name === 'AbortError') {
+        status.setAttribute('role', 'alert');
+        status.textContent = 'Form hizmeti zamanında yanıt vermedi; talebiniz yine de iletilmiş olabilir. Tekrar göndermek yerine lütfen +90 534 547 22 39 numarasından telefon/WhatsApp ile teyit edin.';
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'form_timeout', sayfa: window.location.pathname, form_name: 'kesif_teklif_formu' });
+        window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+        window.gtag('event', 'form_timeout', {form_name:'kesif_teklif_formu'});
+        busy = false;
+        button.disabled = false;
+        button.textContent = originalText;
+        return;
+      }
       status.setAttribute('role', 'alert');
       status.textContent = 'Gönderim onayı alınamadı. Bilgileriniz bu formda duruyor. Yeniden deneyebilir veya +90 534 547 22 39 numarasından telefon/WhatsApp ile ulaşabilirsiniz.';
       window.dataLayer = window.dataLayer || [];
@@ -72,6 +88,7 @@
       button.textContent = originalText;
     } finally {
       window.clearTimeout(timeout);
+      window.clearTimeout(yavas);
     }
   });
 })();
