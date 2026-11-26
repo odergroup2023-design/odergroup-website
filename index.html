@@ -1299,6 +1299,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
       <input id="eposta" name="email" type="email" placeholder="ornek@firma.com">
       <label for="konu">Talep Konusu</label>
       <select id="konu" name="konu">
+        <option value="" selected>Konu seçin (isteğe bağlı)</option>
         <option>Fuar Standı Tasarım ve Uygulama</option>
         <option>Mağaza / Showroom Yapımı</option>
         <option>Konut / Villa Projesi</option>
@@ -1321,7 +1322,7 @@ footer{background:var(--ink-2);color:#9ba2a9;padding:70px 0 0;font-weight:300}
       <label for="takvim">Hedef tarih / aciliyet</label>
       <input id="takvim" name="takvim" placeholder="Örn. keşif bu ay / devreye alma Aralık 2026">
       <label for="mesaj">Kısa Açıklama</label>
-      <textarea id="mesaj" name="mesaj" rows="3" placeholder="Örn. 60 m² fuar standı, kurulum tarihi Ekim 2026"></textarea>
+      <textarea id="mesaj" name="mesaj" rows="3" maxlength="4000" placeholder="Örn. 60 m² fuar standı, kurulum tarihi Ekim 2026"></textarea>
       <label class="consent"><input type="checkbox" name="kvkk_onay" value="onaylandi" required> <span><a href="gizlilik-politikasi.html">Gizlilik Politikası</a> kapsamında bilgilerimin teklif talebimi değerlendirmek amacıyla işlenmesini kabul ediyorum.</span></label>
       <button class="btn" type="submit" data-i18n="btnform">Keşif ve Teklif Talebi Gönder</button>
       <small>Bilgileriniz yalnız talebinizi değerlendirmek için kullanılır.</small>
@@ -1889,7 +1890,7 @@ so.observe(document.querySelector('.stats'));
   if (f) f.addEventListener('focusin', function(){
     if (!formBasladi) { formBasladi = true; dl('form_start', {form_name:'kesif_teklif_formu'}); }
   });
-  /* Başarı olayı yalnızca lead-form.js sağlayıcı onayından sonra gönderilir. */
+  /* Başarı olayı (generate_lead) lead-form.js tarafından talep FormSubmit'e teslim edilince gönderilir. */
   /* okuma derinliği — içeriğin ilgi çekip çekmediğini ölçer */
   var esikler = [25,50,75,100], gecilen = {};
   window.addEventListener('scroll', function(){
@@ -1908,7 +1909,7 @@ so.observe(document.querySelector('.stats'));
 })();
 
 </script>
-<script src="lead-form.js" defer></script>
+<script src="lead-form.js?v=20261127" defer></script>
 <script src="site-ui.js?v=20261012-2" defer></script>
 <script>
 /* LCP: ekran disindaki arka plan gorselleri (hizmet kartlari .ph/.ph2 ve 2.-3. slayt)
